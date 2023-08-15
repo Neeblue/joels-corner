@@ -14,7 +14,7 @@ export default function Card() {
   
   return (
     <button onClick={() => setCount(count + 1)}>
-      This is a button
+      {count}
     </button>
   );
 }

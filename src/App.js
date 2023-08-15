@@ -20,6 +20,7 @@ function App() {
         </a>
         <p />
         <Card />
+        <Card />
       </header>
     </div>
   );
