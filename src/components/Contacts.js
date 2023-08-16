@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const Contact = () => {
 
-    const [name, setName] = useState("");
+    /*const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
@@ -42,7 +42,7 @@ const Contact = () => {
             <button type='submit'>Submit</button>
 
         </form>
-    )
+    )*/
 }
 
 export default Contact;
