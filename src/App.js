@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Card from "./Card";
 import Contact from "./components/Contacts";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <Card />
         <Card />
         <p />
-        <Contact />
+        <Projects />
       </header>
     </div>
   );
