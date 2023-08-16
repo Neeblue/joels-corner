@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Card from "./Card";
+import Contact from "./components/Contacts";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <p />
         <Card />
         <Card />
+        <p />
+        <Contact />
       </header>
     </div>
   );
