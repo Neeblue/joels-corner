@@ -1,0 +1,20 @@
+[
+    {
+      "title": "EcoHub",
+      "description": "An online platform connecting environmental enthusiasts and promoting sustainable practices.",
+      "link": "https://www.ecohub.com",
+      "image": "https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg"
+    },
+    {
+      "title": "HealthTrack",
+      "description": "A mobile app that helps users track their fitness activities, set goals, and monitor progress.",
+      "link": "https://www.healthtrackapp.com",
+      "image": "https://publish.purewow.net/wp-content/uploads/sites/2/2021/06/smallest-dog-breeds-toy-poodle.jpg"
+    },
+    {
+      "title": "ArtGalleryNow",
+      "description": "An online gallery showcasing contemporary artworks from around the world.",
+      "link": "https://www.artgallerynow.com",
+      "image": "https://www.akc.org/wp-content/uploads/2016/11/AdobeStock_94435211-500x500.jpeg"
+    }
+]
