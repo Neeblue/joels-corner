@@ -7,7 +7,7 @@ const ProjectCard = ({ title, description, imageUrl, githubLink }) => {
           <h2>{title}</h2>
         </a>
         <p>{description}</p>
-        <img src={imageUrl} alt={title} />
+        <img src={imageUrl} alt={title} width={300} />
       </div>
     );
   };
