@@ -1,20 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import './Card.css';
- 
-export default function Card() {
-  const [count, setCount] = useState(0);
-  
-  useEffect(() => {
-    document.title = `Clicked ${count} times`;
-  }, [count]);
+import react from 'react';
 
-  useEffect(() => {
-    setCount(5);
-  }, []);
-  
-  return (
-    <button onClick={() => setCount(count + 1)}>
-      {count}
-    </button>
-  );
-}
+const ProjectCard = ({ title, description, imageUrl, githubLink }) => {
+    return (
+      <div className="project-card">
+        <a href={githubLink} target="_blank" rel="noopener noreferrer">
+          <h2>{title}</h2>
+        </a>
+        <p>{description}</p>
+        <img src={imageUrl} alt={title} width={300} />
+      </div>
+    );
+  };
+
+ export default ProjectCard;
