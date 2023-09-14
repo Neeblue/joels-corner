@@ -1,8 +1,4 @@
-import react from 'react';
-import "./Contacts.css";
-import { app } from '../firebase';
-import { useState } from "react";
-
+import "../Contacts.css";
 
 const Contact = () => {
 
