@@ -23,6 +23,7 @@ const ProjectCards = () => {
         <div key={index} className="project-card">
           <h2 className='title'>{project.title}</h2>
           <p className='description'>{project.description}</p>
+          {/* Add tags */}
           <a className='link' href={project.link} target="_blank" rel="noopener noreferrer">
             Github link
           </a>
