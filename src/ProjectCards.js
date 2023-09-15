@@ -17,16 +17,16 @@ const ProjectCards = () => {
   }, []);
 
   return (
-    <div>
-      <h1>GitHub Projects</h1>
+    <div className='projectCards'>
+      <h1 className='header'>GitHub Projects</h1>
       {projects.map((project, index) => (
         <div key={index} className="project-card">
-          <h2>{project.title}</h2>
-          <p>{project.description}</p>
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
-            Visit Project
+          <h2 className='title'>{project.title}</h2>
+          <p className='description'>{project.description}</p>
+          <a className='link' href={project.link} target="_blank" rel="noopener noreferrer">
+            Github link
           </a>
-          <img src={project.image} alt={project.title} width={300} />
+          <img className='image' src={project.image} alt={project.title} width={300} />
         </div>
       ))}
     </div>

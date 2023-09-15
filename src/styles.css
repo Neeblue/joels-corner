@@ -45,3 +45,43 @@ body {
     font-size: 2rem;
     font-weight: bold;
 }
+
+.projectCards {
+    padding: 1rem;
+}
+
+.project-card {
+    margin: 0 0 0 1rem;
+}
+
+.projectCards .header {
+    /* Make the h1 element centered on the website; */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projectCards .title {
+    margin-bottom: 0.5rem;
+
+}
+
+.projectCards .description {
+    margin-bottom: 0.5rem;
+
+}
+
+.projectCards .link {
+    margin-bottom: 0.3rem; /*TODO: Doesn't work */
+    text-align: center;
+    display: block;
+    
+
+}
+
+.projectCards .image {
+    margin-bottom: 5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
