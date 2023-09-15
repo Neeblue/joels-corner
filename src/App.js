@@ -6,7 +6,7 @@ import Projects from "./pages/Projects";
 function App() {
   let component
   switch (window.location.pathname) {
-    case "/":
+    case "/": default:
       component = <Projects />;
       break;
     case "/about":
@@ -17,8 +17,6 @@ function App() {
       break;
     case "/contact":
       component = <Contact />;
-      break;
-    default:
       break;
     }
   return (
