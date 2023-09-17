@@ -1,4 +1,4 @@
-import "../Contacts.css";
+import "../contact.css";
 import { useState } from "react";
 
 const Contact = () => {
@@ -10,17 +10,17 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        db.collection('contacts').add({
-            name:name,
-            email:email,
-            message:message
-        })
-        .then(() => {
-            alert("Message has been submitted 👍")
-        })
-        .catch(error => {
-            alert(error.message)
-        });
+        // db.collection('contacts').add({
+        //     name:name,
+        //     email:email,
+        //     message:message
+        // })
+        // .then(() => {
+        //     alert("Message has been submitted 👍")
+        // })
+        // .catch(error => {
+        //     alert(error.message)
+        // });
     };
 
     return (
