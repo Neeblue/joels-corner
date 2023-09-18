@@ -2,12 +2,18 @@ import Navbar from "./Navbar";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import Introduction from "./components/Introduction";
 
 function App() {
   let component
   switch (window.location.pathname) {
     case "/": default:
-      component = <Projects />;
+      component = (
+        <div>
+          <Introduction />
+          <Projects />
+        </div>
+      );
       break;
     case "/about":
       component = <About />;

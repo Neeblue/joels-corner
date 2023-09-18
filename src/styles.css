@@ -48,6 +48,14 @@ body {
     background-color: #777;
 }
 
+/* Introduction paragraph */
+.intro {
+    /* margin right and down, font larger, blue color */
+    margin: 1rem 1rem 2rem 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
 /* Projects page */
 .projectCards {
     padding: 0.2rem;
@@ -100,6 +108,9 @@ body {
 }
 
 @media (max-width: 500px) { /* 768px */
+    .intro {
+        font-size: 1rem;
+    }
     .project-card {
         flex-direction: column;
     }
