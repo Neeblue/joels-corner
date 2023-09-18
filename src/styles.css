@@ -65,14 +65,15 @@ body {
   
   .rightColumn {
     width: 50%;
+    display: flex;
+    text-align: center;
+    padding: 2rem;
   }
 
   .projectCards .image {
     margin-bottom: 3rem;
     max-width: 100%;
     max-height: 100%;
-    padding: 5%;
-    border-radius: 15%; /* TODO: Still uneven */
     object-fit:contain;
 }
 
@@ -106,7 +107,9 @@ body {
         width: 100%;
     }
 
-    .rightColumn > img {
+    .rightColumn {
         width: 100%;
+        display: flex;        
+        justify-content: center;
     }
 }
