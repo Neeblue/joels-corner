@@ -1,8 +1,8 @@
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
+import Introduction from "./components/Introduction";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
-import Introduction from "./components/Introduction";
 
 function App() {
   let component

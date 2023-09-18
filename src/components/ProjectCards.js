@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import jsonData from './projects.json';
+import jsonData from '../projects.json';
 
 const ProjectCards = () => {
   const [projects, setProjects] = useState([]);
