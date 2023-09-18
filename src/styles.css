@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
@@ -41,7 +41,7 @@ body {
 }
 
 .nav li .active {
-    background-color: #555;
+    background-color: #555; /* TODO: Doesn't work */
 }
 
 .nav li:Hover {
@@ -50,10 +50,10 @@ body {
 
 /* Introduction paragraph */
 .intro {
-    /* margin right and down, font larger, blue color */
+    /* TODO: margin right and down, font larger, blue color */
     margin: 1rem 1rem 2rem 1rem;
     font-size: 1.5rem;
-    color: #333;
+    color:darkslateblue;
 }
 
 /* Projects page */
@@ -125,3 +125,10 @@ body {
         justify-content: center;
     }
 }
+
+.aboutMe {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }

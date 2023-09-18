@@ -11,6 +11,7 @@ function App() {
       component = (
         <div>
           <Introduction />
+          {/* TODO: Add icon tags, Github main link */}
           <Projects />
         </div>
       );
