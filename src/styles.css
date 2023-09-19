@@ -65,20 +65,19 @@ body {
 .project-card {
     display: flex;
     flex-direction: row;
-  }
+}
 
-  .leftColumn {
+.leftColumn {
     width: 50%;
-  }
-  
-  .rightColumn {
+}
+
+.rightColumn {
     width: 50%;
-    display: flex;
+    display: flex; /* Remove this? */
     text-align: center;
-    padding: 2rem;
-  }
+}   
 
-  .projectCards .image {
+.projectCards .image {
     margin-bottom: 3rem;
     max-width: 100%;
     max-height: 100%;
@@ -86,6 +85,11 @@ body {
 }
 
 .projectCards .header {
+    /* margin-bottom: 2rem; */
+    text-align: center;
+}
+
+.projectCards .subHeader {
     margin-bottom: 2rem;
     text-align: center;
 }
