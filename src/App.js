@@ -1,8 +1,14 @@
 import Navbar from "./components/Navbar";
 import Introduction from "./components/Introduction";
+
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+
+import Website from "./pages/projects/Website";
+import Bookshelf from "./pages/projects/Bookshelf";
+import Library from "./pages/projects/Library";
+import Teaching from "./pages/projects/Teaching";
 
 function App() {
   let component
@@ -24,6 +30,18 @@ function App() {
       break;
     case "/contact":
       component = <Contact />;
+      break;
+    case "/projects/this-website":
+      component = <Website />;
+      break;
+    case "/projects/bookshelf":
+      component = <Bookshelf />;
+      break;
+    case "/projects/library":
+      component = <Library />;
+      break;
+    case "/projects/teaching-app-api":
+      component = <Teaching />;
       break;
     }
   return (

@@ -3,36 +3,42 @@
       "title": "This website",
       "description": "Static website hosted on AWS S3 using CloudFront. This website is built using React. Project information is pulled from an ASP.NET API AWS Lambda function. Data is pulled from a DynamoDB table.", 
       "link": "https://www.ecohub.com",
-      "image": "https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg"
+      "image": "https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg",
+      "detailsPage": "projects/this-website"
     },
     {
       "title": "Bookshelf",
       "description": "A C# AvaloniaUI mobile application that keeps track of books you want to read. Uses a Google Books API to find book descriptions, and scrapes Goodreads for a book image and rating using HtmlAgilityPack. Book details are stored using Firebase. This project uses MVVM with help from the .Net Community toolkit, and uses Microsoft's DI container to inject dependencies.",
       "link": "https://www.healthtrackapp.com",
-      "image": "https://publish.purewow.net/wp-content/uploads/sites/2/2021/06/smallest-dog-breeds-toy-poodle.jpg"
+      "image": "https://publish.purewow.net/wp-content/uploads/sites/2/2021/06/smallest-dog-breeds-toy-poodle.jpg",
+      "detailsPage": "/projects/bookshelf"
     },
     {
       "title": "Library",
       "description": "A WPF application that displays books. The image sizes can be changed with a slider. Books are stored locally. This project follows MVVM practices.",
       "link": "https://www.artgallerynow.com",
-      "image": "https://www.akc.org/wp-content/uploads/2016/11/AdobeStock_94435211-500x500.jpeg"
+      "image": "https://www.akc.org/wp-content/uploads/2016/11/AdobeStock_94435211-500x500.jpeg",
+      "detailsPage": "/projects/library"
     },
     {
       "title": "Teaching App API",
       "description": "A backend ASP.NET API that pulls information from a jobs database for teachers. Uses Selenium to scrape information (requires authentication). Jobs are stored in objects and returned to the client as JSON.",
       "link": "https://www.artgallerynow.com",
-      "image": "https://www.akc.org/wp-content/uploads/2016/11/AdobeStock_94435211-500x500.jpeg"
+      "image": "https://www.akc.org/wp-content/uploads/2016/11/AdobeStock_94435211-500x500.jpeg",
+      "detailsPage": "/projects/teaching-app-api"
     },
     {
       "title": "Small Example",
       "description": "Small descripton",
       "link": "https://www.artgallerynow.com",
-      "image": "https://www.akc.org/wp-content/uploads/2016/11/AdobeStock_94435211-500x500.jpeg"
+      "image": "https://www.akc.org/wp-content/uploads/2016/11/AdobeStock_94435211-500x500.jpeg",
+      "detailsPage": "/projects/small-example"
     },
     {
       "title": "Large Example",
       "description": "Looking started he up perhaps against. How remainder all additions get elsewhere resources. One missed shy wishes supply design answer formed. Prevent on present hastily passage an subject in be. Be happiness arranging so newspaper defective affection ye. Families blessing he in to no daughter. Ham followed now ecstatic use speaking exercise may repeated. Himself he evident oh greatly my on inhabit general concern. It earnest amongst he showing females so improve in picture. Mrs can hundred its greater account. Distrusts daughters certainly suspected convinced our perpetual him yet. Words did noise taken right state are since. Lose eyes get fat shew. Winter can indeed letter oppose way change tended now. So is improve my charmed picture exposed adapted demands. Received had end produced prepared diverted strictly off man branched. Known ye money so large decay voice there to. Preserved be mr cordially incommode as an. He doors quick child an point at. Had share vexed front least style off why him. Add you viewing ten equally believe put. Separate families my on drawings do oh offended strictly elegance. Perceive jointure be mistress by jennings properly. An admiration at he discovered difficulty continuing. We in building removing possible suitable friendly on. Nay middleton him admitting consulted and behaviour son household. Recurred advanced he oh together entrance speedily suitable. Ready tried gay state fat could boy its among shall. On no twenty spring of in esteem spirit likely estate. Continue new you declared differed learning bringing honoured. At mean mind so upon they rent am walk. Shortly am waiting inhabit smiling he chiefly of in. Lain tore time gone him his dear sure. Fat decisively estimating affronting assistance not. Resolve pursuit regular so calling me. West he plan girl been my then up no. Extremity direction existence as dashwoods do up. Securing marianne led welcomed offended but offering six raptures. Conveying concluded newspaper rapturous oh at. Two indeed suffer saw beyond far former mrs remain. Occasional continuing possession we insensible an sentiments as is. Law but reasonably motionless principles she. Has six worse downs far blush rooms above stood. In up so discovery my middleton eagerness dejection explained. Estimating excellence ye contrasted insensible as. Oh up unsatiable advantages decisively as at interested. Present suppose in esteems in demesne colonel it to. End horrible she landlord screened stanhill. Repeated offended you opinions off dissuade ask packages screened. She alteration everything sympathize impossible his get compliment. Collected few extremity suffering met had sportsman. Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may. Wicket do manner others seemed enable rather in. Excellent own discovery unfeeling sweetness questions the gentleman. Chapter shyness matters mr parlors if mention thought. Sing long her way size. Waited end mutual missed myself the little sister one. So in pointed or chicken cheered neither spirits invited. Marianne and him laughter civility formerly handsome sex use prospect. Hence we doors is given rapid scale above am. Difficult ye mr delivered behaviour by an. If their woman could do wound on. You folly taste hoped their above are and but. Her extensive perceived may any sincerity extremity. Indeed add rather may pretty see. Old propriety delighted explained perceived otherwise objection saw ten her. Doubt merit sir the right these alone keeps. By sometimes intention smallness he northward. Consisted we otherwise arranging commanded discovery it explained. Does cold even song like two yet been. Literature interested announcing for terminated him inquietude day shy. Himself he fertile chicken perhaps waiting if highest no it. Continued promotion has consulted fat improving not way.",
       "link": "https://www.artgallerynow.com",
-      "image": "https://www.akc.org/wp-content/uploads/2016/11/AdobeStock_94435211-500x500.jpeg"
+      "image": "https://www.akc.org/wp-content/uploads/2016/11/AdobeStock_94435211-500x500.jpeg",
+      "detailsPage": "/projects/large-example"
     }
 ]

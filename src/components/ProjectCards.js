@@ -19,11 +19,12 @@ const ProjectCards = () => {
   return (
     <div className='projectCards'>      
       <h1 className='header'>GitHub Projects</h1>
+      <div className='subHeader'>Click on a project title to see more information about that project</div>
       {projects.map((project, index) => (
         <div key={index} className="project-card">
           <div className='leftColumn'>
             
-            <h2 className='title'>{project.title}</h2>
+            <h2 className='title'><a href={project.detailsPage}>{project.title}</a></h2>
             <a className='link' href={project.link} target="_blank" rel="noopener noreferrer">
               (Github)
             </a>
