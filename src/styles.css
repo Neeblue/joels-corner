@@ -96,8 +96,8 @@ body {
     object-fit:contain;
 }
 
-.project-card .title:link, .title:visited {
-    margin-bottom: 0.25rem;
+.project-card .title a:link, a:visited {
+    /* margin-bottom: 0.25rem; */
     color: rgb(93, 221, 221);
     text-decoration: none;
 }
@@ -106,8 +106,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.projectCards .githubLink:link, .githubLink:visited {
-    margin-bottom: 1rem;
+.project-card .githubLink:link, .githubLink:visited {
     display: block;
     text-decoration: none;
     color: rgb(93, 221, 221);
@@ -126,7 +125,7 @@ body {
         text-align: center;
     }
 
-    .projectCards .image {
+    .project-card .image {
         margin-bottom: 0;
         max-width: 100%;
         max-height: 60vh;
