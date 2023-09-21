@@ -22,17 +22,18 @@ const ProjectCards = () => {
       <div className='subHeader'>Click on a project title to see more information about that project</div>
       {projects.map((project, index) => (
         <div key={index} className="project-card">
+          
           <div className='leftColumn'>
-            
+            <img className='image' src={process.env.PUBLIC_URL + project.image} alt={project.title} />
+          </div>
+
+          <div className='rightColumn'>            
             <h2 className='title'><a href={project.detailsPage}>{project.title}</a></h2>
-            <a className='link' href={project.link} target="_blank" rel="noopener noreferrer">
+            <a className='githubLink' href={project.link} target="_blank" rel="noopener noreferrer">
               (Github)
             </a>
             <p className='description'>{project.description}</p>
             {/* Add tags */}
-          </div>
-          <div className='rightColumn'>
-            <img className='image' src={process.env.PUBLIC_URL + project.image} alt={project.title} />
           </div>
         </div>
 
