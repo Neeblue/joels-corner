@@ -32,7 +32,7 @@ const ProjectCards = () => {
             {/* Add tags */}
           </div>
           <div className='rightColumn'>
-            <img className='image' src={project.image} alt={project.title} />
+            <img className='image' src={process.env.PUBLIC_URL + project.image} alt={project.title} />
           </div>
         </div>
 

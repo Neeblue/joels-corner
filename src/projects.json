@@ -1,30 +1,30 @@
 [
     {
-      "title": "This website",
+      "title": "This React Website",
       "description": "Static website hosted on AWS S3 using CloudFront. This website is built using React. Project information is pulled from an ASP.NET API AWS Lambda function. Data is pulled from a DynamoDB table.", 
       "link": "https://www.ecohub.com",
-      "image": "https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg",
+      "image": "images/website-cover.png",
       "detailsPage": "projects/this-website"
     },
     {
-      "title": "Bookshelf",
+      "title": "Bookshelf Mobile App",
       "description": "A C# AvaloniaUI mobile application that keeps track of books you want to read. Uses a Google Books API to find book descriptions, and scrapes Goodreads for a book image and rating using HtmlAgilityPack. Book details are stored using Firebase. This project uses MVVM with help from the .Net Community toolkit, and uses Microsoft's DI container to inject dependencies.",
       "link": "https://www.healthtrackapp.com",
-      "image": "https://publish.purewow.net/wp-content/uploads/sites/2/2021/06/smallest-dog-breeds-toy-poodle.jpg",
+      "image": "images/bookshelf-cover.jpg",
       "detailsPage": "/projects/bookshelf"
     },
     {
-      "title": "Library",
+      "title": "Librarian WPF App",
       "description": "A WPF application that displays books. The image sizes can be changed with a slider. Books are stored locally. This project follows MVVM practices.",
       "link": "https://www.artgallerynow.com",
-      "image": "https://www.akc.org/wp-content/uploads/2016/11/AdobeStock_94435211-500x500.jpeg",
+      "image": "images/librarian-cover.jpg",
       "detailsPage": "/projects/library"
     },
     {
       "title": "Teaching App API",
       "description": "A backend ASP.NET API that pulls information from a jobs database for teachers. Uses Selenium to scrape information (requires authentication). Jobs are stored in objects and returned to the client as JSON.",
       "link": "https://www.artgallerynow.com",
-      "image": "https://www.akc.org/wp-content/uploads/2016/11/AdobeStock_94435211-500x500.jpeg",
+      "image": "images/JobFinder-cover.jpg",
       "detailsPage": "/projects/teaching-app-api"
     },
     {
