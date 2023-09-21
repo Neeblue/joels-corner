@@ -68,9 +68,19 @@ body {
     text-align: center;
 }
 
+/* Styling for each individual project */
+.project-card {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+
 .leftColumn {
-    margin-right: 1rem;
+    margin: auto;
 }   
+
 
 .rightColumn {
     width: 70%;
@@ -79,21 +89,14 @@ body {
     justify-content: center;
 }
 
-.project-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 .project-card .image {
-    margin-bottom: 3rem;
     max-width: 50vh;
     max-height: 50vh;
     object-fit:contain;
 }
 
 .project-card .title {
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
 }
 
 .project-card .title a:link, .project-card .title a:visited {
