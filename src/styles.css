@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    gap: 2rem;
+gap: 2rem;
     padding: 0 1rem;
 }
 
@@ -73,14 +73,13 @@ body {
 
 .rightColumn {
     width: 50%;
-    display: flex; /* Remove this? */
-    text-align: center;
 }   
 
 .projectCards .image {
     margin-bottom: 3rem;
-    max-width: 100%;
-    max-height: 100%;
+    margin-left: 1rem;
+    max-width: 50vh;
+    max-height: 50vh;
     object-fit:contain;
 }
 
@@ -121,12 +120,14 @@ body {
 
     .leftColumn {
         width: 100%;
+        text-align: center;
     }
 
     .rightColumn {
         width: 100%;
-        display: flex;        
-        justify-content: center;
+        margin-left: 0;
+        text-align: center;
+
     }
 }
 
