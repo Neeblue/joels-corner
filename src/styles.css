@@ -29,13 +29,9 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    /* padding: .25rem; */
 }
 
 .nav ul {
-    padding: 0;
-    margin: 0;
-    margin-right: 0.1rem;
     list-style: none;
     display: flex;
     gap: 1rem;
@@ -96,8 +92,7 @@ body {
     object-fit:contain;
 }
 
-.project-card .title a:link, a:visited {
-    /* margin-bottom: 0.25rem; */
+.project-card .title a:link, .project-card .title a:visited {
     color: rgb(93, 221, 221);
     text-decoration: none;
 }
