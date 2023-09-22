@@ -1,5 +1,5 @@
 .App {
-    background-color: #383838;
+    background-color: #252525;
     color: rgb(225, 239, 199);
 }
 
@@ -14,7 +14,7 @@ body {
 
 /* Navigation bar */
 .nav {
-    background-color: #333;
+    background-color: #000000;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -37,11 +37,11 @@ body {
     gap: 1rem;
 }
 
-.nav li .active {
+.nav a:active {
     background-color: rgb(132, 113, 253);; /* TODO: Doesn't work */
 }
 
-.nav li:Hover {
+.nav li:Hover, .nav .site-title:Hover {
     background-color: rgb(191, 184, 239);;
 }
 
@@ -93,11 +93,7 @@ body {
     object-fit:contain;
 }
 
-.project-card .title {
-    /* margin-top: 0.5rem; */
-}
-
-.project-card .title a:link, .project-card .title a:visited {
+.project-card a:link, a:visited {
     color: rgb(211, 243, 255);
     text-decoration: none;
 }
@@ -105,10 +101,9 @@ body {
 .project-card .githubLink {
     margin-bottom: 0.5rem;
 }
-.project-card .githubLink:link, .project-card .githubLink:visited {
-    display: block;
-    text-decoration: none;
-    color: rgb(211, 243, 255);
+
+.project-card a:hover {
+    background-color: rgb(191, 184, 239);
 }
 
 .projectCards .description {
@@ -116,7 +111,7 @@ body {
 }
 
 
-@media (max-width: 500px) { /* 768px */
+@media (max-width: 500px) {
     .intro {
         font-size: 1rem;
     }
@@ -139,7 +134,7 @@ body {
         width: 100%;
         margin-left: 0;
         text-align: center;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
 
     }
 }

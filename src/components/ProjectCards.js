@@ -29,9 +29,11 @@ const ProjectCards = () => {
 
           <div className='rightColumn'>            
             <h2 className='title'><a href={project.detailsPage}>{project.title}</a></h2>
-            <a className='githubLink' href={project.link} target="_blank" rel="noopener noreferrer">
-              (Github)
-            </a>
+            <div>
+              <a className='githubLink' href={project.link} target="_blank" rel="noopener noreferrer">
+                (Github)
+              </a>
+            </div>
             <p className='description'>{project.description}</p>
             {/* Add tags */}
           </div>
