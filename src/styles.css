@@ -47,9 +47,7 @@ body {
 
 /* Introduction paragraph */
 .intro {
-    /* TODO: margin right and down, font larger, blue color */
     margin: 1rem 1rem 2rem 1rem;
-    font-size: 1.5rem;
     color:rgb(191, 184, 239);
 }
 
@@ -100,7 +98,7 @@ body {
 }
 
 .project-card .title a:link, .project-card .title a:visited {
-    color: white;
+    color: rgb(211, 243, 255);
     text-decoration: none;
 }
 
@@ -110,7 +108,7 @@ body {
 .project-card .githubLink:link, .project-card .githubLink:visited {
     display: block;
     text-decoration: none;
-    color: white;
+    color: rgb(211, 243, 255);
 }
 
 .projectCards .description {
