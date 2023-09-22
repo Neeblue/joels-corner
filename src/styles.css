@@ -1,6 +1,7 @@
 .App {
     background-color: #252525;
     color: rgb(225, 239, 199);
+    min-height: 100vh;
 }
 
 body {
