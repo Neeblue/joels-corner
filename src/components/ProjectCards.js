@@ -19,7 +19,7 @@ const ProjectCards = () => {
   return (
     <div className='projectCards'>      
       <h1 className='header'>GitHub Projects</h1>
-      <div className='subHeader'>Click on a project title to see more information about that project</div>
+      <div className='subHeader'>(Click on a project title to see more information about that project)</div>
       {projects.map((project, index) => (
         <div key={index} className="project-card">
           
