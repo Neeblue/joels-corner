@@ -140,6 +140,40 @@ body {
     }
 }
 
+/* Bookshelf project page */
+.Bookshelf {
+    background-color: #252525;
+    color: rgb(225, 239, 199);
+    min-height: 100vh;
+}
+
+.Bookshelf .detailsImage {
+    max-width: 75vh;
+    max-height: 75vh;
+    margin: 1rem;
+}
+
+.Bookshelf .firstSection {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.Bookshelf .firstParagraph {
+    margin: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.Bookshelf .secondSection {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;    
+}
+
 .aboutMe {
     display: grid;
     justify-content: center;

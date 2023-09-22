@@ -9,11 +9,12 @@
     {
       "title": "Bookshelf Mobile App",
       "description": "A C# AvaloniaUI mobile application that keeps track of books you want to read. Uses a Google Books API to find book descriptions, and scrapes Goodreads for a book image and rating using HtmlAgilityPack. Book details are stored using Firebase. This project uses MVVM with help from the .Net Community toolkit, and uses Microsoft's DI container to inject dependencies.",
-      "detailsDescription": "A C# AvaloniaUI mobile application that keeps track of books you want to read. Uses a Google Books API to find book descriptions, and scrapes Goodreads for a book image and rating using HtmlAgilityPack. Book details are stored using Firebase. This project uses MVVM with help from the .Net Community toolkit, and uses Microsoft's DI container to inject dependencies. ",
+      "detailsDescription1": "",
+      "detailsDescription2": "A C# AvaloniaUI mobile application that keeps track of books you want to read. Uses a Google Books API to find book descriptions, and scrapes Goodreads for a book image and rating using HtmlAgilityPack. Book details are stored using Firebase. This project uses MVVM with help from the .Net Community toolkit, and uses Microsoft's DI container to inject dependencies. ",
       "link": "https://www.healthtrackapp.com",
-      "image": "images/bookshelf-cover.jpg",
-      "detailsImage1": "images/bookshelf-cover.jpg",
-      "detailsImage2": "images/bookshelf-cover.jpg",
+      "image": "/images/bookshelf-cover.jpg",
+      "detailsImage1": "/images/bookshelf/detailsImage1.jpg",
+      "detailsImage2": "/images/bookshelf/detailsImage2.jpg",
       "detailsPage": "/projects/bookshelf"
     },
     {
