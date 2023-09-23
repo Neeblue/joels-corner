@@ -9,9 +9,8 @@
     {
       "title": "Bookshelf Mobile App",
       "description": "A C# AvaloniaUI mobile application that keeps track of books you want to read. Uses a Google Books API to find book descriptions, and scrapes Goodreads for a book image and rating using HtmlAgilityPack. Book details are stored using Firebase. This project uses MVVM with help from the .Net Community toolkit, and uses Microsoft's DI container to inject dependencies.",
-      "detailsDescription": ["<h1 style='text-align: center'> What is the Bookshelf app?</h1><br>A .Net MAUI variant of the Librarian project. This is a follow-along/modification of <a href='https://www.youtube.com/watch?v=DuNLR_NJv8U&pp=ygUYamFtZXMgbW9udGVtYWdubyBtb25rZXlz'>James Montemagno's Monkeys project</a>.<br></br>This app has been tested on Windows and Android. It has a different display of the book details depending on the platform.  Books can be added with a search function. This app uses the Google API and the HtmlAgility package to scrape a book image and rating from Goodreads. <br></br>Tapping on one of the books brings up a larger image with additional information (such as a description, rating, publisher info etc.). Books can be deleted by swiping the book to the left.<br></br>Additional features that are implemented:<li>MVVM with dependency injection</li><li>uses .Net Community Toolkit 8.1</li><li>Files are stored in the cloud using Firebase (Firesharp package)</li>", 
-      "<h1 style='text-align: center'>Details about each book</h1><br>Clicking on one of the books will bring you to a detailed page of the book.<br></br>On android, the information is displayed below the image to better fit the size of a phone screen.<br></br>Information that is displayed includes:<li>An image and rating pulled from Goodreads</li><li>Page count</li><li>Description</li><li>Publisher information</li><li>ISBN 10/13</li>"],
-      "link": "https://www.healthtrackapp.com",
+      "detailsDescription": ["<h1 style='text-align: center'> What is the Bookshelf app?</h1><br>A .Net MAUI variant of the Librarian project. This is a follow-along/modification of <a href='https://www.youtube.com/watch?v=DuNLR_NJv8U&pp=ygUYamFtZXMgbW9udGVtYWdubyBtb25rZXlz'>James Montemagno's Monkeys project</a>.<br></br>This app has been tested on Windows and Android. It has a different display of the book details depending on the platform.  Books can be added with a search function. This app uses the Google API and the HtmlAgility package to scrape a book image and rating from Goodreads. <br></br>Tapping on one of the books brings up a larger image with additional information (such as a description, rating, publisher info etc.). Books can be deleted by swiping the book to the left.<br></br>Additional features that are implemented:<li>MVVM with dependency injection</li><li>uses .Net Community Toolkit 8.1</li><li>Files are stored in the cloud using Firebase (Firesharp package)</li>","<h1 style='text-align: center'>Details about each book</h1><br>Clicking on one of the books will bring you to a detailed page of the book.<br></br>On android, the information is displayed below the image to better fit the size of a phone screen.<br></br>Information that is displayed includes:<li>An image and rating pulled from Goodreads</li><li>Page count</li><li>Description</li><li>Publisher information</li><li>ISBN 10/13</li>"],
+      "link": "https://github.com/Neeblue/Bookshelf",
       "image": "/images/bookshelf-cover.jpg",
       "detailsImage": ["/images/bookshelf/detailsImage1.jpg", "/images/bookshelf/detailsImage2.jpg"],
       "detailsPage": "/projects/bookshelf"
@@ -19,9 +18,11 @@
     {
       "title": "Librarian WPF App",
       "description": "A WPF application that displays books. The image sizes can be changed with a slider. Books are stored locally. This project follows MVVM practices.",
-      "link": "https://www.artgallerynow.com",
-      "image": "images/librarian-cover.jpg",
-      "detailsPage": "/projects/library"
+      "detailsDescription": ["<h1>What is the Librarian app?</h1><br>WPF program built in C# that allows you to add books to a display by using the Google search API.<br><br>Books that are added are displayed by image. Hovering over the image will give a description of the book. Books can be right-clicked and deleted.<br><br>The UI can be scaled using a slider, and the books re-organise when the window changes size.<br><br>Additional features that are implemented:<li>MVVM with a service locator</li><li>uses .Net Community Toolkit 8.1</li><li>Uses AvaloniaUI</li><li>Data is stored locally</li>"],
+      "link": "https://github.com/Neeblue/Librarian",
+      "image": "/images/librarian-cover.jpg",
+      "detailsImage": ["/images/librarian/detailsImage.gif"],
+      "detailsPage": "/projects/librarian"
     },
     {
       "title": "Teaching App API",
