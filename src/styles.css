@@ -141,10 +141,9 @@ body {
 }
 
 /* Bookshelf project page */
-.Bookshelf {
-    background-color: #252525;
-    color: rgb(225, 239, 199);
-    min-height: 100vh;
+.Bookshelf .title {
+    text-align: center;
+    margin: 1rem;
 }
 
 .Bookshelf .detailsImage {
@@ -153,7 +152,7 @@ body {
     margin: 1rem;
 }
 
-.Bookshelf .firstSection {
+.Bookshelf .firstSection, .secondSection {
     margin: 0.5rem;
     display: flex;
     flex-direction: row;
@@ -167,11 +166,11 @@ body {
 
 }
 
-.Bookshelf .secondSection {
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;    
+.Bookshelf .secondParagraph {
+    margin: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
 }
 
 .aboutMe {
