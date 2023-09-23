@@ -4,7 +4,7 @@ export default function Bookshelf() {
     const project = jsonData.find(project => project.title === "Bookshelf Mobile App") ?? jsonData.projects[1];
 
     return (
-        <div className="Bookshelf">
+        <div className="projectPage">
             <h1 className="title">{project.title}</h1>
 
             {project.detailsDescription.map((paragraph, index) => (
@@ -24,24 +24,6 @@ export default function Bookshelf() {
                     
                 </div>
             ))}
-
-
-
-
-
-
-            {/* <div className="firstSection">
-                <div className="firstParagraph">
-                    <div dangerouslySetInnerHTML={{__html: project.detailsDescription1}}></div>
-                </div>
-                <img className='detailsImage' src={process.env.PUBLIC_URL + project.detailsImage1} alt="image missing!" />    
-            </div>
-            <div className="secondSection">
-                <img className='detailsImage' src={process.env.PUBLIC_URL + project.detailsImage2} alt="image missing!" />
-                <div className="secondParagraph">
-                    <div dangerouslySetInnerHTML={{__html: project.detailsDescription2}}></div>
-                </div>
-            </div> */}
         </div>
-    ); /* TODO: Remove white line at bottom */
+    );
 }
