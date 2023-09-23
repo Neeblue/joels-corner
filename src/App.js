@@ -7,7 +7,7 @@ import Projects from "./pages/Projects";
 
 import Website from "./pages/projects/Website";
 import Bookshelf from "./pages/projects/Bookshelf";
-import Library from "./pages/projects/Library";
+import Librarian from "./pages/projects/Librarian";
 import Teaching from "./pages/projects/Teaching";
 
 function App() {
@@ -37,8 +37,8 @@ function App() {
     case "/projects/bookshelf":
       component = <Bookshelf />;
       break;
-    case "/projects/library":
-      component = <Library />;
+    case "/projects/librarian":
+      component = <Librarian />;
       break;
     case "/projects/teaching-app-api":
       component = <Teaching />;
