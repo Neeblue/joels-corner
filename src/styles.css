@@ -39,11 +39,11 @@ body {
 }
 
 .nav a:active {
-    background-color: rgb(132, 113, 253);; /* TODO: Doesn't work */
+    background-color: rgb(132, 113, 253);
 }
 
 .nav li:Hover, .nav .site-title:Hover {
-    background-color: rgb(191, 184, 239);;
+    background-color: rgb(191, 184, 239);
 }
 
 /* Introduction paragraph */
@@ -140,34 +140,56 @@ body {
     }
 }
 
-/* Bookshelf project page */
-.Bookshelf .title {
+/* Project pages */
+.projectPage .title {
     text-align: center;
     margin: 1rem;
 }
 
-.Bookshelf img[src=""] {
+.projectPage img[src=""] {
     display:none;
 }
 
-.Bookshelf .section {
+.projectPage .section {
     display: flex;
     flex-direction: row;
 }
 
-.Bookshelf .detailsImage {
+.projectPage .detailsImage {
     max-width: 75vh;
     max-height: 75vh;
     margin: 1rem;
 
 }
 
-.Bookshelf .detailsParagraph {
+.projectPage .detailsParagraph {
     margin: auto;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
+@media (max-width: 500px) {
+    .projectPage .detailsImage {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .projectPage .detailsParagraph {
+        margin: 1rem;
+    }
+
+    .projectPage .section {
+        flex-direction: column;
+    }
+
+    .projectPage .detailsImage {
+        margin: auto;
+    }
+
+    .projectPage .detailsParagraph {
+        margin: auto;
+    }
+}
 
 .aboutMe {
     display: grid;
