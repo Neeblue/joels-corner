@@ -146,32 +146,28 @@ body {
     margin: 1rem;
 }
 
+.Bookshelf img[src=""] {
+    display:none;
+}
+
+.Bookshelf .section {
+    display: flex;
+    flex-direction: row;
+}
+
 .Bookshelf .detailsImage {
     max-width: 75vh;
     max-height: 75vh;
     margin: 1rem;
+
 }
 
-.Bookshelf .firstSection, .secondSection {
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-}
-
-.Bookshelf .firstParagraph {
+.Bookshelf .detailsParagraph {
     margin: auto;
     margin-left: 1rem;
     margin-right: 1rem;
-
 }
 
-.Bookshelf .secondParagraph {
-    margin: auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
-
-}
 
 .aboutMe {
     display: grid;
