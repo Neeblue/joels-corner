@@ -2,9 +2,11 @@
     {
       "title": "This React Website",
       "description": "Static website hosted on AWS S3 using CloudFront. This website is built using React. Project information is pulled from an ASP.NET API AWS Lambda function. Data is pulled from a DynamoDB table.", 
-      "link": "https://www.ecohub.com",
+      "detailsDescription": [""],
+      "link": "https://github.com/Neeblue/reactwebsite",
       "image": "images/website-cover.png",
-      "detailsPage": "projects/this-website"
+      "detailsImage": [""],
+      "keyword": "website"
     },
     {
       "title": "Bookshelf Mobile App",
@@ -13,7 +15,7 @@
       "link": "https://github.com/Neeblue/Bookshelf",
       "image": "/images/bookshelf-cover.jpg",
       "detailsImage": ["/images/bookshelf/detailsImage1.jpg", "/images/bookshelf/detailsImage2.jpg"],
-      "detailsPage": "/projects/bookshelf"
+      "keyword": "bookshelf"
     },
     {
       "title": "Librarian WPF App",
@@ -22,7 +24,7 @@
       "link": "https://github.com/Neeblue/Librarian",
       "image": "/images/librarian-cover.jpg",
       "detailsImage": ["/images/librarian/detailsImage.gif"],
-      "detailsPage": "/projects/librarian"
+      "keyword": "librarian"
     },
     {
       "title": "Teaching App API",
@@ -31,6 +33,6 @@
       "link": "https://github.com/Neeblue/TTOCApi",
       "image": "images/JobFinder-cover.jpg",
       "detailsImage": [""],
-      "detailsPage": "/projects/teaching-app-api"
+      "keyword": "teaching"
     }
 ]

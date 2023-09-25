@@ -1,25 +1,19 @@
 import Navbar from "./components/Navbar";
 import Introduction from "./components/Introduction";
-
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import SingleProject from "./pages/SingleProject";
 
-import Website from "./pages/projects/Website";
-import Bookshelf from "./pages/projects/Bookshelf";
-import Librarian from "./pages/projects/Librarian";
-import Teaching from "./pages/projects/Teaching";
-
-function App() {
-  let component
+export default function App() {
+  let component;
+  if (window.location.pathname.startsWith("/projects/")) {
+    const keyword = window.location.pathname.replace("/projects/", "");
+    component = <SingleProject keyword={keyword} />;
+  } else
   switch (window.location.pathname) {
     case "/": default:
-      component = (
-        <div>
-          <Introduction />
-          {/* TODO: Add icon tags, Github main link */}
-        </div>
-      );
+      component = <Introduction />;
       break;
     case "/projects":
       component = <Projects />;
@@ -30,19 +24,8 @@ function App() {
     case "/contact":
       component = <Contact />;
       break;
-    case "/projects/this-website":
-      component = <Website />;
-      break;
-    case "/projects/bookshelf":
-      component = <Bookshelf />;
-      break;
-    case "/projects/librarian":
-      component = <Librarian />;
-      break;
-    case "/projects/teaching-app-api":
-      component = <Teaching />;
-      break;
-    }
+  }
+
   return (
     <div className="App">
       <Navbar />
@@ -50,5 +33,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
