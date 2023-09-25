@@ -3,7 +3,7 @@ export default function Introduction() {
         <div className="intro">
             Welcome to my webpage! Here you can find a list of projects that I have worked on,
             my resume, a way to contact me, and more information about myself!
-            
+            {/* TODO: Add icon tags, Github main link */}
             <br></br>
             <div className="icon-row">
                 <Button name="Projects" />
