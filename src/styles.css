@@ -10,7 +10,19 @@ body {
 
 .site-title {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: bold;;
+}
+
+/* Homepage buttons */
+
+.icon-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+Button {
+    padding: 2rem;
+    margin: 1rem;
 }
 
 /* Navigation bar */
@@ -50,6 +62,7 @@ body {
 .intro {
     margin: 1rem 1rem 2rem 1rem;
     color:rgb(191, 184, 239);
+    text-align: center;
 }
 
 /* Projects page */
@@ -89,8 +102,8 @@ body {
 }
 
 .project-card .image {
-    max-width: 50vh;
-    max-height: 50vh;
+    width: 50vh;
+    height: 50vh;
     object-fit:contain;
 }
 
@@ -110,7 +123,6 @@ body {
 .projectCards .description {
     margin-bottom: 1rem;
 }
-
 
 @media (max-width: 500px) {
     .intro {

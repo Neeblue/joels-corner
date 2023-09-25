@@ -18,15 +18,14 @@ function App() {
         <div>
           <Introduction />
           {/* TODO: Add icon tags, Github main link */}
-          <Projects />
         </div>
       );
       break;
-    case "/about":
-      component = <About />;
-      break;
     case "/projects":
       component = <Projects />;
+      break;
+    case "/about":
+      component = <About />;
       break;
     case "/contact":
       component = <Contact />;
