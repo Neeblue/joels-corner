@@ -7,11 +7,15 @@ import SingleProject from "./pages/SingleProject";
 
 export default function App() {
   let component;
-  if (window.location.pathname.startsWith("/projects/")) {
+  //If user clicks the website project it returns itself
+  if (window.location.pathname === "/projects/website") component = <Introduction />;
+  //If user clicks a project it returns a url based on the json project keyword
+  else if (window.location.pathname.startsWith("/projects/")) {
     const keyword = window.location.pathname.replace("/projects/", "");
     component = <SingleProject keyword={keyword} />;
-  } else
-  switch (window.location.pathname) {
+  }
+  //If user clicks any other link it will return the appropriate page
+  else switch (window.location.pathname) {
     case "/": default:
       component = <Introduction />;
       break;
