@@ -1,4 +1,5 @@
 import jsonData from '../projects.json';
+import './SingleProject.css';
 
 export default function SingleProject(props){
     const project = jsonData.find(project => project.keyword === props.keyword);

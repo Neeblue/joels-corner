@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import jsonData from '../projects.json';
+import './Projects.css';
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -22,13 +23,13 @@ const Projects = () => {
       <div className='subHeader'>(Click on a project title to see more information about that project)</div>
 
       {projects.map((project, index) => (
-        <div key={index} className="project-card">
+        <div key={index} className="container">
           
-          <div className='leftColumn'>
+          <div className='imageContainer'>
             <img className='image' src={process.env.PUBLIC_URL + project.image} alt={project.title} />
           </div>
 
-          <div className='rightColumn'>            
+          <div className='text'>            
             <h2 className='title'><a href={"/projects/" + project.keyword}>{project.title}</a></h2>
             <div>
               <a className='githubLink' href={project.link} target="_blank" rel="noopener noreferrer">
