@@ -167,19 +167,20 @@ Button {
 .projectPage .section {
     display: flex;
     flex-direction: row;
+    justify-content:space-between;
 }
 
 .projectPage .detailsImage {
-    max-width: 75vh;
-    max-height: 75vh;
+    object-fit: contain;
+    max-height: 90vh;
+    width: 50%;
     margin: 1rem;
 
 }
 
 .projectPage .detailsParagraph {
-    margin: auto;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: auto 1rem auto 1rem;
+    /* max-width: 50%; */
 }
 
 @media (max-width: 500px) {
