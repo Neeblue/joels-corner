@@ -4,10 +4,6 @@
     min-height: 100vh;
 }
 
-body {
-    margin: 0;
-}
-
 .site-title {
     font-size: 2rem;
     font-weight: bold;;
@@ -22,6 +18,8 @@ body {
     align-items: stretch;
     gap: 2rem;
     padding: 0 1rem;
+    margin-bottom: 1rem;
+
 }
 
 .nav a {
@@ -54,15 +52,21 @@ body {
 }
 
 /* Homepage buttons */
-.icon-row {
+.buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+    }
+}
+
 Button {
     padding: 2rem;
     margin: 1rem;
-    font-size: 5em;
+    font-size: 2em;
     background-color: rgb(132, 123, 248);
     cursor: pointer;
 }
@@ -78,8 +82,8 @@ Button {
 }
 
 .projectCards .subHeader {
-    margin-bottom: 2rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 /* Styling for each individual project */
@@ -97,16 +101,16 @@ Button {
 
 
 .rightColumn {
-    /* width: 70%; */
+    width: 70vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .project-card .image {
-    width: 50vh;
-    height: 50vh;
-    object-fit:contain;
+    width: 30vw;
+    margin-bottom: 2rem;
+    /* object-fit:contain; */
 }
 
 .project-card a:link, a:visited {
@@ -122,11 +126,7 @@ Button {
     background-color: rgb(191, 184, 239);
 }
 
-.projectCards .description {
-    /* margin-bottom: 1rem; */
-}
-
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .intro {
         font-size: 1rem;
     }
