@@ -17,7 +17,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className='projectCards'>      
+    <div className='projects'>      
       <h1 className='header'>GitHub Projects</h1>
       <div className='subHeader'>(Click on a project title to see more information about that project)</div>
 

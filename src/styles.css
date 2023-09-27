@@ -72,16 +72,16 @@ Button {
 }
 
 /* Projects page */
-.projectCards {
+.projects {
     padding: 0.2rem;
     margin: 0 5%;
 }
 
-.projectCards .header {
+.projects .header {
     text-align: center;
 }
 
-.projectCards .subHeader {
+.projects .subHeader {
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -130,31 +130,35 @@ Button {
     .intro {
         font-size: 1rem;
     }
+
+    .projects {
+        margin: 0;   
+    }
+
     .project-card {
         flex-direction: column;
+        margin: 0;
     }
 
-    .leftColumn {
+    .leftColumn { /* Column containing image */
+        margin: 0;
         width: 100%;
-        text-align: center;
+        /* text-align: center; */
     }
 
-    .project-card .image {
-        margin-bottom: 0;
-        max-width: 100%;
-        max-height: 60vh;
-    }
-
-    .rightColumn {
+    .rightColumn { /* Column containing text */
         width: 100%;
-        margin-left: 0;
+        margin: 0;
         text-align: center;
-        /* margin-bottom: 2rem; */
-
     }
 }
 
 /* Project pages */
+.projectPage {
+    padding: 0.2rem;
+    margin: 0 5%;
+}
+
 .projectPage .title {
     text-align: center;
     margin: 1rem;
@@ -174,7 +178,7 @@ Button {
     object-fit: contain;
     max-height: 90vh;
     width: 50%;
-    margin: 1rem;
+    padding: 1rem;
 
 }
 
@@ -184,15 +188,27 @@ Button {
 }
 
 @media (max-width: 500px) {
+    .projects .leftColumn {
+        /* margin-bottom: 1rem; */
+    }
+    
+    .projects .rightColumn {
+        margin-bottom: 2rem;
+    }
+    
+    .projects .image {
+        width: 100%;
+    } 
+
     .projectPage .section {
         display: flex;
         flex-direction: column;
     }
     
     .projectPage .detailsImage {
-        max-width: 100vh;
-        max-height: 100vh;
-        margin: 1rem;    
+        width: 90%;
+        max-height: 90vh;
+        margin: auto;
     }
 }
 
