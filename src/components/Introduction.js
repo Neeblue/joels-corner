@@ -5,7 +5,7 @@ export default function Introduction() {
             my resume, a way to contact me, and more information about myself!
             {/* TODO: Add icon tags, Github main link */}
             <br></br>
-            <div className="icon-row">
+            <div className="buttons">
                 <Button name="Projects" />
                 <Button name="About me" />
                 <Button name="Contact me" />
