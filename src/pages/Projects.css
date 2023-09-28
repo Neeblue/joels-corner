@@ -57,4 +57,15 @@
         flex-direction:column-reverse;
         text-align: center;
     }
+
+    .projects .container .text {
+        width: 100%;
+        margin: auto;
+        
+
+    }
+
+    .projects .container .image {
+        width: 100%;
+    }
 }
