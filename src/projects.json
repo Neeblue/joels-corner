@@ -1,7 +1,7 @@
 [
     {
       "title": "This React Website",
-      "description": "Static website hosted on AWS S3 using CloudFront. This website is built using React. Project information is pulled from an ASP.NET API AWS Lambda function. Data is pulled from a DynamoDB table.", 
+      "description": "Static website soon to be hosted on AWS S3 using CloudFront. This website is built using React. Project information is pulled from an ASP.NET API AWS Lambda function. Data is pulled from a DynamoDB table. A different UI is provided based on screen size. Try going mobile!", 
       "detailsDescription": [""],
       "link": "https://github.com/Neeblue/reactwebsite",
       "image": "images/website-cover.png",
