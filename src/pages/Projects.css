@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    /* margin-bottom: 3rem; */
+    margin-bottom: 3rem;
     gap: 1rem;
 }
 
@@ -33,8 +33,6 @@
 
 .projects .container .image {
     width: 30vw;
-    margin-bottom: 2rem;
-    /* object-fit:contain; */
 }
 
 .projects .container a:link, a:visited {
