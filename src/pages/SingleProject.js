@@ -1,11 +1,23 @@
 import jsonData from '../projects.json';
 import './SingleProject.css';
-
-import { useMediaQuery } from 'react-responsive';
+import { useState, useEffect } from 'react';
 
 export default function SingleProject(props){
     const project = jsonData.find(project => project.keyword === props.keyword);
-    const isMobile = useMediaQuery({ maxWidth: 768 });
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup the event listener on unmount
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <div className="projectPage">
