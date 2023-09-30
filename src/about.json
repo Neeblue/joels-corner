@@ -1,0 +1,41 @@
+
+{
+    "About Me": [
+        {
+            "Header": "My Hobbies",
+            "Subheader": "More details about me",
+            "Description": "This is a description of me"
+        }
+    ],
+    "Education": [
+        {
+            "Header": "Bachelor of Education",
+            "Subheader": "University of British Columbia",
+            "Description": "This is a description of my UBC experience"
+        },
+        {
+            "Header": "Bachelor of Science - Major in Biochemistry",
+            "Subheader": "University of British Columbia",
+            "Description": "This is a description of my UBC experience"
+        },
+        {
+            "Header": "Associates of Science - Major in Biology",
+            "Subheader": "Kwantlen Polytechnic University",
+            "Description": "This is a description of my Kwantlen experience"
+        }
+    ],
+    "Work Experience": [
+        {
+            "Header": "Teaching Experience",
+            "Subheader": "Teacher On Call - Surrey District",
+            "Description": "This is a description of my teaching experience"
+        },
+        {
+            "Header": "SGS Canada",
+            "Subheader": "Chemical Technician",
+            "Description": "This is a description of my SGS experience"
+        }
+    ]
+}
+
+    
