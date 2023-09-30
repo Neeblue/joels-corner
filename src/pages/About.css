@@ -1,39 +1,20 @@
-.Collapsible .header {
-    /* background-color: rgb(200, 200, 200);
-    padding: 6px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid rgb(220, 220, 220); */
-}
-
 .Collapsible .content {
     cursor: pointer;    
 }
 
-.aboutMe {
+.Collapsible .section {
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container {
     display: grid;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    /* margin-bottom: 2rem; */
+    margin-top: 2rem;
 }
 
-.intro {
-
-}
-
-.title {
-}
-
-.header {
-    margin-top: 1rem;
-}
-
-.sub-header {
-
-}
-
-.description {
-
+ .description {
+    margin-bottom: 1rem;
 }
