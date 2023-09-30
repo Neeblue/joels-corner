@@ -24,17 +24,10 @@
     }
 }
 
-Button {
+.intro Button {
     padding: 2rem;
     margin: 1rem;
     font-size: 2em;
     background-color: rgb(132, 123, 248);
     cursor: pointer;
-}
-
-.aboutMe {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }

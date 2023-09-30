@@ -40,7 +40,6 @@ const Projects = () => {
             {/* TODO: Add tags */}
           </div>
         </div>
-
       ))}
     </div>
   );

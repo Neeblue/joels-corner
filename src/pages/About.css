@@ -1,0 +1,39 @@
+.Collapsible .header {
+    /* background-color: rgb(200, 200, 200);
+    padding: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(220, 220, 220); */
+}
+
+.Collapsible .content {
+    cursor: pointer;    
+}
+
+.aboutMe {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* margin-bottom: 2rem; */
+}
+
+.intro {
+
+}
+
+.title {
+}
+
+.header {
+    margin-top: 1rem;
+}
+
+.sub-header {
+
+}
+
+.description {
+
+}
