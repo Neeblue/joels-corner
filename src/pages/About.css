@@ -1,11 +1,9 @@
-.Collapsible .content {
-    cursor: pointer;    
-}
-
 .Collapsible .section {
     margin: 1rem;
     font-size: 2rem;
     font-weight: bold;
+    cursor: pointer;
+    color: rgb(211, 243, 255);
 }
 
 .container {

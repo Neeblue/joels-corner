@@ -29,7 +29,6 @@ export default function About() {
                             <div
                                 className='section'
                                 onClick={() => toggleSection(section)}
-                                style={{ cursor: 'pointer' }}
                             >
                                 {section}
                             </div>
