@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import jsonData from '../projects.json';
 import './Projects.css';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -30,7 +31,8 @@ const Projects = () => {
           </div>
 
           <div className='text'>            
-            <h2 className='title'><a href={"/projects/" + project.keyword}>{project.title}</a></h2>
+            {/* <h2 className='title'><a href={"/projects/" + project.keyword}>{project.title}</a></h2> */}
+            <h2 className='title'><Link to={`/projects/${project.keyword}`}>{project.title}</Link></h2>
             <div>
               <a className='githubLink' href={project.link} target="_blank" rel="noopener noreferrer">
                 (Github)

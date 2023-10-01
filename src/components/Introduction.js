@@ -18,7 +18,7 @@ function Button({ name }) {
     const handleClick = () => {
         switch (name) {
             case "Projects":
-                window.location.href = "/projects";
+                this.props.history.push("/projects");
                 break;
             case "About me":
                 window.location.href = "/about";
