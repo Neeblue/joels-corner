@@ -21,7 +21,7 @@ export default function App() {
 
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="*">"404 Not Found"</Route>
+            <Route path="*" element={<div style={{textAlign: "center"}}>Page not found!</div>} />
           </Routes>
         </main>
       </BrowserRouter>
