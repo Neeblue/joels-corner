@@ -1,9 +1,11 @@
 import jsonData from '../projects.json';
 import './SingleProject.css';
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
-export default function SingleProject(props){
-    const project = jsonData.find(project => project.keyword === props.keyword);
+export default function SingleProject(){
+    const { keyword } = useParams();
+    const project = jsonData.find(project => project.keyword === keyword);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
