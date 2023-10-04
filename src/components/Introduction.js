@@ -1,39 +1,28 @@
-export default function Introduction() {
+import { Link } from 'react-router-dom';
+import './Introduction.css';
+
+export default function Introduction() {    
     return (
         <div className="intro">
-            Welcome to my webpage! Here you can find a list of projects that I have worked on,
-            my resume, a way to contact me, and more information about myself!
+            <div className="intro-text">Welcome to my webpage! Here you can find a list of projects that I have worked on,
+            my resume, a way to contact me, and more information about myself!</div>
             {/* TODO: Add icon tags, Github main link */}
-            <br></br>
             <div className="buttons">
-                <Button name="Projects" />
-                <Button name="About me" />
-                <Button name="Contact me" />
+                <Button url = "/projects" name="Projects" img="/images/projects-icon.png" />
+                <Button url = "/about" name="About me" img="/images/climbing-icon.webp"/>
+                <Button url = "/contact" name="Contact me" img="/images/contact-icon.webp" />
             </div>
         </div>
     );
 }
 
-function Button({ name }) {
-    const handleClick = () => {
-        switch (name) {
-            case "Projects":
-                this.props.history.push("/projects");
-                break;
-            case "About me":
-                window.location.href = "/about";
-                break;
-            case "Contact me":
-                window.location.href = "/contact";
-                break;
-            default:
-                break;
-        }
-    };
-
+function Button (props) {
     return (
-        <button onClick={handleClick}>
-            {name}
-        </button>
+        <div className='button'>
+            <Link to={props.url}>
+                <img src={process.env.PUBLIC_URL + props.img} alt={props.name} />
+                <h1>{props.name}</h1>
+            </Link>
+        </div>
     );
 }

@@ -10,17 +10,20 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Navbar />}>
+        <header>
+          <Navbar />
+        </header>
+        <main>
+          <Routes>
             <Route index element={<Introduction />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="projects/:keyword" element={<SingleProject />} />
+
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="*">"404 Not Found"</Route>
-            <Route path="projects" element={<Projects />}>
-              <Route path=":keyword" element={<SingleProject />} />
-            </Route>            
-          </Route>
-        </Routes>
+          </Routes>
+        </main>
       </BrowserRouter>
     </div>
   );
