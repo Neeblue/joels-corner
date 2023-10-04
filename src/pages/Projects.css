@@ -35,17 +35,8 @@
     width: 30vw;
 }
 
-.projects .container a:link, a:visited {
-    color: rgb(211, 243, 255);
-    text-decoration: none;
-}
-
 .projects .container .githubLink {
     margin-bottom: 0.5rem;
-}
-
-.projects .container a:hover {
-    background-color: rgb(191, 184, 239);
 }
 
 @media (max-width: 768px) {
