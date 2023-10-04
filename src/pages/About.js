@@ -21,6 +21,7 @@ export default function About() {
 
     return (
         <div className='container'>
+            <div>Click on a heading to find out more about me!</div>
             {Object.entries(about).map(([section, items]) => (
                 <div className='box' key={section}>
                     <Collapsible
