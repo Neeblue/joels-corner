@@ -13,10 +13,21 @@
     margin-top: 2rem;
 }
 
- .description {
+.container .box .description {
     margin-bottom: 1rem;
     max-width: 50vw;
+    margin-left: 1rem;
     @media screen and (max-width: 768px) {
         max-width: 90vw;
     }
+}
+
+.container .box .header {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.container .box .subheader {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
 }

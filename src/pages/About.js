@@ -38,8 +38,8 @@ export default function About() {
                     >
                         {items.map((item, index) => (
                             <div key={index}>
-                                <h2 className='header'>{item.Header}</h2>
-                                <h3 className='subheader'>{item.Subheader}</h3>
+                                <div className='header'>{item.Header}</div>
+                                <div className='subheader'>{item.Subheader}</div>
                                 <div className="description" dangerouslySetInnerHTML={{__html: item.Description}}></div>
 
                             </div>
