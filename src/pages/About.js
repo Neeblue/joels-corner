@@ -40,7 +40,8 @@ export default function About() {
                             <div key={index}>
                                 <h2 className='header'>{item.Header}</h2>
                                 <h3 className='subheader'>{item.Subheader}</h3>
-                                <div className='description'>{item.Description}</div>
+                                <div className="description" dangerouslySetInnerHTML={{__html: item.Description}}></div>
+
                             </div>
                         ))}
                     </Collapsible>

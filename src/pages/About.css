@@ -15,4 +15,8 @@
 
  .description {
     margin-bottom: 1rem;
+    max-width: 50vw;
+    @media screen and (max-width: 768px) {
+        max-width: 90vw;
+    }
 }
