@@ -11,29 +11,34 @@
         {
             "Header": "Bachelor of Education",
             "Subheader": "University of British Columbia",
-            "Description": "This is a description of my UBC experience"
+            "Description": "Bachelor of Education, Faculty of Education / Vancouver, BC / 2021 - 2022"
         },
         {
-            "Header": "Bachelor of Science - Major in Biochemistry",
+            "Header": "Bachelor of Science",
             "Subheader": "University of British Columbia",
-            "Description": "This is a description of my UBC experience"
+            "Description": "Major in Biochemistry / Vancouver, BC / 2014 - 2017<br /><a target='_blank' href='https://sciencecoop.ubc.ca/prospective/what'>Co-operative Education Program</a> / Burnaby / 2015 - 2016"
         },
         {
-            "Header": "Associates of Science - Major in Biology",
+            "Header": "Associates of Science",
             "Subheader": "Kwantlen Polytechnic University",
-            "Description": "This is a description of my Kwantlen experience"
+            "Description": "Associates degree in Science, Biology / Surrey, BC / 2011 - 2013"
+        },
+        {
+            "Header": "Online Courses",
+            "Subheader": "Thompson Rivers University",
+            "Description": "Faculty of Education Program pre-requisites / Distance Education / Jan 2021 - June 2021"
         }
     ],
     "Work Experience": [
         {
-            "Header": "Teaching Experience",
-            "Subheader": "Teacher On Call - Surrey District",
-            "Description": "This is a description of my teaching experience"
+            "Header": "Substitute Teacher",
+            "Subheader": "Surrey, BC / Sept 2022 - Present",
+            "Description": "Worked as a teacher on call in the Surrey district. I typically cover Science and BASES classes. <a target='_blank' href='https://www.surreyschools.ca/page/1113/bases'>BASES</a> is a program that helps students with learning or physical disabilities.<li>Worked in classes such as science, math, English, and tech.<li>Developed new material for the classroom and science labs.<li>Worked with complex students to assist them in their individual needs."
         },
         {
-            "Header": "SGS Canada",
-            "Subheader": "Chemical Technician",
-            "Description": "This is a description of my SGS experience"
+            "Header": "Science World - Community Field Experience",
+            "Subheader": "Vancouver, BC / May 2022 - June 2022",
+            "Description": "<li>Designed a web page for the Science World website that contains compiled resources for educators to use inside the classroom, and during field trips to Science World.<li>Assisted with inquiry-based workshops for numerous grades on field trips.<li>Performed multiple chemistry demonstrations to elementary classes.<li>Collaborated with Science World administration by discussing options and limitations for the web page.<li>Rotated through various science-based galleries while assisting guests with their queries."
         }
     ]
 }
