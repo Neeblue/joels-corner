@@ -20,7 +20,7 @@ export default function App() {
             <Route path="projects/:keyword" element={<SingleProject />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="*" element={<div style={{textAlign: "center"}}>Page not found!</div>} />
+            <Route path="*" element={<Introduction />} />
           </Routes>
         </main>
       </BrowserRouter>
