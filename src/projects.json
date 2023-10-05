@@ -4,7 +4,7 @@
       "description": "Static website soon to be hosted on AWS S3 using CloudFront. This website is built using React. Project information is pulled from an ASP.NET API AWS Lambda function. Data is pulled from a DynamoDB table. A different UI is provided based on screen size. Try going mobile!", 
       "detailsDescription": [""],
       "link": "https://github.com/Neeblue/reactwebsite",
-      "image": "images/website-cover.png",
+      "image": "/images/website-cover.png",
       "detailsImage": [""],
       "keyword": "website"
     },
@@ -31,7 +31,7 @@
       "description": "A backend ASP.NET API that pulls information from a jobs database for teachers. Uses Selenium to scrape information (requires authentication). Jobs are stored in objects and returned to the client as JSON.",
       "detailsDescription": [],
       "link": "https://github.com/Neeblue/TTOCApi",
-      "image": "images/JobFinder-cover.jpg",
+      "image": "/images/JobFinder-cover.jpg",
       "detailsImage": [""],
       "keyword": "teaching"
     },
