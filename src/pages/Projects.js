@@ -27,12 +27,17 @@ const Projects = () => {
         <div key={index} className="container">
 
           <div className='imageContainer'>
-            <img className='image' src={process.env.PUBLIC_URL + project.image} alt={project.title} />
+            
+              <Link to={`/projects/${project.keyword}`}>
+                <img className='image' src={process.env.PUBLIC_URL + project.image} alt={project.title} />
+              </Link>
           </div>
 
           <div className='text'>
             {/* <h2 className='title'><a href={"/projects/" + project.keyword}>{project.title}</a></h2> */}
-            <h2 className='title'><Link to={`/projects/${project.keyword}`}>{project.title}</Link></h2>
+            <h2 className='title'>
+              <Link to={`/projects/${project.keyword}`}>{project.title}</Link>
+            </h2>
 
             <a className='githubLink' href={project.link} target="_blank" rel="noopener noreferrer">
               (Github)
