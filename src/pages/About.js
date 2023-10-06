@@ -4,9 +4,12 @@ import Collapsible from "react-collapsible";
 import { useEffect, useState } from 'react';
 
 export default function About() {
-    const [about, setAbout] = useState([]);
+    //Set active section and item for collapsibles
     const [activeSection, setActiveSection] = useState(null);
-
+    const [activeItem, setActiveItem] = useState(null);
+    
+    //Get about data from json file
+    const [about, setAbout] = useState([]);
     useEffect(() => {
         setAbout(jsonData);
     }, []);
@@ -19,11 +22,19 @@ export default function About() {
         }
     };
 
+    const toggleItem = (item) => {
+        if (activeItem === item) {
+            setActiveItem(null);
+        } else {
+            setActiveItem(item);
+        }
+    };
+
     return (
         <div className='container'>
-            <div>Click on a heading to find out more about me!</div>
+            <div className='intro'>Click on a heading to find out more about me!</div>
             {Object.entries(about).map(([section, items]) => (
-                <div className='box' key={section}>
+                <div key={section}>
                     <Collapsible
                         key={section}
                         trigger={
@@ -35,20 +46,29 @@ export default function About() {
                             </div>
                         }
                         open={activeSection === section}
-                    >
+                        >
                         {items.map((item, index) => (
-                            <div key={index}>
-                                <div className='header'>{item.Header}</div>
-                                <div className='subheader'>{item.Subheader}</div>
-                                <div className="description" dangerouslySetInnerHTML={{__html: item.Description}}></div>
-
+                            <div className='item' key={index}>
+                                <Collapsible
+                                    trigger={
+                                        <div
+                                            className='header'
+                                            onClick={() => toggleItem(item)}
+                                        >
+                                            {item.header}
+                                        </div>
+                                    }
+                                    open={activeItem === item}
+                                    >
+                                    <div className="description" dangerouslySetInnerHTML={{__html: item.description}}></div>
+                                </Collapsible>
                             </div>
                         ))}
                     </Collapsible>
                     <hr />
                 </div>
             ))}
-            <br />
+            {/* <br /> */}
         </div>
     );
 }
