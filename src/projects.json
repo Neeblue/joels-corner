@@ -1,8 +1,8 @@
 [
     {
-      "title": "This React Website",
-      "description": "Static website soon to be hosted on AWS S3 using CloudFront. This website is built using React. Project information is pulled from an ASP.NET API AWS Lambda function. Data is pulled from a DynamoDB table. A different UI is provided based on screen size. Try going mobile!", 
-      "detailsDescription": [""],
+      "title": "This Website",
+      "description": "A React.JS hosted on Github Pages. Click into this project to find out more!", 
+      "detailsDescription": ["This website was built with React and hosted on Github Pages. Some features include:<ul><li>Dynamic display based on screen size. Try going mobile!</li><li>Dynamic projects, project pages, and about me information. All information is pulled from a JSON file and the HTML is generated during rendering.</li><li>Makes use of gh-pages, react-router-dom and react-collapsible packages.</li></ul>"],
       "link": "https://github.com/Neeblue/reactwebsite",
       "image": "/images/website-cover.png",
       "detailsImage": [""],
