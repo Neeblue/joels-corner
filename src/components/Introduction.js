@@ -9,8 +9,8 @@ export default function Introduction() {
             {/* TODO: Add icon tags, Github main link */}
             <div className="buttons">
                 <Button url = "/projects" name="Projects" img="/images/projects-icon.png" />
-                <Button url = "/about" name="About me" img="/images/climbing-icon.webp"/>
-                <Button url = "/contact" name="Contact me" img="/images/contact-icon.webp" />
+                <Button url = "/about" name="About me" img="/images/about-icon.png"/>
+                <Button url = "/contact" name="Contact me" img="/images/contact-icon.png" />
             </div>
             <br />
         </div>
