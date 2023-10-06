@@ -1,6 +1,6 @@
 .nav {
     background-color: #000000;
-    color: white;
+    color: rgb(192, 220, 245);;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
