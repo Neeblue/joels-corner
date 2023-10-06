@@ -56,11 +56,15 @@ export default function About() {
                                             onClick={() => toggleItem(item)}
                                         >
                                             {item.header}
-                                            <div className='expand-text'>(click to expand)</div>
+                                            {
+                                                item.header !== "" &&
+                                                <div className='expand-text'>(click to expand)</div>
+                                            }
                                         </div>
                                     }
                                     open={activeItem === item}
                                     >
+                                    <div className="subheader">{item.subheader}</div>
                                     <div className="description" dangerouslySetInnerHTML={{__html: item.description}}></div>
                                 </Collapsible>
                             </div>

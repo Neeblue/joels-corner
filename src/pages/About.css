@@ -26,6 +26,10 @@
     margin: 0.5rem;
 }
 
+.about-container .subheader {
+    margin-left: 0.5rem;
+}
+
 .about-container .description {
     margin: 0.5rem 2rem;
 }
