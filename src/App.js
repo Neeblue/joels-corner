@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Introduction from "./components/Introduction";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -23,6 +24,9 @@ export default function App() {
             <Route path="*" element={<Introduction />} />
           </Routes>
         </main>
+        <footer>
+          <Footer />
+        </footer>
       </BrowserRouter>
     </div>
   );
