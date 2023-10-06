@@ -12,6 +12,7 @@ export default function Introduction() {
                 <Button url = "/about" name="About me" img="/images/climbing-icon.webp"/>
                 <Button url = "/contact" name="Contact me" img="/images/contact-icon.webp" />
             </div>
+            <br />
         </div>
     );
 }
