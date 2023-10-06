@@ -2,58 +2,58 @@
 {
     "About Me": [
         {
-            "Header": "My Hobbies",
-            "Subheader": "More details about me",
-            "Description": "This is a description of me"
+            "header": "My Hobbies",
+            "subheader": "More details about me",
+            "description": "This is a description of me"
         }
     ],
     "Education": [
         {
-            "Header": "Bachelor of Education",
-            "Subheader": "University of British Columbia",
-            "Description": "Bachelor of Education, Faculty of Education / Vancouver, BC / 2021 - 2022"
+            "header": "Bachelor of Education",
+            "subheader": "University of British Columbia",
+            "description": "Bachelor of Education, Faculty of Education / Vancouver, BC / 2021 - 2022"
         },
         {
-            "Header": "Bachelor of Science",
-            "Subheader": "University of British Columbia",
-            "Description": "Major in Biochemistry / Vancouver, BC / 2014 - 2017<br /><a target='_blank' href='https://sciencecoop.ubc.ca/prospective/what'>Co-operative Education Program</a> / Burnaby / 2015 - 2016"
+            "header": "Bachelor of Science",
+            "subheader": "University of British Columbia",
+            "description": "Major in Biochemistry / Vancouver, BC / 2014 - 2017<br /><a target='_blank' href='https://sciencecoop.ubc.ca/prospective/what'>Co-operative Education Program</a> / Burnaby / 2015 - 2016"
         },
         {
-            "Header": "Associates of Science",
-            "Subheader": "Kwantlen Polytechnic University",
-            "Description": "Associates degree in Science, Biology / Surrey, BC / 2011 - 2013"
+            "header": "Associates of Science",
+            "subheader": "Kwantlen Polytechnic University",
+            "description": "Associates degree in Science, Biology / Surrey, BC / 2011 - 2013"
         },
         {
-            "Header": "Online Courses",
-            "Subheader": "Thompson Rivers University",
-            "Description": "Faculty of Education Program pre-requisites / Distance Education / Jan 2021 - June 2021"
+            "header": "Online Courses",
+            "subheader": "Thompson Rivers University",
+            "description": "Faculty of Education Program pre-requisites / Distance Education / Jan 2021 - June 2021"
         }
     ],
     "Work Experience": [
         {
-            "Header": "Substitute Teacher",
-            "Subheader": "Surrey, BC / Sept 2022 - Present",
-            "Description": "Worked as a teacher on call in the Surrey district. I typically cover Science and BASES classes. <a target='_blank' href='https://www.surreyschools.ca/page/1113/bases'>BASES</a> is a program that helps students with learning or physical disabilities.<li>Worked in classes such as science, math, English, and tech.<li>Developed new material for the classroom and science labs.<li>Worked with complex students to assist them in their individual needs."
+            "header": "Substitute Teacher",
+            "subheader": "Surrey, BC / Sept 2022 - Present",
+            "description": "Worked as a teacher on call in the Surrey district. I typically cover Science and BASES classes. <a target='_blank' href='https://www.surreyschools.ca/page/1113/bases'>BASES</a> is a program that helps students with learning or physical disabilities.<ul><li>Worked in classes such as science, math, English, and tech.<li>Developed new material for the classroom and science labs.<li>Worked with complex students to assist them in their individual needs.</ul>"
         },
         {
-            "Header": "Science World - Community Field Experience",
-            "Subheader": "Vancouver, BC / May 2022 - June 2022",
-            "Description": "<li>Designed a web page for the Science World website that contains compiled resources for educators to use inside the classroom, and during field trips to Science World.<li>Assisted with inquiry-based workshops for numerous grades on field trips.<li>Performed multiple chemistry demonstrations to elementary classes.<li>Collaborated with Science World administration by discussing options and limitations for the web page.<li>Rotated through various science-based galleries while assisting guests with their queries."
+            "header": "Science World - Community Field Experience",
+            "subheader": "Vancouver, BC / May 2022 - June 2022",
+            "description": "<ul><li>Designed a web page for the Science World website that contains compiled resources for educators to use inside the classroom, and during field trips to Science World.<li>Assisted with inquiry-based workshops for numerous grades on field trips.<li>Performed multiple chemistry demonstrations to elementary classes.<li>Collaborated with Science World administration by discussing options and limitations for the web page.<li>Rotated through various science-based galleries while assisting guests with their queries.</ul>"
         },
         {
-            "Header": "Education Assistant",
-            "Subheader": "Pacific Academy / Surrey, BC / Sept 2019 - June 2021",
-            "Description": "<li>Instructor for Biology 12 for two terms between April 2019 and September 2020 which includes a transition to an online format as the school closed down due to COVID-19.<li>Online video lessons taught during the pandemic period using YouTube and Google Meet.<li>Designed a teaching website, written exams, oral exams, assignments, and quizzes for two Biology courses.<li>Worked with students with health conditions and disabilities, including those on the autism spectrum.<li>Regularly assist struggling students one-on-one with classwork and homework.<li>Acted as a teacher's assistant in numerous classroom settings.<li>High school librarian: Received and signed out novels and textbooks for classes.<li>Proctored final exams during exam seasons."
+            "header": "Education Assistant",
+            "subheader": "Pacific Academy / Surrey, BC / Sept 2019 - June 2021",
+            "description": "<ul><li>Instructor for Biology 12 for two terms between April 2019 and September 2020 which includes a transition to an online format as the school closed down due to COVID-19.<li>Online video lessons taught during the pandemic period using YouTube and Google Meet.<li>Designed a teaching website, written exams, oral exams, assignments, and quizzes for two Biology courses.<li>Worked with students with health conditions and disabilities, including those on the autism spectrum.<li>Regularly assist struggling students one-on-one with classwork and homework.<li>Acted as a teacher's assistant in numerous classroom settings.<li>High school librarian: Received and signed out novels and textbooks for classes.<li>Proctored final exams during exam seasons.</ul>"
         },
         {
-            "Header": "",
-            "Subheader": "",
-            "Description": ""
+            "header": "",
+            "subheader": "",
+            "description": ""
         },
         {
-            "Header": "",
-            "Subheader": "",
-            "Description": ""
+            "header": "",
+            "subheader": "",
+            "description": ""
         }
     ]
 }

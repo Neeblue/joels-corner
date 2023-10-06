@@ -32,7 +32,6 @@ export default function About() {
 
     return (
         <div className='about-container'>
-            <div className='intro'>Click on a heading to find out more about me!</div>
             {Object.entries(about).map(([section, items]) => (
                 <div key={section}>
                     <Collapsible
@@ -43,6 +42,7 @@ export default function About() {
                                 onClick={() => toggleSection(section)}
                             >
                                 {section}
+                                <div className='expand-text'>(click to expand)</div>
                             </div>
                         }
                         open={activeSection === section}
@@ -56,6 +56,7 @@ export default function About() {
                                             onClick={() => toggleItem(item)}
                                         >
                                             {item.header}
+                                            <div className='expand-text'>(click to expand)</div>
                                         </div>
                                     }
                                     open={activeItem === item}
