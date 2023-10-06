@@ -1,6 +1,6 @@
 .App {
     background-color: #252525;
-    color: rgb(225, 239, 199);
+    color: rgb(192, 220, 245);
     min-height: 100vh;
 }
 
@@ -10,7 +10,7 @@
 }
 
 a:link, a:visited {
-    color: rgb(211, 243, 255);
+    color: rgb(133, 240, 244);
     text-decoration: none;
 }
 
