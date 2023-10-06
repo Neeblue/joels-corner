@@ -31,7 +31,7 @@ export default function About() {
     };
 
     return (
-        <div className='container'>
+        <div className='about-container'>
             <div className='intro'>Click on a heading to find out more about me!</div>
             {Object.entries(about).map(([section, items]) => (
                 <div key={section}>
@@ -70,7 +70,7 @@ export default function About() {
                     }
                 </div>
             ))}
-            {/* <br /> */}
+            <br />
         </div>
     );
 }
