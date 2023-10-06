@@ -65,7 +65,9 @@ export default function About() {
                             </div>
                         ))}
                     </Collapsible>
-                    <hr />
+                    {
+                        section !== Object.keys(about)[Object.keys(about).length - 1] ? <hr /> : null
+                    }
                 </div>
             ))}
             {/* <br /> */}
