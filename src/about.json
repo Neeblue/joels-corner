@@ -3,11 +3,11 @@
     "About Me": [
         {
             "header": "Who am I?",
-            "description": "My name is Joel Miles. I was born in the UK, but I have lived in Canada and the US in recent years (I am a permanent resident in the US). I am currently a full-time <a target='_blank' href='https://www.bctf.ca/'>teacher in Surrey, Canada</a>. I have a passion for science and technology, and I am looking to pivot to Software Engineering."
+            "description": "My name is Joel Miles. I was born in the UK, but I have lived in Canada and the US in recent years (I am a permanent resident in the US). I am currently a full-time <a target='_blank' href='https://www.bctf.ca/'>teacher in Surrey, Canada</a>. I have a passion for science and technology, and I am looking to develop software as a career."
         },
         {
             "header": "Programming background",
-            "description": "I began programming in high school using Visual Basics. My first program was a WinForms style app that pulled information from a Facebook video game. Since then, I have been hobby coding in C# (mostly backend). Recently, I have been learning JavaScript and React. Areas I have dabbled in:<ul><li>Selenium web scrapping</li><li>HTML, CSS, JS</li><li>ASP.NET Web API</li><li></li></ul>"
+            "description": "I began programming in high school using Visual Basics. My first program was a WinForms style app that pulled information from a Facebook video game. Since then, I have been hobby coding in C# (mostly backend). Recently, I have been learning JavaScript and React. Areas I have dabbled in:<ul><li>Selenium web scrapping</li><li>HTML, CSS, JS, React</li><li>ASP.NET Web API</li><li>AWS Lambda, S3, EC2</li></ul>"
         }
     ],
     "Education": [
@@ -36,12 +36,13 @@
         {
             "header": "Substitute Teacher",
             "subheader": "Surrey, BC / Sept 2022 - Present",
-            "description": "Worked as a teacher on call in the Surrey district. I typically cover Science and BASES classes. <a target='_blank' href='https://www.surreyschools.ca/page/1113/bases'>BASES</a> is a program that helps students with learning or physical disabilities.<ul><li>Worked in classes such as science, math, English, and tech.<li>Developed new material for the classroom and science labs.<li>Worked with complex students to assist them in their individual needs.</ul>"
+            "description": "Worked as a teacher on call in the Surrey district. Typically covered Science and BASES classes. <a target='_blank' href='https://www.surreyschools.ca/page/1113/bases'>BASES</a> is a program that helps students with learning or physical disabilities.<ul><li>Worked in classes such as science, math, English, and tech.<li>Developed new material for the classroom and science labs.<li>Worked with complex students to assist them in their individual needs.</ul>"
         },
         {
             "header": "Science World - Community Field Experience",
             "subheader": "Vancouver, BC / May 2022 - June 2022",
-            "description": "<ul><li>Designed a web page for the Science World website that contains compiled resources for educators to use inside the classroom, and during field trips to Science World.<li>Assisted with inquiry-based workshops for numerous grades on field trips.<li>Performed multiple chemistry demonstrations to elementary classes.<li>Collaborated with Science World administration by discussing options and limitations for the web page.<li>Rotated through various science-based galleries while assisting guests with their queries.</ul>"
+            "description": "<ul><li>Designed a web page for the Science World website that contains compiled resources for educators to use inside the classroom, and during field trips to Science World.<li>Assisted with inquiry-based workshops for numerous grades on field trips.<li>Performed multiple chemistry demonstrations to elementary classes.<li>Collaborated with Science World administration by discussing options and limitations for the web page.<li>Rotated through various science-based galleries while assisting guests with their queries.</ul>",
+            "hidden": true
         },
         {
             "header": "Education Assistant",
@@ -49,14 +50,24 @@
             "description": "<ul><li>Instructor for Biology 12 for two terms between April 2019 and September 2020 which includes a transition to an online format as the school closed down due to COVID-19.<li>Online video lessons taught during the pandemic period using YouTube and Google Meet.<li>Designed a teaching website, written exams, oral exams, assignments, and quizzes for two Biology courses.<li>Worked with students with health conditions and disabilities, including those on the autism spectrum.<li>Regularly assist struggling students one-on-one with classwork and homework.<li>Acted as a teacher's assistant in numerous classroom settings.<li>High school librarian: Received and signed out novels and textbooks for classes.<li>Proctored final exams during exam seasons.</ul>"
         },
         {
-            "header": "",
-            "subheader": "",
-            "description": ""
+            "header": "Tutoring",
+            "subheader": "Above Grade Level - In-Home Tutoring Service / Surrey, BC / Sept 2019 - April 2020",
+            "description": "<ul><li>Tutored two secondary school students for eight months in classes such as calculus, chemistry, and English.</li><li>Assisted students with homework and assignments.</li><li>Prepared students for exams.</li><li>Assisted students remotely with urgent problems.</li></ul>"
         },
         {
-            "header": "",
-            "subheader": "",
-            "description": ""
+            "header": "Agriculture Lab Technician",
+            "subheader": "SGS / Burnaby, BC / Aug 2017 - Oct 2018",
+            "description": "Worked independently to deliver <a target='_blank' href='https://www.sgs.com/en-ca/our-services/agriculture-and-food/food'>samples for analysis</a> punctually to fit client's timelines. Extracted chemicals for testing from various agriculture products and quantified using various chemical machinery."
+        },
+        {
+            "header": "Food Residue Technician",
+            "subheader": "Maxxam Analytics / Burnaby, BC / May 2015 - Jan 2016",
+            "description": "<a target='_blank' href='https://www.bvna.com/food-agri/services/food-safety-testing/contaminants-residues'>Extracted pesticides, antibiotics, and toxins for quantification</a>. Extracts were tested using Liquid chromatography-mass spectrometry."
+        },
+        {
+            "header": "Restaurant work",
+            "subheader": "C-Lovers / Surrey, BC / 2012 - 2014",
+            "description": "Cooked and platted food, worked as a cashier, served, and cleaned."
         }
     ]
 }

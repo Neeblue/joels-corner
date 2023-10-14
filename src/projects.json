@@ -27,8 +27,8 @@
       "keyword": "librarian"
     },
     {
-      "title": "Teaching App API",
-      "description": "A backend ASP.NET API that pulls information from a jobs database for teachers. Uses Selenium to scrape information (requires authentication). Jobs are stored in objects and returned to the client as JSON.",
+      "title": "Teaching App",
+      "description": "Primarily a backend ASP.NET API that pulls information from a jobs database for teachers. Uses Selenium to scrape information (requires authentication). Jobs are stored in objects and returned to the client as JSON. The app uses the Selenium package to scrape data from a database containing available work for teachers-on-call. The data is parsed into an object, and displayed on a UI (.Net MAUI, WPF, Avalonia UI). The app can also displays alerts on Windows and sends a text message to my phone when new jobs are found that match various filters (such as specific schools and subjects). This app helped me find work as a substitute teacher.",
       "detailsDescription": [],
       "link": "https://github.com/Neeblue/TTOCApi",
       "image": "/images/JobFinder-cover.jpg",
