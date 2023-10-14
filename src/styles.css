@@ -17,3 +17,10 @@ a:link, a:visited {
 .a:hover {
     background-color: rgb(191, 184, 239);
 }
+
+body,
+input,
+textarea,
+button {
+  font-family: "Inter", sans-serif;
+}
