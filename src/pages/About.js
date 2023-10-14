@@ -48,6 +48,7 @@ export default function About() {
                         open={activeSection === section}
                         >
                         {items.map((item, index) => (
+                            !item.hidden &&
                             <div className='item' key={index}>
                                 <Collapsible
                                     trigger={
