@@ -1,0 +1,25 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+    width: 90vw;
+    /* space between */
+}
+
+.form label {
+    margin-bottom: 0.5rem;
+}
+.form input {
+    margin-bottom: 2rem;
+}
+
+.form .name, .form .email, .form > button {
+    max-width: 20rem;
+}
+
+.form .message {
+    min-width: 90%;
+    height: 5rem;
+    margin-bottom: 1rem;
+}

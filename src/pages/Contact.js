@@ -1,4 +1,5 @@
-import "../contact.css";
+// import "../contact.css";
+import "./Contact.css";
 import { useState } from "react";
 
 const Contact = () => {
@@ -28,13 +29,13 @@ const Contact = () => {
             <h1>Contact form ✉️</h1>
 
             <label>Name</label>
-            <input placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
+            <input className="name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
 
             <label>Email</label>
-            <input placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input className="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
 
             <label>Message</label>
-            <textarea placeholder="Message"  value={message} onChange={(e) => setMessage(e.target.value)} />
+            <textarea className="message" placeholder="Message"  value={message} onChange={(e) => setMessage(e.target.value)} />
 
             <button type='submit'>Submit</button>
 
