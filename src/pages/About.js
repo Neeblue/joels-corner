@@ -42,7 +42,9 @@ export default function About() {
                                 onClick={() => toggleSection(section)}
                             >
                                 {section}
-                                <div className='expand-text'>(click to expand)</div>
+                                <div className='expand-text'>
+                                    {activeSection === section ? "(click to contract)" : "(click to expand)"}
+                                </div>
                             </div>
                         }
                         open={activeSection === section}
@@ -59,7 +61,9 @@ export default function About() {
                                             {item.header}
                                             {
                                                 item.header !== "" &&
-                                                <div className='expand-text'>(click to expand)</div>
+                                                <div className='expand-text'>
+                                                    {activeItem === item ? "(click to contract)" : "(click to expand)"}
+                                                </div>
                                             }
                                         </div>
                                     }
