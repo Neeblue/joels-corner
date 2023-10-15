@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .App {
     background-color: #252525;
     color: rgb(192, 220, 245);
