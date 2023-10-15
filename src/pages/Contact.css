@@ -1,4 +1,4 @@
-.form {
+.contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,18 +7,18 @@
     /* space between */
 }
 
-.form label {
+.contact-form label {
     margin-bottom: 0.5rem;
 }
-.form input {
+.contact-form input {
     margin-bottom: 2rem;
 }
 
-.form .name, .form .email, .form > button {
+.contact-form .name, .contact-form .email, .contact-form > button {
     max-width: 20rem;
 }
 
-.form .message {
+.contact-form .message {
     min-width: 90%;
     height: 5rem;
     margin-bottom: 1rem;

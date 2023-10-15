@@ -25,7 +25,7 @@ const Contact = () => {
     };
 
     return (
-        <form className="form" onSubmit={{handleSubmit}}>
+        <form className="contact-form" onSubmit={{handleSubmit}}>
             <h1>Contact form ✉️</h1>
 
             <label>Name</label>

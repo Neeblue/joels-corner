@@ -4,11 +4,11 @@
     text-align: center;
 }
 
-.intro-text {
+.intro .intro-text {
     margin-bottom: 4rem;
 }
 
-.buttons {
+.intro .buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -23,29 +23,29 @@
     cursor: pointer;
 }
 
-img {
+.intro img {
     width: 30vw;
 }
 
-h1 {
+.intro h1 {
     text-decoration: none;
 }
 
 @media screen and (max-width: 500px) {
-    .intro-text {
+    .intro .intro-text {
         margin-bottom: 1rem;
     }
-    .buttons {
+    .intro .buttons {
         flex-direction: column;
     }
-    .button {
+    .intro .button {
         font-size: 0.5em;
         margin-bottom: 1rem;
     }
-    img {
+    .intro img {
         width: 35vw;
     }
-    h1 {
+    .intro h1 {
         text-decoration: none;
     }    
 }
