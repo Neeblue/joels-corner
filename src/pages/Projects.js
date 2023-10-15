@@ -15,13 +15,13 @@ const Projects = () => {
   }, []);*/
 
   useEffect(() => {
-    setProjects(jsonData);
+    setProjects(jsonData.filter(project => project.hidden === "false"));
   }, []);
 
   return (
     <div className='projects'>
       <h1 className='header'>GitHub Projects</h1>
-      <div className='subHeader'>(Click on a project title to see more information about that project)</div>
+      <div className='sub-header'>(Click on a project title to see more information about that project)</div>
 
       {projects.map((project, index) => (
         <div key={index} className="container">

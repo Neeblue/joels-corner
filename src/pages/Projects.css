@@ -7,9 +7,9 @@
     text-align: center;
 }
 
-.projects .subHeader {
+.projects .sub-header {
     text-align: center;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 .projects .container {
