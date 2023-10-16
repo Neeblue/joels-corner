@@ -7,6 +7,12 @@
     gap: 2rem;
     padding: 0 1rem;
     margin-bottom: 1rem;
+
+    /* Added to prevent the Links from breaking the UI */
+    @media screen and (max-width: 350px) {
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 .nav a {
