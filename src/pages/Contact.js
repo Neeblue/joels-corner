@@ -26,7 +26,7 @@ const Contact = () => {
 
     return (
         <form className="contact-form" onSubmit={{handleSubmit}}>
-            <h1>Contact form ✉️</h1>
+            <h1 className="title">Contact form ✉️</h1>
 
             <label>Name</label>
             <input className="name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />

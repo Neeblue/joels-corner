@@ -7,11 +7,15 @@
     /* space between */
 }
 
+.contact-form .title, .contact-form input {
+    margin-bottom: 1rem;
+}
 .contact-form label {
     margin-bottom: 0.5rem;
 }
-.contact-form input {
-    margin-bottom: 2rem;
+
+.contact-form input, .contact-form textarea {
+    padding: 0.5rem;
 }
 
 .contact-form .name, .contact-form .email, .contact-form > button {
