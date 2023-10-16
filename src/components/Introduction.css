@@ -31,7 +31,7 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .intro .intro-text {
         margin-bottom: 1rem;
     }
