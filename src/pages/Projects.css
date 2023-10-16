@@ -49,6 +49,11 @@
         text-align: center;
     }
 
+    .projects .sub-header {
+        /* text-align: center; */
+        margin-bottom: 2rem;
+    }
+
     .projects .container .text {
         width: 100%;
         margin: auto;
