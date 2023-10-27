@@ -29,16 +29,11 @@ export default function SingleProject(){
         };
     }, []);
 
-    if (!project) {
-        // Handle case when project is not found
-        return <div>Project not found</div>;
-    }
-
     return (
         <div className="projectPage">
-            <h1 className="title">{project.title}</h1>
+            {project && <h1 className="title">{project.title}</h1>}
 
-            {project.detailsDescription.map((paragraph, index) => (
+            {project && project.detailsDescription.map((paragraph, index) => (
                 <div key={index} className='section'>
                     {isMobile ? (
                         <>

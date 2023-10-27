@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import React, { Link } from 'react-router-dom';
 import './Introduction.css';
 
 export default function Introduction() {    
@@ -17,7 +17,7 @@ export default function Introduction() {
     );
 }
 
-function Button (props) {
+function Button (props: {url: string, name: string, img: string}) {
     return (
         <div className='button'>
             <Link to={props.url}>
