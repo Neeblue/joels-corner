@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 
-const Contact = () => {
+export default function Contact() {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
@@ -25,33 +25,20 @@ const Contact = () => {
   };
 
   return (
-    <form className="form" onSubmit={handleSubmit}>
-      <h1>Contact form ✉️</h1>
+    <form className="contact-form" onSubmit={handleSubmit}>
+      <h1 className="title">Contact form ✉️</h1>
 
       <label>Name</label>
-      <input
-        placeholder="Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
+      <input className="name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
 
       <label>Email</label>
-      <input
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
+      <input className="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
 
       <label>Message</label>
-      <textarea
-        placeholder="Message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-      />
+      <textarea className="message" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} />
 
-      <button type="submit">Submit</button>
+      <button type='submit'>Submit</button>
+
     </form>
-  );
+  )
 };
-
-export default Contact;

@@ -24,6 +24,7 @@
 
 .contact-form .message {
     min-width: 90%;
+    max-width: 90%;
     height: 5rem;
     margin-bottom: 1rem;
 }
