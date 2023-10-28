@@ -6,8 +6,8 @@ export default function Footer() {
     return (
         <div className='footer'>
             <div>JoelMiles.com</div>
-            <a href='mailto: joelmiles@hotmail.co.uk'>
-                joelmiles@hotmail.co.uk
+            <a href='mailto: email@joelmiles.com'>
+                email@joelmiles.com
             </a>
         </div>
     );
