@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import SingleProject from "./pages/SingleProject";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import WithScrollToTop from "./components/WithScrollToTop";
 
 export default function App() {
   return (
@@ -17,11 +18,11 @@ export default function App() {
         <main>
           <Routes>
             <Route index element={<Introduction />} />
+            <Route path="*" element={<Introduction />} />
             <Route path="projects" element={<Projects />} />
-            <Route path="projects/:keyword" element={<SingleProject />} />
+            <Route path="projects/:keyword" element={WithScrollToTop(SingleProject)} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="*" element={<Introduction />} />
           </Routes>
         </main>
         <footer>
