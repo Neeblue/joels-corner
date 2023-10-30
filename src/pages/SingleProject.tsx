@@ -12,7 +12,6 @@ interface Project {
 
 export default function SingleProject(){
     const { keyword } = useParams<{ keyword: string }>();
-    //const project = jsonData.find(project => project.keyword === keyword);
     const project: Project | undefined = jsonData.find((project) => project.keyword === keyword);
     const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768);
 
