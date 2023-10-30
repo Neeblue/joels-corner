@@ -1,6 +1,6 @@
 .projectPage {
-    padding: 0.2rem;
-    margin: 0 5%;
+    /* padding: 0.2rem;
+    margin: 0 5%; */
     margin-bottom: 1rem;
 }
 
@@ -9,6 +9,7 @@
     margin: 1rem;
 }
 
+/* When a project has no image but has information this styles it correctly */
 .projectPage img[src=""] {
     display:none;
 }
@@ -22,7 +23,7 @@
 .projectPage .detailsImage {
     object-fit: contain;
     max-height: 90vh;
-    width: 50%;
+    /* width: 50%; */
     padding: 1rem;
 
 }
@@ -42,7 +43,7 @@
     }
     
     .projectPage .image {
-        width: 100%;
+        /* width: 100%; */
     } 
 
     .projectPage .section {

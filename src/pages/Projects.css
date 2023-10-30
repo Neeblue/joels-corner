@@ -1,6 +1,14 @@
+.project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;    
+    gap: 2rem;
+}
+
 .projects {
-    padding: 0.2rem;
-    margin: 0 5%;
+    margin-bottom: 1rem;
 }
 
 .projects .header {
@@ -9,15 +17,16 @@
 
 .projects .sub-header {
     text-align: center;
-    /* margin-bottom: 2rem; */
+    margin-bottom: 2rem;
 }
 
 .projects .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content:space-between;
-    margin-bottom: 3rem;
-    gap: 1rem;
+    margin-bottom: 2rem;
+    gap: 0.5rem;
 }
 
 .projects .container .imageContainer {
@@ -25,14 +34,16 @@
 }   
 
 .projects .container .text {
-    width: 70vw;
+    width: 21rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: auto;
+    align-items: center;
 }
 
 .projects .container .image {
-    width: 30vw;
+    width: 21rem;
 }
 
 .projects .container .githubLink {
@@ -40,27 +51,26 @@
 }
 
 @media (max-width: 768px) {
+    .project {
+        gap: 0rem;
+    }
+
     .projects .intro {
         font-size: 1rem;
     }
     
     .projects .container {
-        flex-direction:column-reverse;
         text-align: center;
-    }
-
-    .projects .sub-header {
-        /* text-align: center; */
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .projects .container .text {
-        width: 100%;
-        margin: auto;
+        width: 90%;
 
     }
 
     .projects .container .image {
-        width: 100%;
+        width: 90%;
+        margin-bottom: 1rem;
     }
 }
