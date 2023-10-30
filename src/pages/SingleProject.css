@@ -23,7 +23,7 @@
 .projectPage .detailsImage {
     object-fit: contain;
     max-height: 90vh;
-    /* width: 50%; */
+    width: 50%;
     padding: 1rem;
 
 }
