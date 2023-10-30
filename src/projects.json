@@ -32,10 +32,10 @@
   {
     "title": "Teaching App",
     "description": "Primarily a backend ASP.NET API that pulls information from a jobs database for teachers. Uses Selenium to scrape information (requires authentication). Jobs are stored in objects and returned to the client as JSON. The app uses the Selenium package to scrape data from a database containing available work for teachers-on-call. The data is parsed into an object, and displayed on a UI (.Net MAUI, WPF, Avalonia UI). The app can also displays alerts on Windows and sends a text message to my phone when new jobs are found that match various filters (such as specific schools and subjects). This app helped me find work as a substitute teacher.",
-    "detailsDescription": [],
+    "detailsDescription": ["<h2 style='text-align: center'>What is the Teaching app?</h2><br>This app helped me find work as a substitute teacher. Teacher's are required to check a database for job postings. The database is updated in real-time and positions fill up quickly. The app uses the Selenium package to scrape data from a database containing available work for teachers-on-call. The data is parsed into an object, and displayed on the UI. The app also displays alerts on Windows and sends a text message to my phone when new jobs are found that match  various filters (such as specific schools and subjects). <br>The images displayed show two variations of the project that I have made (a WinForms in light mode and WPF in dark mode).", "<h2 style='text-align: center'>Full list of features:</h2><br><li>Contains a light and dark mode</li><li>Has a slider that determines how often to check for new positions</li><li>Automatically turns off between specific hours</li><li>Can automatically accept jobs if desired</li><li>Can filter based on job preferences: school location, full time positions only, subject material etc.</li><li>Alerts can be displayed on Windows with custom colours based on certain filters</li><li>Can send text messages when a new position is found</li>"],
     "link": "https://github.com/Neeblue/TTOCApi",
     "image": "/images/covers/JobFinder-cover.jpg",
-    "detailsImage": [""],
+    "detailsImage": ["/images/teaching/detailsImage1.jpg", "/images/teaching/detailsImage2.jpg"],
     "keyword": "teaching",
     "hidden": "false"
   },
