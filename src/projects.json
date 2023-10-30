@@ -5,7 +5,7 @@
     "detailsDescription": ["This website was built with React and TypeScript and is hosted using Cloudflare Pages. Some features include:<li>Dynamic display based on screen size. Try going mobile!</li><li>Dynamic projects, project pages, and about me information. All information is pulled from a JSON file and the HTML is generated during rendering.</li><li>Makes use of gh-pages, react-router-dom and react-collapsible packages.</li>"],
     "link": "https://github.com/Neeblue/reactwebsite",
     "image": "/images/covers/website-cover.png",
-    "detailsImage": [""],
+    "detailsImage": ["/images/website/detailsImage.png"],
     "keyword": "website",
     "hidden": "false"
   },
