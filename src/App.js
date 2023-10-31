@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <header>
+        <header className="sticky">
           <Navbar />
         </header>
         <main>

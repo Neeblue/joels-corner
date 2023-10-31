@@ -29,9 +29,11 @@ export default function Projects() {
               <h2 className='title'>
                 <Link to={`/projects/${project.keyword}`}>{project.title}</Link>
               </h2>
-              <a className='githubLink' href={project.link} target="_blank" rel="noopener noreferrer">
+              <div className='githubLink'><
+                a href={project.link} target="_blank" rel="noopener noreferrer">
                 (Github)
               </a>
+              </div>
               <div className='imageContainer'>
                 <Link to={`/projects/${project.keyword}`}>
                   <img className='image' src={process.env.PUBLIC_URL + project.image} alt={project.title} />
