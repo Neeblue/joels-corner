@@ -1,6 +1,4 @@
 .projectPage {
-    /* padding: 0.2rem;
-    margin: 0 5%; */
     margin-bottom: 1rem;
 }
 
@@ -21,30 +19,25 @@
 }
 
 .projectPage .detailsImage {
-    object-fit: contain;
+    /* object-fit: contain; */
     max-height: 90vh;
-    width: 30%;
+    width: 40%;
     padding: 1rem;
-
 }
 
 .projectPage .detailsParagraph {
     margin: auto 1rem auto 1rem;
-    /* max-width: 50%; */
+}
+
+.imageContainer a:hover {
+    background-color: transparent;
 }
 
 @media (max-width: 768px) {
-    .projectPage .imageContainer {
-        /* margin-bottom: 1rem; */
-    }
     
     .projectPage .text {
         margin-bottom: 2rem;
     }
-    
-    .projectPage .image {
-        /* width: 100%; */
-    } 
 
     .projectPage .section {
         display: flex;

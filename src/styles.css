@@ -8,6 +8,7 @@
     background-color: #252525;
     color: rgb(192, 220, 245);
     min-height: 100vh;
+
 }
 
 .sticky {
@@ -27,6 +28,11 @@ a:link, a:visited {
 
 a:hover {
     background-color: rgb(191, 184, 239);
+}
+
+/* Fixes white bars */
+body {
+  background-color: #252525;
 }
 
 body,
