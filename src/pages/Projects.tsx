@@ -19,31 +19,29 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className='projects'>
+    <div className='projects-page'>
       <h1 className='header'>GitHub Projects</h1>
       <div className='sub-header'>(Click on a project title to see more information about that project)</div>
-      <div className="project">
+      <div className="projects">
         {projects.map((project, index) => (
           <div key={index} className="container">
-
-            <div className='text'>
+            <div className='project'>
               <h2 className='title'>
                 <Link to={`/projects/${project.keyword}`}>{project.title}</Link>
               </h2>
-
               <a className='githubLink' href={project.link} target="_blank" rel="noopener noreferrer">
                 (Github)
               </a>
+              <div className='imageContainer'>
+                <Link to={`/projects/${project.keyword}`}>
+                  <img className='image' src={process.env.PUBLIC_URL + project.image} alt={project.title} />
+                </Link>
+              </div>
               <p className='description'>{project.description}</p>
               {/* TODO: Add tags */}
             </div>
 
-            <div className='imageContainer'>
-              <Link to={`/projects/${project.keyword}`}>
-                <img className='image' src={process.env.PUBLIC_URL + project.image} alt={project.title} />
-              </Link>
-            </div>
-            
+
           </div>
         ))}
       </div>
