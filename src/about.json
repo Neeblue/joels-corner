@@ -6,7 +6,7 @@
         },
         {
             "header": "Programming background",
-            "description": "I began programming in high school using Visual Basics. My first program was a WinForms style app that pulled information from a Facebook video game. Since then, I have been hobby coding in C# (mostly backend). Recently, I have been learning JavaScript and React. Areas I have dabbled in:<ul><li>Selenium web scrapping</li><li>HTML, CSS, JS, React</li><li>ASP.NET Web API</li><li>AWS Lambda, S3, EC2</li></ul>"
+            "description": "I began programming in high school using Visual Basics. My first program was a WinForms style app that pulled information from a Facebook video game. Since then, I have been hobby coding in C# (mostly backend). Recently, I have been learning JavaScript and React. Areas I have dabbled in:<ul className='pl-[20px]'><li>Selenium web scrapping</li><li>HTML, CSS, JS, React</li><li>ASP.NET Web API</li><li>AWS Lambda, S3, EC2</li></ul>"
         }
     ],
     "Education": [
