@@ -17,12 +17,12 @@ export default function App() {
         </header>
         <main>
           <Routes>
-            <Route index element={<Introduction />} />
-            <Route path="*" element={<Introduction />} />
-            <Route path="projects" element={<Projects />} />
+            <Route index element={WithScrollToTop(Introduction)} />
+            <Route path="*" element={WithScrollToTop(Introduction)} />
+            <Route path="projects" element={WithScrollToTop(Projects)} />
             <Route path="projects/:keyword" element={WithScrollToTop(SingleProject)} />
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
+            <Route path="about" element={WithScrollToTop(About)} />
+            <Route path="contact" element={WithScrollToTop(Contact)} />
           </Routes>
         </main>
         <footer>
