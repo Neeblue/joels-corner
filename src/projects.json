@@ -41,10 +41,7 @@
   },
   {
     "title": "Disney Grabber",
-    
-    "description": "C# app that periodically checks Disney World for reservations for popular reservations. Uses Disney's restaurant API to grab restaurant information. JSON info is parsed into objects and filtered based on user preferences such as date and time of day. Results are sent to the console with a direct link to the booking page for that reservation time slot of choice.",
     "description": "C# app that periodically checks Disney World for popular reservations. Uses Disney's restaurant API to grab restaurant information. JSON info is parsed into objects and filtered based on user preferences such as date and time of day. Results are sent to the console with a direct link to the booking page for that reservation time slot of choice.",
-
     "detailsDescription": ["C# app that periodically checks Disney World for reservations for popular reservations. Uses Disney's restaurant API to grab restaurant information. JSON info is parsed into objects and filtered based on user preferences such as date and time of day.<br>Results are sent to the console with a direct link to the booking page for that reservation time slot of choice. This app could easily be put on a repeating timer and implement notifications when reservations are found.<br><br><b>Features of the program:</b><li>Makes an API call to Disney's site using a custom built URL based on choice of restaurant, party size, and time</li><li>Returns the available times found and a direct booking link for each time slot</li><li>C# console app that makes use of: Interfaces, a link-builder helper class, API, API Service/Controller class, enums, and a reservation model</li><br><b>Difficulties of this program:</b><li>Finding and building a link for each restaurant and time in order to make the API call</li><li>Finding and building a reservation link (which is only partially returned from the API call)</li>"],
     "link": "https://github.com/Neeblue/disney-grabber",
     "image": "/images/covers/disney-cover.png",

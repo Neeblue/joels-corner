@@ -35,23 +35,23 @@
         {
             "header": "Substitute Teacher",
             "subheader": "Surrey, BC / Sept 2022 - Present",
-            "description": "Worked as a teacher on call in the Surrey district. Typically covered Science and BASES classes. <a target='_blank' href='https://www.surreyschools.ca/page/1113/bases'>BASES</a> is a program that helps students with learning or physical disabilities.<ul><li>Worked in classes such as science, math, English, and tech.<li>Developed new material for the classroom and science labs.<li>Worked with complex students to assist them in their individual needs.</ul>"
+            "description": "Worked as a teacher on call in the Surrey district. Typically covered Science and BASES classes. <a target='_blank' href='https://www.surreyschools.ca/page/1113/bases'>BASES</a> is a program that helps students with learning or physical disabilities.<ul className='pl-[20px]'><li>Worked in classes such as science, math, English, and tech.<li>Developed new material for the classroom and science labs.<li>Worked with complex students to assist them in their individual needs.</ul>"
         },
         {
             "header": "Science World - Community Field Experience",
             "subheader": "Vancouver, BC / May 2022 - June 2022",
-            "description": "<ul><li>Designed a web page for the Science World website that contains compiled resources for educators to use inside the classroom, and during field trips to Science World.<li>Assisted with inquiry-based workshops for numerous grades on field trips.<li>Performed multiple chemistry demonstrations to elementary classes.<li>Collaborated with Science World administration by discussing options and limitations for the web page.<li>Rotated through various science-based galleries while assisting guests with their queries.</ul>",
+            "description": "<ul className='pl-[20px]'><li>Designed a web page for the Science World website that contains compiled resources for educators to use inside the classroom, and during field trips to Science World.<li>Assisted with inquiry-based workshops for numerous grades on field trips.<li>Performed multiple chemistry demonstrations to elementary classes.<li>Collaborated with Science World administration by discussing options and limitations for the web page.<li>Rotated through various science-based galleries while assisting guests with their queries.</ul>",
             "hidden": true
         },
         {
             "header": "Education Assistant",
             "subheader": "Pacific Academy / Surrey, BC / Sept 2019 - June 2021",
-            "description": "<ul><li>Instructor for Biology 12 for two terms between April 2019 and September 2020 which includes a transition to an online format as the school closed down due to COVID-19.<li>Online video lessons taught during the pandemic period using YouTube and Google Meet.<li>Designed a teaching website, written exams, oral exams, assignments, and quizzes for two Biology courses.<li>Worked with students with health conditions and disabilities, including those on the autism spectrum.<li>Regularly assist struggling students one-on-one with classwork and homework.<li>Acted as a teacher's assistant in numerous classroom settings.<li>High school librarian: Received and signed out novels and textbooks for classes.<li>Proctored final exams during exam seasons.</ul>"
+            "description": "<ul className='pl-[20px]'><li>Instructor for Biology 12 for two terms between April 2019 and September 2020 which includes a transition to an online format as the school closed down due to COVID-19.<li>Online video lessons taught during the pandemic period using YouTube and Google Meet.<li>Designed a teaching website, written exams, oral exams, assignments, and quizzes for two Biology courses.<li>Worked with students with health conditions and disabilities, including those on the autism spectrum.<li>Regularly assist struggling students one-on-one with classwork and homework.<li>Acted as a teacher's assistant in numerous classroom settings.<li>High school librarian: Received and signed out novels and textbooks for classes.<li>Proctored final exams during exam seasons.</ul>"
         },
         {
             "header": "Tutoring",
             "subheader": "Above Grade Level - In-Home Tutoring Service / Surrey, BC / Sept 2019 - April 2020",
-            "description": "<ul><li>Tutored two secondary school students for eight months in classes such as calculus, chemistry, and English.</li><li>Assisted students with homework and assignments.</li><li>Prepared students for exams.</li><li>Assisted students remotely with urgent problems.</li></ul>"
+            "description": "<ul className='pl-[20px]'><li>Tutored two secondary school students for eight months in classes such as calculus, chemistry, and English.</li><li>Assisted students with homework and assignments.</li><li>Prepared students for exams.</li><li>Assisted students remotely with urgent problems.</li></ul>"
         },
         {
             "header": "Agriculture Lab Technician",
