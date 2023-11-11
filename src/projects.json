@@ -1,12 +1,42 @@
 [
   {
     "title": "This Website",
-    "description": "A React.JS website hosted using Cloudflare Pages. Click into this project to find out more!", 
-    "detailsDescription": ["This website was built with React and TypeScript and is hosted using Cloudflare Pages. Some features include:<li>Dynamic display based on screen size. Try going mobile!</li><li>Dynamic projects, project pages, and about me information. All information is pulled from a JSON file and the HTML is generated during rendering.</li><li>Makes use of gh-pages, react-router-dom and react-collapsible packages.</li>"],
+    "description": "A website for displaying my projects. This site also contains details about myself. Click into this project to find out what technologies were used to build this site!", 
+    "detailsDescription": ["This website was built with React.JS, TypeScript and Tailwind. It is hosted using Cloudflare Pages. Some features include:<li>Dynamic display based on screen size. Try going mobile!</li><li>Dynamic projects, project pages, and about me information. All information is pulled from a JSON file and the HTML is generated during rendering.</li><li>Makes use of gh-pages, react-router-dom and react-collapsible packages.</li>"],
     "link": "https://github.com/Neeblue/reactwebsite",
     "image": "/images/covers/website-cover.png",
     "detailsImage": ["/images/website/detailsImage.png"],
     "keyword": "website",
+    "hidden": "false"
+  },
+  {
+    "title": "",
+    "description": "Options: Suprabase, SQL, React Native, JS Backend?, Hosted DB? AWS? Azure? What about a react native app that has REST API, hosted SQL DB", 
+    "detailsDescription": [""],
+    "link": "https://github.com/Neeblue/",
+    "image": "/images/covers/@@@-cover.png",
+    "detailsImage": ["/images/@@@/detailsImage.png"],
+    "keyword": "",
+    "hidden": "true"
+  },
+  {
+    "title": "Teaching App",
+    "description": "A full stack app (React frontend, C# backend and ASP.NET API) that pulls information from a jobs database for teachers. Uses Selenium to scrape information (requires authentication). The backend uses dependency injection. Currently, a mock selenium class is enabled (regular scraper is commented out in Programs.cs) to simulate scrapping results by pulling from a static JSON file. Various services have been coded to allow job filtering based on preferences and email, text, and Windows notifications. The app uses the Selenium package to scrape data from a database containing available work for teachers-on-call. The data is parsed into an object, and displayed on a various UIs (Previous versions used .Net MAUI, WPF, and Avalonia UI). The app can also displays alerts on Windows, send emails, and send text messages when new jobs are found that match various filters (such as specific schools and subjects). This app helped me find work as a substitute teacher.",
+    "detailsDescription": ["<h2 style='text-align: center'>What is the Teaching app?</h2><br>This app helped me find work as a substitute teacher. Teacher's are required to check a database for job postings. The database is updated in real-time and positions fill up quickly. The app uses the Selenium package to scrape data from a database containing available work for teachers-on-call. The data is parsed into an object, and displayed on the UI. The app also displays alerts on Windows, through email, or through text when new jobs are found that match  various filters (such as specific schools and subjects). The images displayed show two variations of the project that I have made (a WinForms in light mode and WPF in dark mode). The Github link takes you to the React, full-stack version.", "<h2 style='text-align: center'> List of some features in current and previous versions:</h2><br><li>Contains a light and dark mode</li><li>Has a slider that determines how often to check for new positions</li><li>Automatically turns off between specific hours</li><li>Can automatically accept jobs if desired</li><li>Can filter based on job preferences: school location, full time positions only, subject material etc.</li><li>Alerts can be displayed on Windows with custom colours based on certain filters</li><li>Can send text messages or emails when a new position is found</li>"],
+    "link": "https://github.com/Neeblue/TTOC",
+    "image": "/images/covers/JobFinder-cover.jpg",
+    "detailsImage": ["/images/teaching/detailsImage1.jpg", "/images/teaching/detailsImage2.jpg"],
+    "keyword": "teaching",
+    "hidden": "false"
+  },
+  {
+    "title": "Disney Grabber",
+    "description": "C# app that periodically checks Disney World for popular reservations. Uses Disney's restaurant API to grab restaurant information. JSON info is parsed into objects and filtered based on user preferences such as date and time of day. Results are sent to the console with a direct link to the booking page for that reservation time slot of choice.",
+    "detailsDescription": ["C# app that periodically checks Disney World for reservations for popular reservations. Uses Disney's restaurant API to grab restaurant information. JSON info is parsed into objects and filtered based on user preferences such as date and time of day.<br>Results are sent to the console with a direct link to the booking page for that reservation time slot of choice. This app could easily be put on a repeating timer and implement notifications when reservations are found.<br><br><b>Features of the program:</b><li>Makes an API call to Disney's site using a custom built URL based on choice of restaurant, party size, and time</li><li>Returns the available times found and a direct booking link for each time slot</li><li>C# console app that makes use of: Interfaces, a link-builder helper class, API, API Service/Controller class, enums, and a reservation model</li><br><b>Difficulties of this program:</b><li>Finding and building a link for each restaurant and time in order to make the API call</li><li>Finding and building a reservation link (which is only partially returned from the API call)</li>"],
+    "link": "https://github.com/Neeblue/disney-grabber",
+    "image": "/images/covers/disney-cover.png",
+    "detailsImage": ["/images/disney/detailsImage.png"],
+    "keyword": "disney",
     "hidden": "false"
   },
   {
@@ -27,26 +57,6 @@
     "image": "/images/covers/librarian-cover.jpg",
     "detailsImage": ["/images/librarian/detailsImage.gif"],
     "keyword": "librarian",
-    "hidden": "false"
-  },
-  {
-    "title": "Teaching App",
-    "description": "Primarily a backend ASP.NET API that pulls information from a jobs database for teachers. Uses Selenium to scrape information (requires authentication). Jobs are stored in objects and returned to the client as JSON. The app uses the Selenium package to scrape data from a database containing available work for teachers-on-call. The data is parsed into an object, and displayed on a UI (.Net MAUI, WPF, Avalonia UI). The app can also displays alerts on Windows and sends a text message to my phone when new jobs are found that match various filters (such as specific schools and subjects). This app helped me find work as a substitute teacher.",
-    "detailsDescription": ["<h2 style='text-align: center'>What is the Teaching app?</h2><br>This app helped me find work as a substitute teacher. Teacher's are required to check a database for job postings. The database is updated in real-time and positions fill up quickly. The app uses the Selenium package to scrape data from a database containing available work for teachers-on-call. The data is parsed into an object, and displayed on the UI. The app also displays alerts on Windows and sends a text message to my phone when new jobs are found that match  various filters (such as specific schools and subjects). <br>The images displayed show two variations of the project that I have made (a WinForms in light mode and WPF in dark mode).", "<h2 style='text-align: center'>Full list of features:</h2><br><li>Contains a light and dark mode</li><li>Has a slider that determines how often to check for new positions</li><li>Automatically turns off between specific hours</li><li>Can automatically accept jobs if desired</li><li>Can filter based on job preferences: school location, full time positions only, subject material etc.</li><li>Alerts can be displayed on Windows with custom colours based on certain filters</li><li>Can send text messages when a new position is found</li>"],
-    "link": "https://github.com/Neeblue/TTOCApi",
-    "image": "/images/covers/JobFinder-cover.jpg",
-    "detailsImage": ["/images/teaching/detailsImage1.jpg", "/images/teaching/detailsImage2.jpg"],
-    "keyword": "teaching",
-    "hidden": "false"
-  },
-  {
-    "title": "Disney Grabber",
-    "description": "C# app that periodically checks Disney World for popular reservations. Uses Disney's restaurant API to grab restaurant information. JSON info is parsed into objects and filtered based on user preferences such as date and time of day. Results are sent to the console with a direct link to the booking page for that reservation time slot of choice.",
-    "detailsDescription": ["C# app that periodically checks Disney World for reservations for popular reservations. Uses Disney's restaurant API to grab restaurant information. JSON info is parsed into objects and filtered based on user preferences such as date and time of day.<br>Results are sent to the console with a direct link to the booking page for that reservation time slot of choice. This app could easily be put on a repeating timer and implement notifications when reservations are found.<br><br><b>Features of the program:</b><li>Makes an API call to Disney's site using a custom built URL based on choice of restaurant, party size, and time</li><li>Returns the available times found and a direct booking link for each time slot</li><li>C# console app that makes use of: Interfaces, a link-builder helper class, API, API Service/Controller class, enums, and a reservation model</li><br><b>Difficulties of this program:</b><li>Finding and building a link for each restaurant and time in order to make the API call</li><li>Finding and building a reservation link (which is only partially returned from the API call)</li>"],
-    "link": "https://github.com/Neeblue/disney-grabber",
-    "image": "/images/covers/disney-cover.png",
-    "detailsImage": ["/images/disney/detailsImage.png"],
-    "keyword": "disney",
     "hidden": "false"
   },
   {
