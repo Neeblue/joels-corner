@@ -18,7 +18,7 @@
     justify-content: center;
     margin-bottom: 2rem;
 }
-
+5
 .intro Button {
     padding: 2rem;
     margin: 1rem;
@@ -29,6 +29,9 @@
 
 .intro img {
     width: 30vw;
+    max-height: 50vh;
+    /* make sure aspect ratio of image stays consistent */
+    object-fit: contain;
 }
 
 .intro h1 {
