@@ -1,8 +1,8 @@
 [
   {
-    "title": "This Website",
-    "description": "A website for displaying my projects. This site also contains details about myself. Click into this project to find out what technologies were used to build this site!", 
-    "detailsDescription": ["This website was built with React.JS, TypeScript and Tailwind. It is hosted using Cloudflare Pages. Some features include:<li>Dynamic display based on screen size. Try going mobile!</li><li>Dynamic projects, project pages, and about me information. All information is pulled from a JSON file and the HTML is generated during rendering.</li><li>Makes use of gh-pages, react-router-dom and react-collapsible packages.</li>"],
+    "title": "Joel's Corner (This Website)",
+    "description": "This site was built using React.JS, TypeScript, and Tailwind. Click on a project for more information.", 
+    "detailsDescription": ["This website was built with React.JS, TypeScript and Tailwind. It is hosted using Cloudflare Pages. Some features include:<ul><li>Dynamic display based on screen size. Try going mobile!</li><li>Dynamic projects, project pages, and about me information. All information is pulled from a JSON file and the HTML is generated during rendering.</li><li>Makes use of gh-pages, react-router-dom and react-collapsible packages.</li></ul>"],
     "link": "https://github.com/Neeblue/reactwebsite",
     "image": "/images/covers/website-cover.png",
     "detailsImage": ["/images/website/detailsImage.png"],
@@ -20,8 +20,12 @@
     "hidden": "true"
   },
   {
-    "title": "Teaching App",
-    "description": "A full stack app (React frontend, C# backend and ASP.NET API) that pulls information from a jobs database for teachers. Uses Selenium to scrape information (requires authentication). The backend uses dependency injection. Currently, a mock selenium class is enabled (regular scraper is commented out in Programs.cs) to simulate scrapping results by pulling from a static JSON file. Various services have been coded to allow job filtering based on preferences and email, text, and Windows notifications. The app uses the Selenium package to scrape data from a database containing available work for teachers-on-call. The data is parsed into an object, and displayed on a various UIs (Previous versions used .Net MAUI, WPF, and Avalonia UI). The app can also displays alerts on Windows, send emails, and send text messages when new jobs are found that match various filters (such as specific schools and subjects). This app helped me find work as a substitute teacher.",
+    "title": "Substitute Work Grabber",
+    "description": "A full stack app (React frontend, C# backend and ASP.NET API) that grabs available work from a database for substitute teachers.
+    
+    
+    
+    A full stack app (React frontend, C# backend and ASP.NET API) that pulls information from a jobs database for teachers. Uses Selenium to scrape information (requires authentication). The backend uses dependency injection. Currently, a mock selenium class is enabled (regular scraper is commented out in Programs.cs) to simulate scrapping results by pulling from a static JSON file. Various services have been coded to allow job filtering based on preferences and email, text, and Windows notifications. The app uses the Selenium package to scrape data from a database containing available work for teachers-on-call. The data is parsed into an object, and displayed on a various UIs (Previous versions used .Net MAUI, WPF, and Avalonia UI). The app can also displays alerts on Windows, send emails, and send text messages when new jobs are found that match various filters (such as specific schools and subjects). This app helped me find work as a substitute teacher.",
     "detailsDescription": ["<h2 style='text-align: center'>What is the Teaching app?</h2><br>This app helped me find work as a substitute teacher. Teacher's are required to check a database for job postings. The database is updated in real-time and positions fill up quickly. The app uses the Selenium package to scrape data from a database containing available work for teachers-on-call. The data is parsed into an object, and displayed on the UI. The app also displays alerts on Windows, through email, or through text when new jobs are found that match  various filters (such as specific schools and subjects). The images displayed show two variations of the project that I have made (a WinForms in light mode and WPF in dark mode). The Github link takes you to the React, full-stack version.", "<h2 style='text-align: center'> List of some features in current and previous versions:</h2><br><li>Contains a light and dark mode</li><li>Has a slider that determines how often to check for new positions</li><li>Automatically turns off between specific hours</li><li>Can automatically accept jobs if desired</li><li>Can filter based on job preferences: school location, full time positions only, subject material etc.</li><li>Alerts can be displayed on Windows with custom colours based on certain filters</li><li>Can send text messages or emails when a new position is found</li>"],
     "link": "https://github.com/Neeblue/TTOC",
     "image": "/images/covers/JobFinder-cover.jpg",
