@@ -52,10 +52,10 @@
   {
     "title": "Wizarding Spells",
     "description": "Explore the spells of the Harry Potter Universe!",
-    "detailsDescription": ["<a href='/spells'>Try it out!</a> ", "Paragraph 2"],
+    "detailsDescription": ["<a href='/spells'><h2>Click here to try it out!</h2></a><br>Explore the spells of the Harry Potter Universe by selecting a spell type. Spell information is pulled from a public API called the Wizard World API. Background colours are added depending on the colour of the spell! Images for each spell type are added statically.", ""],
     "link": "https://github.com/Neeblue/reactwebsite/blob/master/src/pages/Spells.tsx",
     "image": "/images/covers/spells-cover.png",
-    "detailsImage": ["", ""],
+    "detailsImage": ["https://img.freepik.com/free-photo/dragons-fantasy-artificial-intelligence-image_23-2150400884.jpg", ""],
     "keyword": "spells",
     "hidden": "false"
   },
