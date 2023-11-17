@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react';
 
 const spellTypes: string[] = [
-    "None", "Charm", "Conjuration", "Spell", "Transfiguration", "HealingSpell",
-    "DarkCharm", "Jinx", "Curse", "MagicalTransportation", "Hex", "CounterSpell",
-    "Dark Arts", "CounterJinx", "Counter Charm", "Untransfiguration",
-    "BindingMagicalContract", "Vanishment"
+    "None", "Charm", "Conjuration", "Spell", "Transfiguration", "Healing Spell",
+    "Dark Charm", "Jinx", "Curse", "Magical Transportation", "Hex", "Counter Spell",
+    "Dark Arts", "Counter Jinx", "Counter Charm", "Untransfiguration",
+    "Binding Magical Contract", "Vanishment"
 ];
 
 const api = async (spellType: string) => {
-    if (!spellTypes.includes(spellType)) {
-        throw new Error('Invalid spell type');
-    }
+    // Remove any spaces found in the spell type
+    const formattedSpellType = spellType.replace(/\s/g, '');
 
-    const url = `https://wizard-world-api.herokuapp.com/Spells?Type=${spellType}`;
+    const url = `https://wizard-world-api.herokuapp.com/Spells?Type=${formattedSpellType}`;
     const response = await fetch(url);
     const data = await response.json();
     return data;
@@ -38,7 +37,7 @@ export default function Spells() {
         <div>
             <div>
                 {spellTypes.map(spellType => (
-                    <button key={spellType} onClick={() => handleSpellTypeClick(spellType)}>
+                    <button style={{ marginRight: "0.5rem" }} key={spellType} onClick={() => handleSpellTypeClick(spellType)}>
                         {spellType}
                     </button>
                 ))}
