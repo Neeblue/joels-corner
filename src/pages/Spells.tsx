@@ -45,11 +45,12 @@ export default function Spells() {
             <div>
                 {/* {data && <pre>{JSON.stringify(data, null, 2)}</pre>} */}
                 {data && data.map((spell: any) => (
-                    <div key={spell.id} style={{ marginBottom: "1rem" }}>
+                    <div key={spell.id} style={{ margin: "1rem" }}>
                         <h3>{spell.name}</h3>
                         <div>Effect: {spell.effect}</div>
-                        <div>Incantation: {spell.incantation}</div>
-                        <div>Wand light colour: {spell.light}</div>
+                        {spell.incantation && <div>Incantation: {spell.incantation}</div>}
+                        {/* <div>Wand light colour: {spell.light}</div> */}
+                        {spell.light !== "None" && <div>Wand light colour: {spell.light}</div>}
                     </div>
                 ))}
 
