@@ -35,37 +35,59 @@ export default function Spells() {
 
     return (
         <div>
-            <div style={{ marginBottom: "1rem" }}>
+            <div style={{
+                marginBottom: "1rem",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexWrap: "wrap",
+                gap: "1rem",
+            }}>
                 {spellTypes.map(spellType => (
-                    <button style={{ marginRight: "0.5rem" }} key={spellType} onClick={() => handleSpellTypeClick(spellType)}>
+                    <button style={{
+                        marginRight: "0.5rem",
+                        font: "bold",
+                        fontSize: "1.25rem",
+                        backgroundColor: "black",
+                        color: "white",
+                        padding: "0.5rem",
+                    }} key={spellType} onClick={() => handleSpellTypeClick(spellType)}>
                         {spellType}
                     </button>
                 ))}
             </div>
-            <div>
+            <div style={{
+                // justifyContent: "space-between", 
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexWrap: "wrap",
+                gap: "1rem"
+            }}>
                 {/* {data && <pre>{JSON.stringify(data, null, 2)}</pre>} */}
                 {data && data.map((spell: any) => (
                     <div key={spell.id} style={{
                         display: "inline-block",
                         backgroundImage: "url(/images/spells/parchment.webp)",
-                        backgroundSize: "cover",
+                        backgroundSize: "100% 100%",
+                        verticalAlign: "middle",
                         margin: "1rem",
                         padding: "0.5rem",
                         color: "black",
+                        alignItems: "flex-start"
                     }}>
                         <div style={{ padding: "0.5rem" }}>
                             <h3 style={{
-                                ...(spell.light !== "Transparent" ? { color: spell.light } : {}),
-                                textShadow: "1px 1px 1px black",
                                 margin: "auto",
                                 marginBottom: "0.5rem",
                                 textAlign: "center",
+                                fontSize: "1.5rem",
                             }}>
                                 {spell.name}
                             </h3>
-                            <div>Effect: {spell.effect}</div>
-                            {spell.incantation && <div>Incantation: {spell.incantation}</div>}
-                            {spell.light !== "None" && <div>Wand light colour: {spell.light}</div>}
+                            <div style={{ fontSize: "1.2rem" }}>Effect: {spell.effect}</div>
+                            {spell.incantation && <div style={{ fontSize: "1.2rem" }}>Incantation: {spell.incantation}</div>}
+                            {spell.light !== "None" && spell.light !== "Transparent" && <div style={{ fontSize: "1.2rem" }}>Wand light colour: <text style={{ color: spell.light }}>{spell.light}</text></div>}
                         </div>
                     </div>
                 ))}
