@@ -18,8 +18,8 @@ const api = async (spellType: string) => {
 }
 
 export default function Spells() {
-    const [data, setData] = useState(null);
-    const [selectedSpellType, setSelectedSpellType] = useState('');
+    const [data, setData] = useState<[] | null>(null);
+    const [selectedSpellType, setSelectedSpellType] = useState<string>('');
 
     useEffect(() => {
         if (selectedSpellType) {
@@ -35,7 +35,7 @@ export default function Spells() {
 
     return (
         <div>
-            <div>
+            <div style={{ marginBottom: "1rem" }}>
                 {spellTypes.map(spellType => (
                     <button style={{ marginRight: "0.5rem" }} key={spellType} onClick={() => handleSpellTypeClick(spellType)}>
                         {spellType}
@@ -43,7 +43,22 @@ export default function Spells() {
                 ))}
             </div>
             <div>
-                {data && <pre>{JSON.stringify(data, null, 2)}</pre>}
+                {/* {data && <pre>{JSON.stringify(data, null, 2)}</pre>} */}
+                {data && data.map((spell: any) => (
+                    <div key={spell.id} style={{ marginBottom: "1rem" }}>
+                        <h3>{spell.name}</h3>
+                        <div>Effect: {spell.effect}</div>
+                        <div>Incantation: {spell.incantation}</div>
+                        <div>Wand light colour: {spell.light}</div>
+                    </div>
+                ))}
+
+                {/* {data?.map((spell: any) => (
+                    <div key={spell.Spell}>
+                        <h3>{spell.Spell}</h3>
+                        <p>{spell.Description}</p>
+                    </div>
+                ))} */}
             </div>
         </div>
     );
