@@ -4,6 +4,7 @@ import Introduction from "./components/Introduction";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import Spells from "./pages/Spells";
 import SingleProject from "./pages/SingleProject";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import WithScrollToTop from "./components/WithScrollToTop";
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="projects/:keyword" element={WithScrollToTop(SingleProject)} />
             <Route path="about" element={WithScrollToTop(About)} />
             <Route path="contact" element={WithScrollToTop(Contact)} />
+            <Route path="spells" element={WithScrollToTop(Spells)} />
           </Routes>
         </main>
         <footer>
