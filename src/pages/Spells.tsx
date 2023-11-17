@@ -46,10 +46,9 @@ export default function Spells() {
                 {/* {data && <pre>{JSON.stringify(data, null, 2)}</pre>} */}
                 {data && data.map((spell: any) => (
                     <div key={spell.id} style={{ margin: "1rem" }}>
-                        <h3 style={{ color: spell.light}}>{spell.name}</h3>
+                        <h3 style={(spell.light !== "Transparent" ? { color: spell.light } : {})}>{spell.name}</h3>
                         <div>Effect: {spell.effect}</div>
                         {spell.incantation && <div>Incantation: {spell.incantation}</div>}
-                        {/* <div>Wand light colour: {spell.light}</div> */}
                         {spell.light !== "None" && <div>Wand light colour: {spell.light}</div>}
                     </div>
                 ))}
