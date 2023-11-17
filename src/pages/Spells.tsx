@@ -45,11 +45,28 @@ export default function Spells() {
             <div>
                 {/* {data && <pre>{JSON.stringify(data, null, 2)}</pre>} */}
                 {data && data.map((spell: any) => (
-                    <div key={spell.id} style={{ margin: "1rem" }}>
-                        <h3 style={(spell.light !== "Transparent" ? { color: spell.light } : {})}>{spell.name}</h3>
-                        <div>Effect: {spell.effect}</div>
-                        {spell.incantation && <div>Incantation: {spell.incantation}</div>}
-                        {spell.light !== "None" && <div>Wand light colour: {spell.light}</div>}
+                    <div key={spell.id} style={{
+                        display: "inline-block",
+                        backgroundImage: "url(/images/spells/parchment.webp)",
+                        backgroundSize: "cover",
+                        margin: "1rem",
+                        padding: "0.5rem",
+                        color: "black",
+                    }}>
+                        <div style={{ padding: "0.5rem" }}>
+                            <h3 style={{
+                                ...(spell.light !== "Transparent" ? { color: spell.light } : {}),
+                                textShadow: "1px 1px 1px black",
+                                margin: "auto",
+                                marginBottom: "0.5rem",
+                                textAlign: "center",
+                            }}>
+                                {spell.name}
+                            </h3>
+                            <div>Effect: {spell.effect}</div>
+                            {spell.incantation && <div>Incantation: {spell.incantation}</div>}
+                            {spell.light !== "None" && <div>Wand light colour: {spell.light}</div>}
+                        </div>
                     </div>
                 ))}
             </div>
