@@ -46,10 +46,7 @@ export default function Projects() {
                 </Link>
               </div>
               <p className='description'>{project.description}</p>
-              {/* TODO: Add tags */}
             </div>
-
-
           </div>
         ))}
       </div>
