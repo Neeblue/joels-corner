@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import jsonData from '../projects.json';
 import './Projects.css';
 import { Link } from 'react-router-dom';
+import Tag from '../components/Tag';
 
 interface Project {
   keyword: string;
@@ -9,6 +10,7 @@ interface Project {
   title: string;
   link: string;
   description: string;
+  tags: string[];
 }
 
 export default function Projects() {
@@ -37,6 +39,10 @@ export default function Projects() {
               <div className='imageContainer'>
                 <Link to={`/projects/${project.keyword}`}>
                   <img className='image' src={process.env.PUBLIC_URL + project.image} alt={project.title} />
+                  {project.tags.map((tag: string) => (
+                    tag && <Tag key={tag} name={tag} />
+                  )
+                  )}
                 </Link>
               </div>
               <p className='description'>{project.description}</p>

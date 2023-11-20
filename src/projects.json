@@ -1,93 +1,188 @@
 [
   {
     "title": "Joel's Corner (This Website)",
-    "description": "This site was built using React.JS, TypeScript, and Tailwind. Click on a project for more information.", 
-    "detailsDescription": ["This website was built with React.JS, TypeScript and Tailwind. It is hosted using Cloudflare Pages. Some features include:<ul><li>Dynamic display based on screen size. Try going mobile!</li><li>Dynamic projects, project pages, and about me information. All information is pulled from a JSON file and the HTML is generated during rendering.</li><li>Makes use of gh-pages, react-router-dom and react-collapsible packages.</li></ul>"],
+    "description": "This site was built using React.JS, TypeScript, and Tailwind. Click on a project for more information.",
+    "detailsDescription": [
+      "This website was built with React.JS, TypeScript and Tailwind. It is hosted using Cloudflare Pages. Some features include:<ul><li>Dynamic display based on screen size. Try going mobile!</li><li>Dynamic projects, project pages, and about me information. All information is pulled from a JSON file and the HTML is generated during rendering.</li><li>Makes use of gh-pages, react-router-dom and react-collapsible packages.</li></ul>"
+    ],
     "link": "https://github.com/Neeblue/reactwebsite",
     "image": "/images/covers/website-cover.png",
-    "detailsImage": ["/images/website/detailsImage.png"],
+    "detailsImage": [
+      "/images/website/detailsImage.png"
+    ],
     "keyword": "website",
+    "tags": [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Cloudflare"
+    ],
     "hidden": "false"
   },
   {
     "title": "Substitute Work Grabber",
     "description": "A full stack app (React frontend, C# backend and ASP.NET API) that grabs available work from a database for substitute teachers.",
-    "detailsDescription": ["<h2 style='text-align: center'>What is the Teaching app?</h2><br>This app helped me find work as a substitute teacher. Teacher's are required to check a database for job postings. The database is updated in real-time and positions fill up quickly. The app uses the Selenium package to scrape data from a database containing available work for teachers-on-call. The data is parsed into an object, and displayed on the UI. The app also displays alerts on Windows, through email, or through text when new jobs are found that match  various filters (such as specific schools and subjects). The app has gone through various UIs: AvaloniaUI, MAUI, WPF, WinForms, and React. The images displayed show two variations (a WinForms in light mode and WPF in dark mode). The Github link takes you to the React, full-stack version.", "<h2 style='text-align: center'> List of some features in current and previous versions:</h2><br><ul><li>Contains a light and dark mode</li><li>Has a slider that determines how often to check for new positions</li><li>Automatically turns off between specific hours</li><li>Can automatically accept jobs if desired</li><li>Can filter based on job preferences: school location, full time positions only, subject material etc.</li><li>Alerts can be displayed on Windows with custom colours based on certain filters</li><li>Can send text messages or emails when a new position is found</li><li>Contains a mock Selenium class to provide fake data for testing.</li></ul>"],
+    "detailsDescription": [
+      "<h2 style='text-align: center'>What is the Teaching app?</h2><br>This app helped me find work as a substitute teacher. Teacher's are required to check a database for job postings. The database is updated in real-time and positions fill up quickly. The app uses the Selenium package to scrape data from a database containing available work for teachers-on-call. The data is parsed into an object, and displayed on the UI. The app also displays alerts on Windows, through email, or through text when new jobs are found that match  various filters (such as specific schools and subjects). The app has gone through various UIs: AvaloniaUI, MAUI, WPF, WinForms, and React. The images displayed show two variations (a WinForms in light mode and WPF in dark mode). The Github link takes you to the React, full-stack version.",
+      "<h2 style='text-align: center'> List of some features in current and previous versions:</h2><br><ul><li>Contains a light and dark mode</li><li>Has a slider that determines how often to check for new positions</li><li>Automatically turns off between specific hours</li><li>Can automatically accept jobs if desired</li><li>Can filter based on job preferences: school location, full time positions only, subject material etc.</li><li>Alerts can be displayed on Windows with custom colours based on certain filters</li><li>Can send text messages or emails when a new position is found</li><li>Contains a mock Selenium class to provide fake data for testing.</li></ul>"
+    ],
     "link": "https://github.com/Neeblue/TTOC",
     "image": "/images/covers/JobFinder-cover.jpg",
-    "detailsImage": ["/images/teaching/detailsImage1.jpg", "/images/teaching/detailsImage2.jpg"],
+    "detailsImage": [
+      "/images/teaching/detailsImage1.jpg",
+      "/images/teaching/detailsImage2.jpg"
+    ],
     "keyword": "teaching",
+    "tags": [
+      "React",
+      "Full Stack",
+      "ASP.Net API",
+      "WPF",
+      "MAUI",
+      "WinForms",
+      "Selenium"
+    ],
     "hidden": "false"
   },
   {
     "title": "Disney Grabber",
     "description": "C# app for grabbing Disney World restaurant reservations for specific times.",
-    "detailsDescription": ["C# app that checks Disney World for popular reservations. Uses Disney's restaurant API to grab restaurant information. JSON info is parsed into objects and filtered based on user preferences such as date and time of day.<br>Results are sent to the console with a direct link to the booking page for that reservation time slot of choice. This app could easily be put on a repeating timer and implement notifications when reservations are found.<br><br><b>Features of the program:</b><li>Makes an API call to Disney's site using a custom built URL based on choice of restaurant, party size, and time</li><li>Returns the available times found and a direct booking link for each time slot</li><li>C# console app that makes use of: Interfaces, a link-builder helper class, API, API Service/Controller class, enums, and a reservation model</li><br><b>Difficulties with this program:</b><li>Finding and building a link for each restaurant and time in order to make the API call</li><li>Finding and building a reservation link (which is only partially returned from the API call)</li>"],
+    "detailsDescription": [
+      "C# app that checks Disney World for popular reservations. Uses Disney's restaurant API to grab restaurant information. JSON info is parsed into objects and filtered based on user preferences such as date and time of day.<br>Results are sent to the console with a direct link to the booking page for that reservation time slot of choice. This app could easily be put on a repeating timer and implement notifications when reservations are found.<br><br><b>Features of the program:</b><li>Makes an API call to Disney's site using a custom built URL based on choice of restaurant, party size, and time</li><li>Returns the available times found and a direct booking link for each time slot</li><li>C# console app that makes use of: Interfaces, a link-builder helper class, API, API Service/Controller class, enums, and a reservation model</li><br><b>Difficulties with this program:</b><li>Finding and building a link for each restaurant and time in order to make the API call</li><li>Finding and building a reservation link (which is only partially returned from the API call)</li>"
+    ],
     "link": "https://github.com/Neeblue/disney-grabber",
     "image": "/images/covers/disney-cover.png",
-    "detailsImage": ["/images/disney/detailsImage.png"],
+    "detailsImage": [
+      "/images/disney/detailsImage.png"
+    ],
     "keyword": "disney",
+    "tags": [
+      "ASP.Net API",
+      "C#"
+    ],
     "hidden": "false"
   },
   {
     "title": "Bookshelf Mobile App",
     "description": "A C# AvaloniaUI mobile app that tracks your favourite books. Goodreads ratings, images and information is stored for added books.",
-    "detailsDescription": ["<h2 style='text-align: center'> What is the Bookshelf app?</h2><br>A .Net MAUI variant of the Librarian project. This is a modification of <a href='https://www.youtube.com/watch?v=DuNLR_NJv8U&pp=ygUYamFtZXMgbW9udGVtYWdubyBtb25rZXlz'>James Montemagno's Monkeys project</a>.<br>This app has been tested on Windows and Android. It has a different display of the book details depending on the platform.  Books can be added with a search function. This app uses the Google API and the HtmlAgility package to scrape a book image and rating from Goodreads. <br>Tapping on one of the books brings up a larger image with additional information (such as a description, rating, publisher info etc.). Books can be deleted by swiping the book to the left.<br>Additional features that are implemented:<li>MVVM with dependency injection</li><li>uses .Net Community Toolkit 8.1</li><li>Files are stored in the cloud using Firebase (Firesharp package)</li>","<h2 style='text-align: center'>Details about each book</h2><br>Clicking on one of the books will bring you to a detailed page of the book.<br>On android, the information is displayed below the image to better fit the size of a phone screen.<br>Information that is displayed includes:<li>An image and rating pulled from Goodreads</li><li>Page count</li><li>Description</li><li>Publisher information</li><li>ISBN 10/13</li>"],
+    "detailsDescription": [
+      "<h2 style='text-align: center'> What is the Bookshelf app?</h2><br>A .Net MAUI variant of the Librarian project. This is a modification of <a href='https://www.youtube.com/watch?v=DuNLR_NJv8U&pp=ygUYamFtZXMgbW9udGVtYWdubyBtb25rZXlz'>James Montemagno's Monkeys project</a>.<br>This app has been tested on Windows and Android. It has a different display of the book details depending on the platform.  Books can be added with a search function. This app uses the Google API and the HtmlAgility package to scrape a book image and rating from Goodreads. <br>Tapping on one of the books brings up a larger image with additional information (such as a description, rating, publisher info etc.). Books can be deleted by swiping the book to the left.<br>Additional features that are implemented:<li>MVVM with dependency injection</li><li>uses .Net Community Toolkit 8.1</li><li>Files are stored in the cloud using Firebase (Firesharp package)</li>",
+      "<h2 style='text-align: center'>Details about each book</h2><br>Clicking on one of the books will bring you to a detailed page of the book.<br>On android, the information is displayed below the image to better fit the size of a phone screen.<br>Information that is displayed includes:<li>An image and rating pulled from Goodreads</li><li>Page count</li><li>Description</li><li>Publisher information</li><li>ISBN 10/13</li>"
+    ],
     "link": "https://github.com/Neeblue/Bookshelf",
     "image": "/images/covers/bookshelf-cover.jpg",
-    "detailsImage": ["/images/bookshelf/detailsImage1.jpg", "/images/bookshelf/detailsImage2.jpg"],
+    "detailsImage": [
+      "/images/bookshelf/detailsImage1.jpg",
+      "/images/bookshelf/detailsImage2.jpg"
+    ],
     "keyword": "bookshelf",
+    "tags": [
+      "Cross-platform",
+      "AvaloniaUI",
+      "Firebase",
+      "MVVM",
+      "Google Books API",
+      ".Net Community Toolkit 8.1",
+      "DI"
+    ],
     "hidden": "false"
   },
   {
     "title": "Librarian WPF App",
     "description": "A WPF application that displays books added using Google's API in a clean UI.",
-    "detailsDescription": ["<h2>What is the Librarian app?</h2><br>WPF program built in C# that allows you to add books to a display by using the Google search API.<br>Books that are added are displayed by image. Hovering over the image will give a description of the book. Books can be right-clicked and deleted.<br><br>The UI can be scaled using a slider, and the books re-organise when the window changes size.<br><br>Additional features that are implemented:<li>MVVM with a service locator</li><li>uses .Net Community Toolkit 8.1</li><li>Uses AvaloniaUI</li><li>Data is stored locally</li>"],
+    "detailsDescription": [
+      "<h2>What is the Librarian app?</h2><br>WPF program built in C# that allows you to add books to a display by using the Google search API.<br>Books that are added are displayed by image. Hovering over the image will give a description of the book. Books can be right-clicked and deleted.<br><br>The UI can be scaled using a slider, and the books re-organise when the window changes size.<br><br>Additional features that are implemented:<li>MVVM with a service locator</li><li>uses .Net Community Toolkit 8.1</li><li>Uses AvaloniaUI</li><li>Data is stored locally</li>"
+    ],
     "link": "https://github.com/Neeblue/Librarian",
     "image": "/images/covers/librarian-cover.jpg",
-    "detailsImage": ["/images/librarian/detailsImage.gif"],
+    "detailsImage": [
+      "/images/librarian/detailsImage.gif"
+    ],
     "keyword": "librarian",
+    "tags": [
+      "WPF",
+      "MVVM",
+      ".Net Community Toolkit 8.1",
+      "Google Books API"
+    ],
     "hidden": "false"
   },
   {
     "title": "Wizarding Spells",
     "description": "Explore the spells of the Harry Potter Universe!",
-    "detailsDescription": ["<a href='/spells'><h2>Click here to try it out!</h2></a><br>Explore the spells of the Harry Potter Universe by selecting a spell type. Spell information is pulled from a public API called the Wizard World API. Background colours are added depending on the colour of the spell!", ""],
+    "detailsDescription": [
+      "<a href='/spells'><h2>Click here to try it out!</h2></a><br>Explore the spells of the Harry Potter Universe by selecting a spell type. Spell information is pulled from a public API called the Wizard World API. Background colours are added depending on the colour of the spell!",
+      ""
+    ],
     "link": "https://github.com/Neeblue/reactwebsite/blob/master/src/pages/Spells.tsx",
     "image": "/images/covers/spells-cover.png",
-    "detailsImage": ["/images/spells/detailsImage.png", ""],
+    "detailsImage": [
+      "/images/spells/detailsImage.png",
+      ""
+    ],
     "keyword": "spells",
+    "tags": [
+      "React",
+      "Wizard World API"
+    ],
     "hidden": "false"
   },
   {
     "title": "",
-    "description": "Options: Suprabase, SQL, React Native, JS Backend?, Hosted DB? AWS? Azure? What about a react native app that has REST API, hosted SQL DB", 
-    "detailsDescription": [""],
+    "description": "Options: Suprabase, SQL, React Native, JS Backend?, Hosted DB? AWS? Azure? What about a react native app that has REST API, hosted SQL DB",
+    "detailsDescription": [
+      ""
+    ],
     "link": "https://github.com/Neeblue/",
     "image": "/images/covers/@@@-cover.png",
-    "detailsImage": ["/images/@@@/detailsImage.png"],
+    "detailsImage": [
+      "/images/@@@/detailsImage.png"
+    ],
     "keyword": "",
+    "tags": [
+      "",
+      ""
+    ],
     "hidden": "true"
   },
   {
     "title": "Test application",
     "description": "This is a test description",
-    "detailsDescription": ["Paragraph 1", "Paragraph 2"],
+    "detailsDescription": [
+      "Paragraph 1",
+      "Paragraph 2"
+    ],
     "link": "https://github.com/Neeblue/",
     "image": "https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/dragon-img_ver_1.jpg",
-    "detailsImage": ["https://img.freepik.com/free-photo/dragons-fantasy-artificial-intelligence-image_23-2150400884.jpg",
-    "https://static.wikia.nocookie.net/monster/images/3/3c/68185247-BAAD-4E7C-BA78-C2C72761CBDA.jpeg/revision/latest?cb=20190406202034"],
+    "detailsImage": [
+      "https://img.freepik.com/free-photo/dragons-fantasy-artificial-intelligence-image_23-2150400884.jpg",
+      "https://static.wikia.nocookie.net/monster/images/3/3c/68185247-BAAD-4E7C-BA78-C2C72761CBDA.jpeg/revision/latest?cb=20190406202034"
+    ],
     "keyword": "test",
+    "tags": [
+      "",
+      ""
+    ],
     "hidden": "true"
   },
   {
     "title": "Blank project",
     "description": "",
-    "detailsDescription": ["", ""],
+    "detailsDescription": [
+      "",
+      ""
+    ],
     "link": "https://github.com/Neeblue/***",
     "image": "/images/covers/***-cover.jpg",
-    "detailsImage": ["", ""],
+    "detailsImage": [
+      "",
+      ""
+    ],
     "keyword": "***",
+    "tags": [
+      "",
+      ""
+    ],
     "hidden": "true"
   }
 ]
