@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Spell from '../components/Spell';
 
 const spellTypes: string[] = [
     "None", "Charm", "Conjuration", "Spell", "Transfiguration", "Healing Spell",
@@ -57,7 +58,6 @@ export default function Spells() {
                 ))}
             </div>
             <div style={{
-                // justifyContent: "space-between", 
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -66,31 +66,7 @@ export default function Spells() {
             }}>
                 {/* {data && <pre>{JSON.stringify(data, null, 2)}</pre>} */}
                 {data && data.map((spell: any) => (
-                    <div key={spell.id} style={{
-                        display: "inline-block",
-                        backgroundImage: "url(/images/spells/parchment.webp)",
-                        backgroundSize: "100% 100%",
-                        verticalAlign: "middle",
-                        margin: "1rem",
-                        padding: "0.5rem",
-                        color: "black",
-                        alignItems: "flex-start",
-                        boxShadow: `0 0 10px ${spell.light}, 0 0 20px ${spell.light}, 0 0 30px ${spell.light}, 0 0 40px ${spell.light}`
-                    }}>
-                        <div style={{ padding: "0.5rem", maxWidth: "25rem" }}>
-                            <h3 style={{
-                                margin: "auto",
-                                marginBottom: "0.5rem",
-                                textAlign: "center",
-                                fontSize: "1.5rem",
-                            }}>
-                                {spell.name}
-                            </h3>
-                            <div style={{ fontSize: "1.2rem" }}>Effect: {spell.effect}</div>
-                            {spell.incantation && <div style={{ fontSize: "1.2rem" }}>Incantation: {spell.incantation}</div>}
-                            {spell.light !== "None" && <div style={{ fontSize: "1.2rem" }}>Wand light colour: {spell.light}</div>}
-                        </div>
-                    </div>
+                    <Spell key={spell.name} spell={spell} />
                 ))}
             </div>
             <br /><br />
