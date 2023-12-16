@@ -7,7 +7,7 @@ import Projects from "./pages/Projects";
 import Spells from "./pages/Spells";
 import SingleProject from "./pages/SingleProject";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import WithScrollToTop from "./components/WithScrollToTop";
+import ScrollToTopWrapper from "./components/ScrollToTopWrapper";
 import { ThemeProvider } from './contexts/ThemeContext';
 import ToggleTheme from './components/ToggleTheme';
 
@@ -17,19 +17,21 @@ export default function App() {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ThemeProvider>
           <header className="sticky">
-            <Navbar/>
+            <Navbar />
             <ToggleTheme />
           </header>
           <main>
-            <Routes>
-              <Route index element={WithScrollToTop(Introduction)} />
-              <Route path="*" element={WithScrollToTop(Introduction)} />
-              <Route path="projects" element={WithScrollToTop(Projects)} />
-              <Route path="projects/:keyword" element={WithScrollToTop(SingleProject)} />
-              <Route path="about" element={WithScrollToTop(About)} />
-              <Route path="contact" element={WithScrollToTop(Contact)} />
-              <Route path="spells" element={WithScrollToTop(Spells)} />
-            </Routes>
+            <ScrollToTopWrapper>
+              <Routes>
+                <Route index element={<Introduction />} />
+                <Route path="*" element={<Introduction />} />
+                <Route path="projects" element={<Projects />} />
+                <Route path="projects/:keyword" element={<SingleProject />} />
+                <Route path="about" element={<About />} />
+                <Route path="contact" element={<Contact />} />
+                <Route path="spells" element={<Spells />} />
+              </Routes>
+            </ScrollToTopWrapper>
           </main>
           <footer>
             <Footer />
