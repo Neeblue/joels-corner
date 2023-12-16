@@ -8,7 +8,7 @@ import Spells from "./pages/Spells";
 import SingleProject from "./pages/SingleProject";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import WithScrollToTop from "./components/WithScrollToTop";
-import { ThemeProvider } from './components/ThemeContext';
+import { ThemeProvider } from './contexts/ThemeContext';
 import ToggleTheme from './components/ToggleTheme';
 
 export default function App() {
