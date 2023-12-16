@@ -28,6 +28,8 @@
     list-style: none;
     display: flex;
     gap: 1rem;
+    font-weight: 600;
+    font-size: large;
 }
 
 .nav a:active {

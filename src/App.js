@@ -18,7 +18,6 @@ export default function App() {
         <ThemeProvider>
           <header className="sticky">
             <Navbar />
-            <ToggleTheme />
           </header>
           <main>
             <ScrollToTopWrapper>

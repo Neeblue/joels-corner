@@ -1,9 +1,5 @@
 import React, { createContext, useState, FC } from 'react';
-
-interface Theme {
-  background: string;
-  color: string;
-}
+import { Theme, themeOptions } from '../types';
 
 interface ThemeContextProps {
   theme: Theme;
@@ -15,12 +11,11 @@ const themes = {
   dark: { background: "#171717", color: "#fff" }
 };
 
-type ThemeName = 'dark' | 'light';
 
 export const ThemeContext = createContext<ThemeContextProps>({ theme: themes.dark, toggleTheme: () => {} });
 
 export const ThemeProvider: FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [theme, setTheme] = useState<ThemeName>("dark");
+  const [theme, setTheme] = useState<themeOptions>("dark");
   
   function toggleTheme() {
     setTheme(theme === 'dark' ? 'light' : 'dark');
