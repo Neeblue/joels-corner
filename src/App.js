@@ -9,7 +9,6 @@ import SingleProject from "./pages/SingleProject";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ScrollToTopWrapper from "./components/ScrollToTopWrapper";
 import { ThemeProvider } from './contexts/ThemeContext';
-import ToggleTheme from './components/ToggleTheme';
 
 export default function App() {
   return (
