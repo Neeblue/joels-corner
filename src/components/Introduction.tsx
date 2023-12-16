@@ -10,7 +10,7 @@ export default function Introduction() {
             <div className="buttons">
                 <Button url = "/projects" name="Projects" img="/images/projects-icon.png" />
                 <Button url = "/about" name="About me" img="/images/about-icon.png"/>
-                <Button url = "/contact" name="Contact me" img="/images/contact-icon.png" />
+                {/* <Button url="/contact" name={`Contact me (unused)`} img="/images/contact-icon.png" /> */}
             </div>
             <br />
         </div>

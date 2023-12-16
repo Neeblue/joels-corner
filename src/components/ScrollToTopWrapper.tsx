@@ -6,7 +6,7 @@ const ScrollToTopWrapper = ({ children }: any) => {
     return withScrollToTop(() => children);
 };
 
-function withScrollToTop(WrappedComponent: any) {
+function withScrollToTop(WrappedComponent: React.FC) {
     return (
         <>
             <WrappedComponent />
