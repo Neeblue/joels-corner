@@ -6,11 +6,16 @@ import ToggleTheme from './ToggleTheme';
 
 export default function Navbar() {
     const theme = useContext(ThemeContext);
+    const background = theme.theme.background === "#fff" ? "lightGray" : "rgba(0, 0, 0, 1)";
     return (
-        <nav className="nav" style={{...theme.theme, padding:"0.5rem"}}>
-            <div style={{display: "flex", flexDirection: "row", gap: "0.5rem"}}>
-                <Link to="/" className="site-title">Joel's Corner</Link>
+        <nav className="nav" style={{
+            ...theme.theme,
+            padding: "0.5rem", 
+            background: background,
+        }}>
+            <div style={{ display: "flex", flexDirection: "row", gap: "0.5rem" }}>
                 <ToggleTheme />
+                <Link to="/" className="site-title">Joel's Corner</Link>
             </div>
             <ul>
                 <li><Link to="/projects">Projects</Link></li>

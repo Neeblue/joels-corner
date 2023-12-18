@@ -6,7 +6,7 @@ export default function ToggleTheme() {
   const theme = useContext(ThemeContext);
 
   return (
-    <button onClick={theme.toggleTheme} style={{ ...theme.theme, fontSize: '2rem', border: 'none', background: 'none' }}>
+    <button onClick={theme.toggleTheme} style={{ ...theme.theme, fontSize: '2rem', border: 'none', background: 'none', cursor: "pointer" }}>
       {theme.theme.color === '#fff' ? '🌖' : '🌑'}
     </button>
   );

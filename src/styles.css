@@ -5,8 +5,8 @@
 }
 
 .App {
-    background-color: #252525;
-    color: rgb(192, 220, 245);
+    /* background-color: #252525; */
+    /* color: rgb(192, 220, 245); */
     min-height: 100vh;
 
 }
@@ -32,7 +32,7 @@ a:hover {
 
 /* Fixes white bars */
 body {
-  background-color: #252525;
+  /* background-color: #252525; */
 }
 
 body,
