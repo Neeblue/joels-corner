@@ -7,20 +7,22 @@ import ToggleTheme from './ToggleTheme';
 export default function Navbar() {
     const theme = useContext(ThemeContext);
     const background = theme.theme.background === "#fff" ? "lightGray" : "rgba(0, 0, 0, 1)";
+    const values = "font-bold text-lg color-nav-link max-sm:mx-auto";
+    const focus = "focus:bg-link-focus focus:text-black text-nav-link";
+    
     return (
-        <nav className="nav" style={{
+        <nav className="bg-black w-full flex justify-between py-2 px-4 mb-4 sm:flex-column max-sm:flex-col" style={{
             ...theme.theme,
             padding: "0.5rem", 
             background: background,
         }}>
             <div style={{ display: "flex", flexDirection: "row", gap: "0.5rem" }}>
                 <ToggleTheme />
-                <Link to="/" className="site-title">Joel's Corner</Link>
+                <Link to="/" className={`${values} ${focus} text-[2rem] max-sm:mb-2`}>Joel's Corner</Link>
             </div>
-            <ul>
-                <li><Link to="/projects">Projects</Link></li>
-                <li><Link to="/about">About me</Link></li>
-                {/* <li><Link to="/contact">Contact me</Link></li> */}
+            <ul className='list-none flex gap-8'>
+                <li className={values}><Link className={focus} to="/projects">Projects</Link></li>
+                <li className={values}><Link className={focus} to="/about">About me</Link></li>
             </ul>
         </nav>
     )
