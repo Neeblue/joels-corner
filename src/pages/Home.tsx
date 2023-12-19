@@ -13,8 +13,11 @@ export default function Home() {
         <div className='flex flex-col gap-4 m-4'>
             <Header />
             <Info />
+            {/* Info complete */}
             <About />
-            <Projects />
+            {/* About complete */}
+            <Projects /> 
+            {/* Projects complete */}
             <Future />
             <Resume />
             <Closing />

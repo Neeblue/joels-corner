@@ -25,13 +25,11 @@ export default function Homepage() {
                     <ScrollToTopWrapper>
                         <Routes>
                             <Route index element={<Home />} />
-                            <Route index element={<Introduction />} />
-                            <Route path="*" element={<Introduction />} />
+                            <Route path="*" element={<Home />} />
                             <Route path="projects" element={<Projects />} />
                             <Route path="projects/:keyword" element={<SingleProject />} />
                             <Route path="about" element={<About />} />
                             <Route path="spells" element={<Spells />} />
-                            <Route path="home" element={<Home />} />
                         </Routes>
                     </ScrollToTopWrapper>
                 </main>
