@@ -21,7 +21,7 @@ export default function Homepage() {
             minHeight: "100vh",
         }}>
             <BrowserRouter basename={process.env.PUBLIC_URL}>
-                <header className="sticky">
+                <header className="sticky top-0">
                     <Navbar />
                 </header>
                 <main style={theme.theme}>
