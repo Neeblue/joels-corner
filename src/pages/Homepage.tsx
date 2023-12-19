@@ -16,15 +16,12 @@ export default function Homepage() {
     const theme = useContext(ThemeContext);
 
     return (
-        <div style={{
-            ...theme.theme,
-            minHeight: "100vh",
-        }}>
+        <div className={`min-h-[100vh] ${theme.theme}`}>
             <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <header className="sticky top-0">
                     <Navbar />
                 </header>
-                <main style={theme.theme}>
+                <main className={theme.theme}>
                     <ScrollToTopWrapper>
                         <Routes>
                             <Route index element={<Introduction />} />
