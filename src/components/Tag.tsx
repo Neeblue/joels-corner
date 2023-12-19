@@ -11,6 +11,9 @@ export default function Tag(props: { name: string }) {
         fontSize: '0.7em',
     };
 
+    const theme = "color-white py-[0.2rem] px-[0.4rem] m-[0.3] font-[0.7rem] ";
+    const theme2 = "inline-block br-[15] bg-[dimgrey]"
+
     return (
         <div className="tag" style={style}>
             {props.name}
