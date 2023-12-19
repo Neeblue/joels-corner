@@ -7,8 +7,8 @@ import ToggleTheme from './ToggleTheme';
 export default function Navbar() {
     const theme = useContext(ThemeContext);
     const background = theme.theme.includes("#fff") ? "lightGray" : "rgba(0, 0, 0, 1)";
-    const values = "font-bold text-lg color-nav-link max-sm:mx-auto";
-    const focus = "focus:bg-link-focus focus:text-black text-nav-link";
+    const values = "font-bold text-lg max-sm:mx-auto";
+    const focus = "focus:bg-link-focus focus:text-black";
 
     return (
         <nav className={`bg-black w-full flex justify-between py-2 px-4 mb-4 sm:flex-column max-sm:flex-col ${theme.theme}`}

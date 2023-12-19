@@ -11,7 +11,7 @@ export default function Footer() {
     return (
         <div className={`fixed bottom-0 flex justify-between w-full p-2 bg-black ${theme.theme}`} style={{ background: background, }}>
             <div>JoelMiles.com</div>
-            <a className={`text-nav-link ${theme.theme}`} href='mailto: email@joelmiles.com'>
+            <a className={` ${theme.theme}`} href='mailto: email@joelmiles.com'>
                 email@joelmiles.com
             </a>
         </div>
