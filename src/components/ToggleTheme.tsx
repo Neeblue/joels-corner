@@ -6,8 +6,8 @@ export default function ToggleTheme() {
   const theme = useContext(ThemeContext);
 
   return (
-    <button onClick={theme.toggleTheme} style={{ ...theme.theme, fontSize: '2rem', border: 'none', background: 'none', cursor: "pointer" }}>
-      {theme.theme.color === '#fff' ? '🌖' : '🌑'}
+    <button onClick={theme.toggleTheme} className={theme.theme} style={{ fontSize: '2rem', border: 'none', background: 'none', cursor: "pointer" }}>
+      {theme.theme.includes('#fff') ? '🌖' : '🌑'}
     </button>
   );
 };
