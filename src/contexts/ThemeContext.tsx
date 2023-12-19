@@ -1,13 +1,13 @@
 import React, { createContext, useState, FC } from 'react';
-import { Theme, themeOptions } from '../types';
+import { themeOptions } from '../types';
 
 const themes = {
-  light: { background: "#fff", color: "#000" },
-  dark: { background: "#171717", color: "#fff" }
-};
+  light: "bg-[#fff] color-[#000]",
+  dark: "bg-[#171717] color-[fff]",
+}
 
 interface ThemeContextProps {
-  theme: Theme;
+  theme: string;
   toggleTheme: () => void;
 }
 
