@@ -43,18 +43,18 @@ export default function About() {
     };
 
     return (
-        <div className='about-container'>
+        <div className='text-center mx-auto font-bol max-w-[90vw] sm:max-w-[50vw] my-8'>
             {Object.entries(about).map(([section, items]) => (
                 <div key={section}>
                     <Collapsible
                         key={section}
                         trigger={
                             <div
-                                className='section'
+                                className='text-4xl font-bold mt-4'
                                 onClick={() => toggleSection(section)}
                             >
                                 {section}
-                                <div className='expand-text'>
+                                <div className='text-[0.75rem]'>
                                     {activeSection === section ? "(click to contract)" : "(click to expand)"}
                                 </div>
                             </div>
@@ -63,17 +63,17 @@ export default function About() {
                         >
                         {items.map((item, index) => (
                             !item.hidden &&
-                            <div className='item' key={index}>
+                            <div className='text-left mx-4' key={index}>
                                 <Collapsible
                                     trigger={
                                         <div
-                                            className='header'
+                                            className='text-2xl font-bold'
                                             onClick={() => toggleItem(item)}
                                         >
                                             {item.header}
                                             {
                                                 item.header !== "" &&
-                                                <div className='expand-text'>
+                                                <div className='mb-2 text-[0.75rem]'>
                                                     {activeItem === item ? "(click to contract)" : "(click to expand)"}
                                                 </div>
                                             }
@@ -81,14 +81,14 @@ export default function About() {
                                     }
                                     open={activeItem === item}
                                     >
-                                    <div className="subheader">{item.subheader}</div>
-                                    <div className="description" dangerouslySetInnerHTML={{__html: item.description}}></div>
+                                    <div className="ml-4 font-bold mb-1">{item.subheader}</div>
+                                    <div className="ml-4 mb-4" dangerouslySetInnerHTML={{__html: item.description}}></div>
                                 </Collapsible>
                             </div>
                         ))}
                     </Collapsible>
                     {
-                        section !== Object.keys(about)[Object.keys(about).length - 1] ? <hr /> : null
+                        section !== Object.keys(about)[Object.keys(about).length - 1] ? <hr className='my-8' /> : null
                     }
                 </div>
             ))}

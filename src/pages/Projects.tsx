@@ -21,24 +21,24 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className='projects-page'>
-      <h1 className='header'>GitHub Projects</h1>
-      <div className='sub-header'>(Click on a project title to see more information about that project)</div>
-      <div className="projects">
+    <div className='text-center'>
+      <h1 className='text-3xl font-bold'>GitHub Projects</h1>
+      <div className='mb-8'>(Click on a project title to see more information about that project)</div>
+      <div className="flex flex-wrap items-start gap-8 mb-12">
         {projects.map((project, index) => (
-          <div key={index} className="container">
-            <div className='project'>
+          <div key={index} className="justify-between gap-2 mx-4">
+            <div className='max-w-[90vw] w-[21rem]'>
               <h2 className='title'>
                 <Link to={`/projects/${project.keyword}`}>{project.title}</Link>
               </h2>
-              <div className='githubLink'><
+              <div className='mb-2'><
                 a href={project.link} target="_blank" rel="noopener noreferrer">
                 (Github)
               </a>
               </div>
-              <div className='imageContainer'>
+              <div className='mb-2'>
                 <Link to={`/projects/${project.keyword}`}>
-                  <img className='image' src={process.env.PUBLIC_URL + project.image} alt={project.title} />
+                  <img className='max-w-[90vw] w-[21rem]' src={process.env.PUBLIC_URL + project.image} alt={project.title} />
                   {project.tags.map((tag: string) => (
                     tag && <Tag key={tag} name={tag} />
                   )
