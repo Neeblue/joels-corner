@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import jsonData from '../../projects.json';
-import './Projects.css';
 import { Link } from 'react-router-dom';
 import Tag from '../../components/Tag';
 

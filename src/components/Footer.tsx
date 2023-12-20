@@ -1,5 +1,4 @@
 import React from 'react';
-import './Footer.css';
 import { useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 

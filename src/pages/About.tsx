@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import Collapsible from "react-collapsible";
-import './About.css';
 import jsonData from '../about.json';
 
 interface AboutItem {

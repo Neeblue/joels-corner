@@ -1,4 +1,3 @@
-import './Navbar.css';
 import React, { Link } from 'react-router-dom';
 import { ThemeContext } from '../contexts/ThemeContext';
 import { useContext } from 'react';
