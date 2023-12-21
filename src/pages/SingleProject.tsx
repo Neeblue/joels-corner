@@ -40,20 +40,23 @@ export default function SingleProject() {
                         <>
                             <br></br>
                             <div className={ text } dangerouslySetInnerHTML={{ __html: paragraph }}></div>
-                            <img className={img} src={process.env.PUBLIC_URL + project.detailsImage[index]} alt="" />
+                            {/* <img className={img} src={process.env.PUBLIC_URL + project.detailsImage[index]} alt="" /> */}
+                            <img className={img} src={project.detailsImage[index]} alt="" />
                             <br></br>
                         </>
                     ) : (
                         <>
                             {index % 2 === 0 ? (
                                 <>
-                                    <img className={img} src={process.env.PUBLIC_URL + project.detailsImage[index]} alt="" />
+                                    {/* <img className={img} src={process.env.PUBLIC_URL + project.detailsImage[index]} alt="" /> */}
+                                    <img className={img} src={project.detailsImage[index]} alt="" />
                                     <div className={ text } dangerouslySetInnerHTML={{ __html: paragraph }}></div>
                                 </>
                             ) : (
                                 <>
                                     <div className={ text } dangerouslySetInnerHTML={{ __html: paragraph }}></div>
-                                    <img className={img} src={process.env.PUBLIC_URL + project.detailsImage[index]} alt="" />
+                                    {/* <img className={img} src={process.env.PUBLIC_URL + project.detailsImage[index]} alt="" /> */}
+                                    <img className={img} src={project.detailsImage[index]} alt="" />
                                 </>
                             )}
                             <br></br>

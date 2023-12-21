@@ -37,7 +37,8 @@ export default function Projects() {
               </div>
               <div className='mb-2'>
                 <Link to={`/projects/${project.keyword}`}>
-                  <img className='max-w-[90vw] w-[21rem]' src={process.env.PUBLIC_URL + project.image} alt={project.title} />
+                  {/* <img className='max-w-[90vw] w-[21rem]' src={process.env.PUBLIC_URL + project.image} alt={project.title} /> */}
+                  <img className='max-w-[90vw] w-[21rem]' src={project.image} alt={project.title} />
                   {project.tags.map((tag: string) => (
                     tag && <Tag key={tag} name={tag} />
                   )

@@ -3,7 +3,6 @@ import React, { useContext } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Introduction from '../components/Introduction';
 import Projects from '../pages/Projects';
 import SingleProject from '../pages/SingleProject';
 import About from '../pages/About';
@@ -17,7 +16,8 @@ export default function Homepage() {
 
     return (
         <div className={`min-h-[100vh] ${theme.theme}`}>
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
+            {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
+            <BrowserRouter>
                 <header className="sticky top-0">
                     <Navbar />
                 </header>
