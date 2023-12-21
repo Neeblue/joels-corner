@@ -5,22 +5,26 @@ import Projects from './home/Projects';
 import Future from './home/Future';
 import Resume from './home/Resume';
 import Closing from './home/Closing';
-import Header from './home/Header';
+// import Header from './home/Header';
 
 export default function Home() {
 
     return (
-        <div className='flex flex-col gap-4 m-4'>
-            <Header />
-            <Info />
-            {/* Info complete */}
-            <About />
-            {/* About complete */}
-            <Projects /> 
-            {/* Projects complete */}
-            <Future />
-            <Resume />
-            <Closing />
+        <div className='flex flex-col gap-4 mt-4'>
+            {[
+                // <Header />,
+                <Info />,
+                <About />,
+                <Projects />,
+                <Future />,
+                <Resume />,
+                <Closing />
+            ].map((component, index) => (
+                <React.Fragment key={index}>
+                    {component}
+                    <hr className="w-[90vw] mx-auto border-black" />
+                </React.Fragment>
+            ))}
         </div>
     );
 }

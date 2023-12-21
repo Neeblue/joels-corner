@@ -1,9 +1,9 @@
 
 import React, { useContext } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Projects from '../pages/Projects';
+import Projects from '../pages/home/Projects';
 import SingleProject from '../pages/SingleProject';
 import About from '../pages/About';
 import Spells from "../pages/Spells";
@@ -16,8 +16,6 @@ export default function Homepage() {
 
     return (
         <div className={`min-h-[100vh] ${theme.theme}`}>
-            {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
-            <BrowserRouter>
                 <header className="sticky top-0">
                     <Navbar />
                 </header>
@@ -36,7 +34,6 @@ export default function Homepage() {
                 <footer>
                     <Footer />
                 </footer>
-            </BrowserRouter>
         </div>
     );
 }

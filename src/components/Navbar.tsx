@@ -10,14 +10,14 @@ export default function Navbar() {
     const focus = "focus:bg-link-focus focus:text-black";
 
     return (
-        <nav className={`bg-black w-full flex justify-between py-2 px-4 mb-4 sm:flex-column max-sm:flex-col ${theme.theme}`}
+        <nav className={`w-full flex justify-between items-center ${theme.theme}`}
             // Theme override for app background
-            style={{ padding: "0.5rem", background: background, }}>
-            <div className='flex flex-row gap-2'>
+            style={{ background: background, }}>
+            <div className='flex flex-row gap-2 items-center'>
                 <ToggleTheme />
-                <Link to="/" className={`${values} ${focus} text-[2rem] max-sm:mb-2`}>Joel's Corner</Link>
+                <Link to="/" className={`${values} ${focus} text-[2rem]`}>Joel's Corner</Link>
             </div>
-            <ul className='list-none flex gap-8'>
+            <ul className='list-none flex gap-4 m-2 items-center'>
                 <li className={values}><Link className={focus} to="/projects">Projects</Link></li>
                 <li className={values}><Link className={focus} to="/about">About me</Link></li>
             </ul>

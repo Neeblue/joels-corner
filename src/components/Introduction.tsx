@@ -19,7 +19,6 @@ function Button (props: {url: string, name: string, img: string}) {
     return (
         <div className='max-sm:mx-auto'>
             <Link className='hover:bg-transparent' to={props.url}>
-                {/* <img className='w-[50vw] sm:w-[20rem]' src={process.env.PUBLIC_URL + props.img} alt={props.name} /> */}
                 <img className='w-[50vw] sm:w-[20rem]' src={props.img} alt={props.name} />
                 <div className='decoration-0 text-2xl'>{props.name}</div>
             </Link>

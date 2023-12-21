@@ -8,11 +8,11 @@ export default function Footer() {
     const background = theme.theme.includes("#fff") ? "lightGray" : "rgba(0, 0, 0, 1)";
 
     return (
-        <div className={`fixed bottom-0 flex justify-between w-full p-2 bg-black ${theme.theme}`} style={{ background: background, }}>
+        <div className={`fixed bottom-0 flex justify-between w-full p-2 ${theme.theme}`} style={{ background: background, }}>
             <div>JoelMiles.com</div>
-            <a className={` ${theme.theme}`} href='mailto: email@joelmiles.com'>
+            <a href='mailto: email@joelmiles.com'>
                 email@joelmiles.com
             </a>
         </div>
     );
-};
+}
