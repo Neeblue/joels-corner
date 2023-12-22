@@ -5,14 +5,14 @@ import Projects from './home/Projects';
 import Future from './home/Future';
 import Resume from './home/Resume';
 import Closing from './home/Closing';
-// import Header from './home/Header';
+import Banner from './home/Banner';
 
 export default function Home() {
 
     return (
-        <div className='flex flex-col gap-4 mt-4'>
+        <div className='flex flex-col gap-4'>
             {[
-                // <Header />,
+                <Banner />,
                 <Info />,
                 <About />,
                 <Projects />,

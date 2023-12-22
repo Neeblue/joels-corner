@@ -10,7 +10,7 @@ export default function Navbar() {
     const focus = "focus:bg-link-focus focus:text-black";
 
     return (
-        <nav className={`w-full flex justify-between items-center ${theme.theme}`}
+        <nav className={`w-full flex justify-between items-center mb-4 ${theme.theme}`}
             // Theme override for app background
             style={{ background: background, }}>
             <div className='flex flex-row gap-2 items-center'>
