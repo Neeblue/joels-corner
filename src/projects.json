@@ -20,10 +20,10 @@
     "hidden": "false"
   },
   {
-    "title": "Substitute Work Grabber",
+    "title": "Work Finder",
     "description": "A full stack app (React frontend, C# backend and ASP.NET API) that grabs available work from a database for substitute teachers.",
     "detailsDescription": [
-      "<h2 style='text-align: center'>What is Substitute Work Grabber?</h2><br>This app helped me find work as a substitute teacher. Teacher's are required to check a database for job postings. The database is updated in real-time and positions fill up quickly. The app uses the Selenium package to scrape data from a database containing available work for teachers-on-call. The data is parsed into an object, and displayed on the UI. The app also displays alerts on Windows, through email, or through text when new jobs are found that match  various filters (such as specific schools and subjects). The app has gone through various UIs: AvaloniaUI, MAUI, WPF, WinForms, and React. The images displayed show two variations (a WinForms in light mode and WPF in dark mode). The Github link takes you to the React, full-stack version shown on the left (which uses Tailwind, Mantine UI, and a few other packages.",
+      "<h2 style='text-align: center'>What is Work Finder?</h2><br>This app helped me find work as a substitute teacher. Teacher's are required to check a database for job postings. The database is updated in real-time and positions fill up quickly. The app uses the Selenium package to scrape data from a database containing available work for teachers-on-call. The data is parsed into an object, and displayed on the UI. The app also displays alerts on Windows, through email, or through text when new jobs are found that match  various filters (such as specific schools and subjects). The app has gone through various UIs: AvaloniaUI, MAUI, WPF, WinForms, and React. The images displayed show two variations (a WinForms in light mode and WPF in dark mode). The Github link takes you to the React, full-stack version shown on the left (which uses Tailwind, Mantine UI, and a few other packages.",
       "<h2 style='text-align: center'> List of some features in current and previous versions:</h2><br><ul><li>Contains a light and dark mode</li><li>Has a slider that determines how often to check for new positions</li><li>Automatically turns off between specific hours</li><li>Can automatically accept jobs if desired</li><li>Can filter based on job preferences: school location, full time positions only, subject material etc.</li><li>Alerts can be displayed on Windows with custom colours based on certain filters</li><li>Can send text messages or emails when a new position is found</li><li>Contains a mock Selenium class to provide fake data for testing.</li></ul>"
     ],
     "link": "https://github.com/Neeblue/TTOC",
@@ -81,7 +81,7 @@
     "keyword": "bookshelf",
     "tags": [
       "Cross-platform",
-      "AvaloniaUI",
+      "MAUI",
       "Firebase",
       "MVVM",
       "Google Books API",
@@ -91,7 +91,7 @@
     "hidden": "false"
   },
   {
-    "title": "Librarian WPF App",
+    "title": "Librarian App",
     "description": "A WPF application that displays books added using Google's API in a clean UI.",
     "detailsDescription": [
       "<h2>What is the Librarian app?</h2><br>WPF program built in C# that allows you to add books to a display by using the Google search API.<br>Books that are added are displayed by image. Hovering over the image will give a description of the book. Books can be right-clicked and deleted.<br><br>The UI can be scaled using a slider, and the books re-organise when the window changes size.<br><br>Additional features that are implemented:<li>MVVM with a service locator</li><li>uses .Net Community Toolkit 8.1</li><li>Uses AvaloniaUI</li><li>Data is stored locally</li>"
