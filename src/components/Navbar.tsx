@@ -2,7 +2,7 @@ import './Navbar.css';
 import React, { Link } from 'react-router-dom';
 import { ThemeContext } from '../contexts/ThemeContext';
 import { useContext } from 'react';
-import ToggleTheme from './ToggleTheme';
+// import ToggleTheme from './ToggleTheme';
 
 export default function Navbar() {
     const theme = useContext(ThemeContext);
