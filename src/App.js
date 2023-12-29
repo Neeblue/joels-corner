@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Spells from "./pages/Spells";
+import Resume from "./pages/Resume";
 import SingleProject from "./pages/SingleProject";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ScrollToTopWrapper from "./components/ScrollToTopWrapper";
@@ -21,11 +22,12 @@ export default function App() {
           <main>
             <ScrollToTopWrapper>
               <Routes>
-                <Route index element={<Introduction />} />
+                <Route index element={<><Introduction /><Projects /></>} />
                 <Route path="*" element={<Introduction />} />
                 <Route path="projects" element={<Projects />} />
                 <Route path="projects/:keyword" element={<SingleProject />} />
                 <Route path="about" element={<About />} />
+                <Route path="resume" element={<Resume />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="spells" element={<Spells />} />
               </Routes>
