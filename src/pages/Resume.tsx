@@ -7,9 +7,11 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 export default function Resume() {
 
     return (
-        <div style={{ }}>
+        <div style={{
+            backgroundColor: 'black',
+        }}>
             <Document file={'/Resume.pdf'}>
-                <Page pageNumber={1} renderTextLayer={false}/>
+                <Page pageNumber={1} renderTextLayer={false} />
             </Document>
         </div>
     )
