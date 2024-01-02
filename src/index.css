@@ -14,4 +14,8 @@
     .projectPage img[src=""] {
         @apply hidden;
     }
+
+    .about-container a {
+        @apply underline;
+    }
 }
