@@ -2,11 +2,11 @@
     "About Me": [
         {
             "header": "Who am I?",
-            "description": "My name is Joel Miles. I was born in the UK, but I have lived in Canada and the US in recent years (I am a permanent resident in the US). I am currently a full-time <a target='_blank' href='https://www.bctf.ca/'>teacher in Surrey, Canada</a>. I have a passion for science and technology, and I am looking to develop software as a career."
+            "description": "My name is Joel Miles. I was born in the UK, but I have lived in Canada and the US in recent years (I am a permanent resident in the US). I am currently a full-time <a target='_blank' href='https://www.bctf.ca/'>teacher in Surrey, Canada</a>. I have a passion for science and technology, and I am looking to begin my career in software development."
         },
         {
             "header": "Programming background",
-            "description": "I began programming in high school using Visual Basics. My first program was a WinForms style app that pulled information from a Facebook video game. Since then, I have been hobby coding in C# (mostly backend). Recently, I have been learning JavaScript and React. Areas I have dabbled in:<ul className='pl-[20px]'><li>Selenium web scrapping</li><li>HTML, CSS, JS, React</li><li>ASP.NET Web API</li><li>AWS Lambda, S3, EC2</li></ul>"
+            "description": "I began programming in high school using Visual Basics. My first program was a WinForms style app that pulled information from a Facebook video game. Since then, I have been hobby coding in C# (mostly backend). Recently, I have been learning JavaScript and React. Areas I have worked in:<ul className='pl-[20px]'><li>C#</li><li>Selenium web scrapping</li><li>HTML, CSS, JS, React</li><li>ASP.NET Web API</li><li>AWS Lambda, S3, EC2</li></ul>"
         }
     ],
     "Education": [
