@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Spell from '../components/Spell';
 
 const spellTypes: string[] = [

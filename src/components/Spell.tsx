@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Spell({ spell }: { spell: any }) {
     return (
         <div>

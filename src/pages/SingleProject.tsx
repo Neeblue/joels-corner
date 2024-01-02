@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import jsonData from '../projects.json';
-import './SingleProject.css';
 
 interface Project {
     keyword: string;
@@ -13,11 +12,11 @@ interface Project {
 export default function SingleProject(){
     const { keyword } = useParams<{ keyword: string }>();
     const project: Project | undefined = jsonData.find((project) => project.keyword === keyword);
-    const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768);
+    const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 640);
 
     useEffect(() => {
         const handleResize = () => {
-        setIsMobile(window.innerWidth <= 768);
+        setIsMobile(window.innerWidth <= 640);
         };
 
         window.addEventListener('resize', handleResize);
@@ -29,37 +28,34 @@ export default function SingleProject(){
     }, []);
 
     return (
-        <div className="projectPage">
-            {project && <h1 className="title">{project.title}</h1>}
+        <div className="projectPage m-4">
+            {project && <h1 className="title text-center font-bold mb-4">{project.title}</h1>}
 
             {project && project.detailsDescription.map((paragraph, index) => (
-                <div key={index} className='section'>
+                <div key={index} className='section max-w-full justify-center flex flex-col gap-4 mb-8 sm:flex-row sm:items-center'>
                     {isMobile ? (
                         <>
-                            <br></br>
                             <div className="detailsParagraph" dangerouslySetInnerHTML={{__html: paragraph}}></div>
-                            <img className='detailsImage' src={process.env.PUBLIC_URL + project.detailsImage[index]} alt="" />
-                            <br></br>
+                            <img className='detailsImage' src={project.detailsImage[index]} alt="" />
+
                         </>
                     ) : (
                         <>
                             {index % 2 === 0 ? (
                                 <>
-                                    <img className='detailsImage' src={process.env.PUBLIC_URL + project.detailsImage[index]} alt= "" />
-                                    <div className="detailsParagraph" dangerouslySetInnerHTML={{__html: paragraph}}></div>
+                                    <img className='detailsImage max-w-[50vw] max-h-[75vw] p-2 object-contain' src={project.detailsImage[index]} alt= "" />
+                                    <div className="detailsParagraph max-w-[50vw] p-2" dangerouslySetInnerHTML={{__html: paragraph}}></div>
                                 </>
                             ) : (
                                 <>
-                                    <div className="detailsParagraph" dangerouslySetInnerHTML={{__html: paragraph}}></div>
-                                    <img className='detailsImage' src={process.env.PUBLIC_URL + project.detailsImage[index]} alt="" />
+                                    <div className="detailsParagraph max-w-[50vw] p-2" dangerouslySetInnerHTML={{__html: paragraph}}></div>
+                                    <img className='detailsImage max-w-[50vw] max-h-[75vw] p-2 object-contain' src={project.detailsImage[index]} alt="" />
                                 </>
                             )}
-                            <br></br>
                         </>
                     )}
                 </div>
             ))}
-            <br></br>
         </div>
     );
 }
