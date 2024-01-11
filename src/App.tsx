@@ -18,7 +18,7 @@ export default function App() {
           <Navbar />
         </header>
         <ScrollToTopWrapper>
-          <main className="flex-grow">
+          <main className="flex-grow bg-base-100">
             <Routes>
               <Route index element={<><Introduction /><Projects /></>} />
               <Route path="*" element={<Introduction />} />
