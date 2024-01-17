@@ -28,7 +28,7 @@ export default function About() {
     <div className='about-container max-w-[95vw] md:max-w-[50vw] m-auto mt-8 mb-8'>
       <div className="join join-vertical w-full">
         {Object.entries(about).map(([section, items], index) => (
-          <div className="collapse collapse-arrow join-item border border-base-300" key={section}>
+          <div className="collapse collapse-arrow join-item border border-base-300 text-primary" key={section}>
             <input
               type="radio"
               name={`my-accordion-${index}`}
