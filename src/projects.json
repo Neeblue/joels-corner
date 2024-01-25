@@ -82,6 +82,7 @@
     "keyword": "bookshelf",
     "tags": [
       "Cross-platform",
+      "C#",
       "MAUI",
       "Firebase",
       "MVVM",
@@ -104,6 +105,7 @@
     ],
     "keyword": "librarian",
     "tags": [
+      "C#",
       "WPF",
       "MVVM",
       ".Net Community Toolkit 8.1",
