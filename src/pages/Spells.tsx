@@ -1,32 +1,29 @@
 import { useEffect, useState } from 'react';
 import Spell from '../components/Spell';
 
-const spellTypes: string[] = [
-    "None", "Charm", "Conjuration", "Spell", "Transfiguration", "Healing Spell",
-    "Dark Charm", "Jinx", "Curse", "Magical Transportation", "Hex", "Counter Spell",
-    "Dark Arts", "Counter Jinx", "Counter Charm", "Untransfiguration",
-    "Binding Magical Contract", "Vanishment"
-];
-
-const api = async (spellType: string) => {
-    // Remove any spaces found in the spell type
-    const formattedSpellType = spellType.replace(/\s/g, '');
-
-    const url = `https://wizard-world-api.herokuapp.com/Spells?Type=${formattedSpellType}`;
-    const response = await fetch(url);
-    const data = await response.json();
-    return data;
-}
-
 export default function Spells() {
+    const spellTypes: string[] = [
+        "None", "Charm", "Conjuration", "Spell", "Transfiguration", "Healing Spell",
+        "Dark Charm", "Jinx", "Curse", "Magical Transportation", "Hex", "Counter Spell",
+        "Dark Arts", "Counter Jinx", "Counter Charm", "Untransfiguration",
+        "Binding Magical Contract", "Vanishment"
+    ];
+
     const [data, setData] = useState<[] | null>(null);
     const [selectedSpellType, setSelectedSpellType] = useState<string>('');
+    const [isloading, setIsLoading] = useState<boolean>(false);
 
     useEffect(() => {
         if (selectedSpellType) {
-            api(selectedSpellType)
-                .then(data => setData(data))
-                .catch(error => console.error(error));
+            setIsLoading(true);
+            const formattedSpellType = selectedSpellType.replace(/\s/g, '');
+            fetch(`https://wizard-world-api.herokuapp.com/Spells?Type=${formattedSpellType}`)
+                .then(response => response.json())
+                .then(data => {
+                    setData(data);
+                    setIsLoading(false);
+                })
+                .catch(error => console.log(error));
         }
     }, [selectedSpellType]);
 
@@ -35,42 +32,26 @@ export default function Spells() {
     }
 
     return (
-        <div>
-            <div style={{
-                marginBottom: "1rem",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                flexWrap: "wrap",
-                gap: "1rem",
-            }}>
+        <div className='mb-8'>
+            <div className='flex flex-wrap justify-center items-center gap-2 mb-4'>
                 {spellTypes.map(spellType => (
-                    <button style={{
-                        marginRight: "0.5rem",
-                        font: "bold",
-                        fontSize: "1.25rem",
-                        backgroundColor: "black",
-                        color: "white",
-                        padding: "0.5rem",
-                    }} key={spellType} onClick={() => handleSpellTypeClick(spellType)}>
+                    <button className='btn text-neutral bg-secondary' key={spellType} onClick={() => handleSpellTypeClick(spellType)}>
                         {spellType}
                     </button>
                 ))}
             </div>
-            <div style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                flexWrap: "wrap",
-                gap: "1rem"
-            }}>
-                {/* {data && <pre>{JSON.stringify(data, null, 2)}</pre>} */}
-                {data && data.map((spell: any) => (
-                    <Spell key={spell.name} spell={spell} />
-                ))}
+            <div className='flex justify-center'>
+                {isloading ? (
+                    <span className="loading loading-spinner text-primary size-9 flex justify-center"></span>
+                ) : (
+                <div className='flex flex-wrap justify-center items-center gap-4'>
+                    {data && data.map((spell: any) => (
+                        <Spell key={spell.name} spell={spell} />
+                    ))}
+                </div>
+                )}
+
             </div>
-            <br /><br />
         </div>
     );
 }
-
