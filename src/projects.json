@@ -36,14 +36,13 @@
     "keyword": "teaching",
     "tags": [
       "Full Stack",
+      "C#",
       "React",
       "TypeScript",
       "ASP.Net API",
       "Mantine",
       "Tailwind",
-      "MAUI",
-      "WPF",
-      "WinForms",
+      "Cross-platform",
       "Selenium"
     ],
     "hidden": "false"
