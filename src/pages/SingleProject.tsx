@@ -29,13 +29,13 @@ export default function SingleProject(){
 
     return (
         <div className="projectPage m-4">
-            {project && <h1 className="title text-center font-bold mb-4">{project.title}</h1>}
+            {project && <h1 className="title text-center font-bold mb-4 text-primary">{project.title}</h1>}
 
             {project && project.detailsDescription.map((paragraph, index) => (
                 <div key={index} className='section max-w-full justify-center flex flex-col gap-4 mb-8 sm:flex-row sm:items-center'>
                     {isMobile ? (
                         <>
-                            <div className="detailsParagraph" dangerouslySetInnerHTML={{__html: paragraph}}></div>
+                            <div className="detailsParagraph text-primary" dangerouslySetInnerHTML={{__html: paragraph}}></div>
                             <img className='detailsImage' src={project.detailsImage[index]} alt="" />
 
                         </>
@@ -44,11 +44,11 @@ export default function SingleProject(){
                             {index % 2 === 0 ? (
                                 <>
                                     <img className='detailsImage max-w-[50vw] max-h-[75vw] p-2 object-contain' src={project.detailsImage[index]} alt= "" />
-                                    <div className="detailsParagraph max-w-[50vw] p-2" dangerouslySetInnerHTML={{__html: paragraph}}></div>
+                                    <div className="detailsParagraph text-primary max-w-[50vw] p-2" dangerouslySetInnerHTML={{__html: paragraph}}></div>
                                 </>
                             ) : (
                                 <>
-                                    <div className="detailsParagraph max-w-[50vw] p-2" dangerouslySetInnerHTML={{__html: paragraph}}></div>
+                                    <div className="detailsParagraph text-primary max-w-[50vw] p-2" dangerouslySetInnerHTML={{__html: paragraph}}></div>
                                     <img className='detailsImage max-w-[50vw] max-h-[75vw] p-2 object-contain' src={project.detailsImage[index]} alt="" />
                                 </>
                             )}
