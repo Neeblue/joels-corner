@@ -27,8 +27,8 @@ export default function App() {
               <Route path="projects/:keyword" element={<SingleProject />} />
               <Route path="about" element={<About />} />
               <Route path="resume" element={<Resume />} />
-              <Route path="spells" element={<Spells />} />
-              <Route path="notes" element={<Notes />} />
+              <Route path="projects/spells/app" element={<Spells />} />
+              <Route path="projects/notes/app" element={<Notes />} />
             </Routes>
           </main>
         </ScrollToTopWrapper>
