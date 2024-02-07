@@ -38,6 +38,7 @@ export default function Navbar() {
                         <li><Link className="text-lg" onClick={closeDropdown} to="/projects">Projects</Link></li>
                         <li><Link className="text-lg" onClick={closeDropdown} to="/about">About me</Link></li>
                         <li><Link className="text-lg" onClick={closeDropdown} to="/resume">Resume</Link></li>
+                        <li><Link className="text-lg" onClick={closeDropdown} to="/notes">Notes</Link></li>
                     </ul>
                 </div>
                 <a href="/" className="btn btn-ghost text-2xl font-bold text-primary gap-4 z-0">
@@ -61,6 +62,7 @@ export default function Navbar() {
                     <li><Link className="text-xl" to="/projects">Projects</Link></li>
                     <li><Link className="text-xl" to="/about">About me</Link></li>
                     <li><Link className="text-xl" to="/resume">Resume</Link></li>
+                    <li><Link className="text-xl" to="/notes">Notes</Link></li>
                 </ul>
             </div>
         </div>

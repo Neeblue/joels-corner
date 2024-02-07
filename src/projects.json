@@ -21,6 +21,28 @@
     "hidden": "false"
   },
   {
+    "title": "My Notes",
+    "description": "A place for me to leave messages for myself!",
+    "detailsDescription": [
+      "On the notes page you can see the notes I have left for myself. This section of the site uses an Azure SQL database and Azure Functions to add notes. Uses React, Tailwind, Typescript, and DaisyUI for the UI. Try it out by clicking \"Notes\" on the navigation bar."
+    ],
+    "link": "https://github.com/Neeblue/joels-corner/blob/master/src/pages/Notes.tsx",
+    "image": "/images/covers/notes-cover.png",
+    "detailsImage": [
+      "/images/notes/detailsImage.png"
+    ],
+    "keyword": "notes",
+    "tags": [
+      "Azure SQL DB",
+      "Azure Functions",
+      "DaisyUI",
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    "hidden": "false"
+  },
+  {
     "title": "Work Finder",
     "description": "A full stack app (React frontend, C# backend and ASP.NET API) that grabs available work from a database for substitute teachers.",
     "detailsDescription": [
