@@ -24,7 +24,7 @@
     "title": "My Notes",
     "description": "A place for me to leave messages for myself!",
     "detailsDescription": [
-      "<a href='/projects/notes/app'><h2>Click here to try it out!</h2></a><br>On the notes page you can see the notes I have left for myself. This section of the site uses an Azure SQL database and Azure Functions to add notes. Uses React, Tailwind, Typescript, and DaisyUI for the UI. Try it out by clicking \"Notes\" on the navigation bar.",
+      "<a href='/projects/notes/app'><h2>Click here to try it out!</h2></a><br>On the notes page you can see the notes I have left for myself. This section of the site uses an Azure SQL database and Azure Functions to add notes. Uses React, Tailwind, Typescript, and DaisyUI for the UI.",
       "This image shows the Azure function code to grab the data from the Azure SQL DB. Features to be added soon: Update and delete notes."
     ],
     "link": "https://github.com/Neeblue/joels-corner/blob/master/src/pages/Notes.tsx",
