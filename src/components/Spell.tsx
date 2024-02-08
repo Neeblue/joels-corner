@@ -1,4 +1,10 @@
-export default function Spell({ spell }: { spell: any }) {
+export default function Spell({ spell }: { spell: { 
+    light: string, 
+    name: string, 
+    effect: string, 
+    incantation: string, 
+    id:string
+} }) {
     return (
         <div>
             <div key={spell.id} style={{
