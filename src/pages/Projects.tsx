@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import jsonData from '../projects.json';
+import jsonData from '@/projects.json';
 import { Link } from 'react-router-dom';
-import Tag from '../components/Tag';
+import Tag from '@components/Tag';
 
 interface Project {
   keyword: string;

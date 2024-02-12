@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import NotesCard from '../components/NotesCard';
+import NotesCard from '@components/NotesCard';
 
 interface Note {
     title: string;

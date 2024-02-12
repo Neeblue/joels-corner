@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import jsonData from '../about.json';
+import jsonData from '@/about.json';
 
 interface AboutItem {
   header: string;

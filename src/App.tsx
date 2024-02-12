@@ -1,14 +1,14 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Introduction from "./components/Introduction";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Spells from "./pages/Spells";
-import Resume from "./pages/Resume";
-import SingleProject from "./pages/SingleProject";
-import Notes from "./pages/Notes";
+import Navbar from "@components/Navbar";
+import Footer from "@components/Footer";
+import Introduction from "@components/Introduction";
+import About from "@pages/About";
+import Projects from "@pages/Projects";
+import Spells from "@pages/Spells";
+import Resume from "@pages/Resume";
+import SingleProject from "@pages/SingleProject";
+import Notes from "@pages/Notes";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ScrollToTopWrapper from "./components/ScrollToTopWrapper";
+import ScrollToTopWrapper from "@components/ScrollToTopWrapper";
 
 export default function App() {
 

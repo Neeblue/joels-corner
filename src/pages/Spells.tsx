@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Spell from '../components/Spell';
+import Spell from '@components/Spell';
 
 export default function Spells() {
     const spellTypes: string[] = [

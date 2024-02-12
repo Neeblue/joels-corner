@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import jsonData from '../projects.json';
+import jsonData from '@/projects.json';
 
 interface Project {
     keyword: string;
