@@ -13,11 +13,20 @@ interface AboutSection {
 }
 
 export default function About() {
+  const [about, setAbout] = useState<AboutSection>({});
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
-  const [about, setAbout] = useState<AboutSection>({});
+  // grab initial data from json, and open the first section
   useEffect(() => {
     setAbout(jsonData);
+    const firstSectionKey = Object.keys(jsonData)[0];
+    setActiveSection(firstSectionKey);
+
+    // Simulate a click event on the first item after the component has mounted
+    setTimeout(() => {
+      const firstItem = document.querySelector('.collapse-content .item input[type="radio"]');
+      (firstItem as HTMLElement)?.click();
+    }, 500);
   }, []);
 
   const toggleSection = (section: string) => {
@@ -35,10 +44,7 @@ export default function About() {
               checked={activeSection === section}
               onChange={() => toggleSection(section)}
             />
-            <div
-              className="collapse-title text-xl font-medium"
-              onClick={() => toggleSection(section)}
-            >
+            <div className="collapse-title text-xl font-medium">
               {section}
             </div>
             <div className={`collapse-content ${activeSection === section ? 'block' : 'hidden'}`}>
@@ -52,7 +58,7 @@ export default function About() {
                       </div>
                       <div className="collapse-content">
                         <div className="subheader ml-2 text-primary">{item.subheader}</div>
-                        <div className="description my-2 mx-8 text-primary" dangerouslySetInnerHTML={{__html: item.description}}></div>
+                        <div className="description my-2 mx-8 text-primary" dangerouslySetInnerHTML={{ __html: item.description }}></div>
                       </div>
                     </div>
                   </div>
