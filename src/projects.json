@@ -6,7 +6,7 @@
       "This website was built with React (Vite), TypeScript and Tailwind. It is hosted using Cloudflare Pages. Some features include:<li>Dynamic display based on screen size. Try going mobile!</li><li>Dynamic projects, project pages, and about me information. All information is pulled from a JSON file and the HTML is generated during rendering.</li><li>Uses DaisyUI for theming and components.</li>"
     ],
     "link": "https://github.com/Neeblue/joels-corner",
-    "image": "/images/covers/website-cover.png",
+    "image": "/images/covers/website-cover.webp",
     "detailsImage": [
       "/images/website/detailsImage.png"
     ],
@@ -28,7 +28,7 @@
       "This image shows the Azure function code to grab the data from the Azure SQL DB. Features to be added soon: Update and delete notes."
     ],
     "link": "https://github.com/Neeblue/joels-corner/blob/master/src/pages/Notes.tsx",
-    "image": "/images/covers/notes-cover.png",
+    "image": "/images/covers/notes-cover.webp",
     "detailsImage": [
       "/images/notes/detailsImage.png",
       "/images/notes/detailsImage2.png"
@@ -52,7 +52,7 @@
       "<h2 className='text-center'> List of some features in current and previous versions:</h2><br><li>Contains a light and dark mode</li><li>Has a slider that determines how often to check for new positions</li><li>Automatically turns off between specific hours</li><li>Can filter based on job preferences: school location, full time positions only, subject material etc.</li><li>Alerts can be displayed on Windows with custom colours based on certain filters</li><li>Can send text messages or emails when a new position is found</li><li>Contains a mock Selenium class to provide fake data for testing.</li>"
     ],
     "link": "https://github.com/Neeblue/TTOC",
-    "image": "/images/covers/JobFinder-cover.jpg",
+    "image": "/images/covers/JobFinder-cover.webp",
     "detailsImage": [
       "/images/teaching/detailsImage1.jpg",
       "/images/teaching/detailsImage2.png"
@@ -78,7 +78,7 @@
       "C# app that checks Disney World for popular reservations. Uses Disney's restaurant API to grab restaurant information. JSON info is parsed into objects and filtered based on user preferences such as date and time of day.<br>Results are sent to the console with a direct link to the booking page for that reservation time slot of choice. This app could easily be put on a repeating timer and implement notifications when reservations are found.<br><br><b>Features of the program:</b><li>Makes an API call to Disney's site using a custom built URL based on choice of restaurant, party size, and time</li><li>Returns the available times found and a direct booking link for each time slot</li><li>C# console app that makes use of: Interfaces, a link-builder helper class, API, API Service/Controller class, enums, and a reservation model</li><br><b>Difficulties with this program:</b><li>Finding and building a link for each restaurant and time in order to make the API call</li><li>Finding and building a reservation link (which is only partially returned from the API call)</li>"
     ],
     "link": "https://github.com/Neeblue/disney-grabber",
-    "image": "/images/covers/disney-cover.png",
+    "image": "/images/covers/disney-cover.webp",
     "detailsImage": [
       "/images/disney/detailsImage.png"
     ],
@@ -97,7 +97,7 @@
       "<h2 className='text-center'>Details about each book</h2><br>Clicking on one of the books will bring you to a detailed page of the book.<br>On android, the information is displayed below the image to better fit the size of a phone screen.<br>Information that is displayed includes:<li>An image and rating pulled from Goodreads</li><li>Page count</li><li>Description</li><li>Publisher information</li><li>ISBN 10/13</li>"
     ],
     "link": "https://github.com/Neeblue/Bookshelf",
-    "image": "/images/covers/bookshelf-cover.jpg",
+    "image": "/images/covers/bookshelf-cover.webp",
     "detailsImage": [
       "/images/bookshelf/detailsImage1.jpg",
       "/images/bookshelf/detailsImage2.jpg"
@@ -122,7 +122,7 @@
       "<h2>What is the Librarian app?</h2><br>WPF program built in C# that allows you to add books to a display by using the Google search API.<br>Books that are added are displayed by image. Hovering over the image will give a description of the book. Books can be right-clicked and deleted.<br><br>The UI can be scaled using a slider, and the books re-organise when the window changes size.<br><br>Additional features that are implemented:<li>MVVM with a service locator</li><li>uses .Net Community Toolkit 8.1</li><li>Uses AvaloniaUI</li><li>Data is stored locally</li>"
     ],
     "link": "https://github.com/Neeblue/Librarian",
-    "image": "/images/covers/librarian-cover.jpg",
+    "image": "/images/covers/librarian-cover.webp",
     "detailsImage": [
       "/images/librarian/detailsImage.gif"
     ],
@@ -144,7 +144,7 @@
       ""
     ],
     "link": "https://github.com/Neeblue/joels-corner/blob/master/src/pages/Spells.tsx",
-    "image": "/images/covers/spells-cover.png",
+    "image": "/images/covers/spells-cover.webp",
     "detailsImage": [
       "/images/spells/detailsImage.png",
       ""
@@ -202,7 +202,7 @@
       ""
     ],
     "link": "https://github.com/Neeblue/***",
-    "image": "/images/covers/***-cover.jpg",
+    "image": "/images/covers/***-cover.webp",
     "detailsImage": [
       "",
       ""
