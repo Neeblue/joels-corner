@@ -46,7 +46,7 @@
   },
   {
     "title": "Work Finder",
-    "description": "Full stack app for displaying custom substitute teacher jobs with filtering, sorting, and alerts.",
+    "description": "Full stack app for displaying substitute teacher jobs with custom filtering, sorting, and alerts.",
     "detailsDescription": ["A full stack app (React front end, ASP.NET Back end) that grabs available work from a database for substitute teachers. The app uses Selenium to scrape data from a database containing available work for teachers-on-call. The fetched data is sent to the front end and displayed with custom formatting and filters. Alerts can be added to send notifications by email, text etc. when specified jobs are found."],
     "link": "https://github.com/Neeblue/TTOC",
     "image": "/images/covers/jobFinder-cover.png",
