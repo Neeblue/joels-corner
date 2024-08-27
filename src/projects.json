@@ -21,28 +21,27 @@
     "hidden": "false"
   },
   {
-    "title": "My Notes",
-    "description": "A place for me to leave messages for myself!",
+    "title": "Cloud Functions",
+    "description": "Read about my experience with AWS Lambda and Azure Functions.",
     "detailsDescription": [
-      "<a href='/projects/notes/app'><h2>Click here to try it out!</h2></a><br>On the notes page you can see the notes I have left for myself. This section of the site uses an Azure SQL database and Azure Functions to add notes. Uses React, Tailwind, Typescript, and DaisyUI for the UI.",
-      "This image shows the Azure function code to grab the data from the Azure SQL DB. Features to be added soon: Update and delete notes."
+      "I have a few apps that make use of a server that needs to on at most times of the day. Running these apps on my computer is costly as it requires running power to all the hardware. This has made me wonder what alternative methods I can make use of to run my apps. I thought about purchasing a small computer such as a Raspberry Pi where I could then dockerize my app and run it on an efficient linux operating system. This would require a large upfront cost but would save me money in the long run. I decided to look into Cloud Functions. This would give me the ability to run small snippets of code in response to a frontend endpoint (or at a specific interval). Two of the most common are Amazon's AWS Lambda functions and Microsoft's Azure Functions. I decided I would test both of these services because I currently have no exposure to any of the Cloud Computing services offered by either of these companies' cloud services. I began with AWS. The initial setup was pretty extensive. It involved the initial setup and CLI installation and navigating IAM roles, SSO users, 2FA, billing and so forth. I tested AWS's Lambda functions, Elastic Compute (EC2), their storage solution (S3), briefly read up on their own noSQL database DynamoDB. I found that, in general, AWS was a little too \"Industrial\" for my needs. I got a few snippets of code running on both Lambda Functions and EC2 that made use of S3 before moving on to Azure.", "I found the setup for Azure a lot simpler and I was up and running a lot faster. I tested Azure Functions along with Azure's SQL database. I decided to build a quick CRUD application that would allow me to save notes on programming goals. I built the \"create\" portion of the app and a quick frontend display on my website to test the Function. It worked just fine, but I ran into a problem called cold start. This is where the function takes a long time to start up if it hasn't been used in a while because the Function needs to be spun up. If I left my app alone for a length of time (lets say an hour) it would take 30 seconds to receive results from the database! You could get around the cold start by making use of their Azure App Service Plans or by having having a secondary function trigger the first on an interval. I'm glad I tested both of these services, but for my own small projects the Cloud Computing services are a little overkill. I found that there may be more use cases for the databases that for the Cloud Functions, so I may look into using one of the databases in the future."
     ],
-    "link": "https://github.com/Neeblue/joels-corner/blob/master/src/pages/Notes.tsx",
-    "image": "/images/covers/notes-cover.webp",
+    "link": "/projects/cloud",
+    "image": "/images/covers/cloud-cover.webp",
     "detailsImage": [
-      "/images/notes/detailsImage.png",
-      "/images/notes/detailsImage2.png"
+      "/images/cloud/detailsImage.png",
+      "/images/cloud/detailsImage2.png"
     ],
-    "keyword": "notes",
+    "keyword": "cloud",
     "tags": [
-      "Azure SQL DB",
       "Azure Functions",
-      "DaisyUI",
-      "React",
-      "TypeScript",
-      "Tailwind"
+      "Azure SQL DB",
+      "AWS Lambda",
+      "AWS EC2",
+      "AWS S3",
+      "AWS SQL DB"
     ],
-    "hidden": "true"
+    "hidden": "false"
   },
   {
     "title": "Work Finder",
