@@ -9,6 +9,7 @@ import SingleProject from "@pages/SingleProject";
 import Notes from "@pages/Notes";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ScrollToTopWrapper from "@components/ScrollToTopWrapper";
+import Blog from "./pages/Blog";
 
 export default function App() {
 
@@ -25,6 +26,7 @@ export default function App() {
               <Route path="*" element={<Introduction />} />
               <Route path="projects" element={<Projects />} />
               <Route path="projects/:keyword" element={<SingleProject />} />
+              <Route path="blog" element={<Blog />} />
               <Route path="about" element={<About />} />
               <Route path="resume" element={<Resume />} />
               <Route path="projects/spells/app" element={<Spells />} />

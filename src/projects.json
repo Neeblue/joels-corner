@@ -21,6 +21,27 @@
     "hidden": "false"
   },
   {
+    "title": "Desert Island",
+    "description": "Desert Island is a messaging site that allows you to communicate with other lost souls on my desert island.",
+    "detailsDescription": [
+      "Angular frontend and C# backend. Originally "
+    ],
+    "link": "https://github.com/Neeblue/DesertIsland",
+    "image": "",
+    "detailsImage": [
+    ],
+    "keyword": "island",
+    "tags": [
+      "Angular",
+      "C#",
+      "Postgres",
+      "SignalR",
+      "Docker",
+      "Hosted on..."
+    ],
+    "hidden": "true"
+  },
+  {
     "title": "Cloud Functions",
     "description": "Read about my experience with AWS Lambda and Azure Functions.",
     "detailsDescription": [
