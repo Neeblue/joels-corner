@@ -20,14 +20,17 @@ type Blog = {
 export default function BlogCard({ blog }: { blog: Blog }) {
     return (
         <>
-            <div className='project w-[21rem] max-w-[90vw] text-primary'>
+            <div className='project w-[21rem] max-w-[90vw] text-primary flex flex-col gap-1'>
+                <img className='project-image rounded-2xl mb-2' src={blog.cover} alt={blog.title} />
                 <h2 className='title font-bold'>
-                    <Link to={`/projects/${blog.keyword}`}>{blog.title}</Link>
+                    <Link to={`/blogs/${blog.keyword}`}>{blog.title}</Link>
                 </h2>
-                {blog.tags.map((tag: string) => (
-                    tag && <Tag key={tag} name={tag} />
-                )
-                )}
+                <div className="tag">
+                    {blog.tags.map((tag: string) => (
+                        tag && <Tag key={tag} name={tag} />
+                    )
+                    )}
+                </div>
                 <p className='description'>{blog.description}</p>
             </div>
         </>
