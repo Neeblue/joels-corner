@@ -10,7 +10,7 @@ import Notes from "@pages/Notes";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ScrollToTopWrapper from "@components/ScrollToTopWrapper";
 import Blogs from "./pages/Blogs";
-import SingleBlog from "./pages/singleBlog";
+import SingleBlog from "./pages/SingleBlog";
 
 export default function App() {
 
