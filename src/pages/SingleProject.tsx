@@ -43,13 +43,13 @@ export default function SingleProject(){
                         <>
                             {index % 2 === 0 ? (
                                 <>
-                                    <img className='detailsImage max-w-[50vw] max-h-[75vw] p-2 object-contain' src={project.detailsImage[index]} alt= "" />
+                                    <img className='detailsImage max-w-[50vw] max-h-[60vw] p-2 object-contain' src={project.detailsImage[index]} alt= "" />
                                     <div className="detailsParagraph text-primary max-w-[50vw] p-2" dangerouslySetInnerHTML={{__html: paragraph}}></div>
                                 </>
                             ) : (
                                 <>
                                     <div className="detailsParagraph text-primary max-w-[50vw] p-2" dangerouslySetInnerHTML={{__html: paragraph}}></div>
-                                    <img className='detailsImage max-w-[50vw] max-h-[75vw] p-2 object-contain' src={project.detailsImage[index]} alt="" />
+                                    <img className='detailsImage max-w-[50vw] max-h-[60vw] p-2 object-contain' src={project.detailsImage[index]} alt="" />
                                 </>
                             )}
                         </>

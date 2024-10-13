@@ -6,7 +6,7 @@
       "This website was built with React (Vite), TypeScript and Tailwind. It is hosted using Cloudflare Pages. Some features include:<li>Dynamic display based on screen size. Try going mobile!</li><li>Dynamic projects, project pages, and about me information. All information is pulled from a JSON file and the HTML is generated during rendering.</li><li>Uses DaisyUI for theming and components.</li>"
     ],
     "link": "https://github.com/Neeblue/joels-corner",
-    "image": "/images/covers/website-cover.webp",
+    "image": "/images/projects/website-cover.webp",
     "detailsImage": [
       "/images/website/detailsImage.png"
     ],
@@ -21,34 +21,32 @@
     "hidden": "false"
   },
   {
-    "title": "Cloud Functions",
-    "description": "Read about my experience with AWS Lambda and Azure Functions.",
+    "title": "Desert Island",
+    "description": "Desert Island is a messaging site that allows you to communicate with other lost souls on my desert island.",
     "detailsDescription": [
-      "I have a few apps that make use of a server that needs to on at most times of the day. Running these apps on my computer is costly as it requires running power to all the hardware. This has made me wonder what alternative methods I can make use of to run my apps. I thought about purchasing a small computer such as a Raspberry Pi where I could then dockerize my app and run it on an efficient linux operating system. This would require a large upfront cost but would save me money in the long run. I decided to look into Cloud Functions. This would give me the ability to run small snippets of code in response to a frontend endpoint (or at a specific interval). Two of the most common are Amazon's AWS Lambda functions and Microsoft's Azure Functions. I decided I would test both of these services because I currently have no exposure to any of the Cloud Computing services offered by either of these companies' cloud services. I began with AWS. The initial setup was pretty extensive. It involved the initial setup and CLI installation and navigating IAM roles, SSO users, 2FA, billing and so forth. I tested AWS's Lambda functions, Elastic Compute (EC2), their storage solution (S3), briefly read up on their own noSQL database DynamoDB. I found that, in general, AWS was a little too \"Industrial\" for my needs. I got a few snippets of code running on both Lambda Functions and EC2 that made use of S3 before moving on to Azure.", "I found the setup for Azure a lot simpler and I was up and running a lot faster. I tested Azure Functions along with Azure's SQL database. I decided to build a quick CRUD application that would allow me to save notes on programming goals. I built the \"create\" portion of the app and a quick frontend display on my website to test the Function. It worked just fine, but I ran into a problem called cold start. This is where the function takes a long time to start up if it hasn't been used in a while because the Function needs to be spun up. If I left my app alone for a length of time (lets say an hour) it would take 30 seconds to receive results from the database! You could get around the cold start by making use of their Azure App Service Plans or by having having a secondary function trigger the first on an interval. I'm glad I tested both of these services, but for my own small projects the Cloud Computing services are a little overkill. I found that there may be more use cases for the databases that for the Cloud Functions, so I may look into using one of the databases in the future."
+      "Angular frontend and C# backend. Originally "
     ],
-    "link": "/projects/cloud",
-    "image": "/images/covers/cloud-cover.webp",
+    "link": "https://github.com/Neeblue/DesertIsland",
+    "image": "",
     "detailsImage": [
-      "/images/cloud/detailsImage.png",
-      "/images/cloud/detailsImage2.png"
     ],
-    "keyword": "cloud",
+    "keyword": "island",
     "tags": [
-      "Azure Functions",
-      "Azure SQL DB",
-      "AWS Lambda",
-      "AWS EC2",
-      "AWS S3",
-      "AWS SQL DB"
+      "Angular",
+      "C#",
+      "Postgres",
+      "SignalR",
+      "Docker",
+      "Hosted on..."
     ],
-    "hidden": "false"
+    "hidden": "true"
   },
   {
     "title": "Work Finder",
     "description": "Full stack app for displaying substitute teacher jobs with custom filtering, sorting, and alerts.",
     "detailsDescription": ["A full stack app (React front end, ASP.NET Back end) that grabs available work from a database for substitute teachers. The app uses Selenium to scrape data from a database containing available work for teachers-on-call. The fetched data is sent to the front end and displayed with custom formatting, filters and alerts."],
     "link": "https://github.com/Neeblue/TTOC",
-    "image": "/images/covers/jobFinder-cover.png",
+    "image": "/images/projects/jobFinder-cover.png",
     "detailsImage": [
       "/images/teaching/detailsImage3.png"
     ],
@@ -73,7 +71,7 @@
       "C# app that checks Disney World for popular reservations. Uses Disney's restaurant API to grab restaurant information. JSON info is parsed into objects and filtered based on user preferences such as date and time of day.<br>Results are sent to the console with a direct link to the booking page for that reservation time slot of choice. This app could easily be put on a repeating timer and implement notifications when reservations are found.<br><br><b>Features of the program:</b><li>Makes an API call to Disney's site using a custom built URL based on choice of restaurant, party size, and time</li><li>Returns the available times found and a direct booking link for each time slot</li><li>C# console app that makes use of: Interfaces, a link-builder helper class, API, API Service/Controller class, enums, and a reservation model</li><br><b>Difficulties with this program:</b><li>Finding and building a link for each restaurant and time in order to make the API call</li><li>Finding and building a reservation link (which is only partially returned from the API call)</li>"
     ],
     "link": "https://github.com/Neeblue/disney-grabber",
-    "image": "/images/covers/disney-cover.webp",
+    "image": "/images/projects/disney-cover.webp",
     "detailsImage": [
       "/images/disney/detailsImage.png"
     ],
@@ -92,7 +90,7 @@
       "<h2 className='text-center'>Details about each book</h2><br>Clicking on one of the books will bring you to a detailed page of the book.<br>On android, the information is displayed below the image to better fit the size of a phone screen.<br>Information that is displayed includes:<li>An image and rating pulled from Goodreads</li><li>Page count</li><li>Description</li><li>Publisher information</li><li>ISBN 10/13</li>"
     ],
     "link": "https://github.com/Neeblue/Bookshelf",
-    "image": "/images/covers/bookshelf-cover.webp",
+    "image": "/images/projects/bookshelf-cover.webp",
     "detailsImage": [
       "/images/bookshelf/detailsImage1.jpg",
       "/images/bookshelf/detailsImage2.jpg"
@@ -117,7 +115,7 @@
       "<h2>What is the Librarian app?</h2><br>WPF program built in C# that allows you to add books to a display by using the Google search API.<br>Books that are added are displayed by image. Hovering over the image will give a description of the book. Books can be right-clicked and deleted.<br><br>The UI can be scaled using a slider, and the books re-organise when the window changes size.<br><br>Additional features that are implemented:<li>MVVM with a service locator</li><li>uses .Net Community Toolkit 8.1</li><li>Uses AvaloniaUI</li><li>Data is stored locally</li>"
     ],
     "link": "https://github.com/Neeblue/Librarian",
-    "image": "/images/covers/librarian-cover.webp",
+    "image": "/images/projects/librarian-cover.webp",
     "detailsImage": [
       "/images/librarian/detailsImage.gif"
     ],
@@ -139,7 +137,7 @@
       ""
     ],
     "link": "https://github.com/Neeblue/joels-corner/blob/master/src/pages/Spells.tsx",
-    "image": "/images/covers/spells-cover.webp",
+    "image": "/images/projects/spells-cover.webp",
     "detailsImage": [
       "/images/spells/detailsImage.png",
       ""
@@ -158,7 +156,7 @@
       ""
     ],
     "link": "https://github.com/Neeblue/",
-    "image": "/images/covers/@@@-cover.png",
+    "image": "/images/projects/@@@-cover.png",
     "detailsImage": [
       "/images/@@@/detailsImage.png"
     ],
@@ -197,7 +195,7 @@
       ""
     ],
     "link": "https://github.com/Neeblue/***",
-    "image": "/images/covers/***-cover.webp",
+    "image": "/images/projects/***-cover.webp",
     "detailsImage": [
       "",
       ""
