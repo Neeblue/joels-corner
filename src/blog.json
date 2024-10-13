@@ -1,0 +1,119 @@
+[
+    {
+        "title": "Corne Keyboard",
+        "description": "Building a Corne Keyboard from PCB and parts",
+        "keyword": "corne",
+        "cover": "/images/blogs/corne/corne-cover.webp",
+        "hidden": false,
+        "tags": [
+            "keyboard", 
+            "dvorak",
+            "corne",
+            "split",
+            "DIY"
+        ],
+        "sections": [
+             {
+                "content": "As someone who wishes they learned to touch type (and also to protect my dear old phalanges from my least favourite tunnel) I've decided to jump in the deep end and commit to touch typing in the hardest way possible: on a new split keyboard using a new keyboard layout. I did a bunch of research on keyboard layouts and potential keyboards to compliment touch typing. I contemplated mostly between \"Colemak\" and \"Dvorak\" (and some of their variants). I also contemplated between a few split keyboards, such as the Corne, the ZSA Moonlander, and the popular Kinesis. Ultimately, I decided on Dvorak with the Corne keyboard. I chose the keyboard for its portability and finger positioning (ortholinear and staggered). The keyboard layout... was kind of a toss-up. As long as it would ease typing over time I wasn't too fussy.",
+                "pictureUrl": "/images/blogs/corne/detailsImage.webp",
+                "pictureCaption": "Printed Circuit Board (PCB) for the Corne Keyboard"
+            },
+            {
+                "content": "When building a Corne keyboard, I had to decide how much of the keyboard I wanted to build. Do you wish to start from scratch and print off PCBs and solder all your parts on, or do you want some of that work done for you. I decided to take a half way point where some of the parts were soldered on and I didn't care to add LEDs. I had to manually solder the micro-controllers onto the board. I had hot-swappable switches in case I didn't like the feel of the keys or switches. The features I ultimately decided on were wireless, low profile, and all black.",
+                "pictureUrl": "/images/blogs/corne/detailsImage2.webp",
+                "pictureCaption": "My completed Corne Keyboard"
+            },
+            {
+                "content": "Unexpectedly, the longest amount of time building this went to configuring the keys. I used a keymapping editor (credit goes to nickcoutsos) to build my layers of keys. Since the keyboard has such few buttons, the keyboard makes use of layers to stack multiple inputs to a single key. You switch between them by performing a chosen action, such as holding a button. In the end, I have a nice, compact keyboard that is great practice for touch typing. Do you ever have those dreams where you are trying to run from something but you just can't get to speed? That's how I now feel when typing on this new keyboard. Practicing time!",
+                "pictureUrl": "/images/blogs/corne/detailsImage3.webp",
+                "pictureCaption": "ZMK Keymapping Editor"
+            }
+        ]
+    },
+    {
+        "title": "Cloud Functions",
+        "description": "Exploring AWS and Azure Cloud Functions",
+        "keyword": "cloud",
+        "cover": "/images/blogs/cloud/cloud-cover.webp",
+        "hidden": false,
+        "tags": [
+            "AWS S3",
+            "AWS EC2",
+            "AWS Lambda",
+            "DynamoDB",
+            "Azure Functions"
+        ],
+        "sections": [
+            {
+                "content": "I have a few apps that make use of a server that needs to on at most times of the day. Running these apps on my computer is costly as it requires running power to all the hardware. This has made me wonder what alternative methods I can make use of to run my apps. I thought about purchasing a small computer such as a Raspberry Pi where I could then dockerize my app and run it on an efficient linux operating system. This would require a large upfront cost but would save me money in the long run. I decided to look into Cloud Functions. This would give me the ability to run small snippets of code in response to a frontend endpoint (or at a specific interval). Two of the most common are Amazon's AWS Lambda functions and Microsoft's Azure Functions. I decided I would test both of these services because I currently have no exposure to any of the Cloud Computing services offered by either of these companies' cloud services. I began with AWS. The initial setup was pretty extensive. It involved the initial setup and CLI installation and navigating IAM roles, SSO users, 2FA, billing and so forth. I tested AWS's Lambda functions, Elastic Compute (EC2), their storage solution (S3), briefly read up on their own noSQL database DynamoDB. I found that, in general, AWS was a little too \"Industrial\" for my needs. I got a few snippets of code running on both Lambda Functions and EC2 that made use of S3 before moving on to Azure.",
+                "pictureUrl": "/images/blogs/cloud/detailsImage.png",
+                "pictureCaption": ""
+            },
+            {
+                "content": "I found the setup for Azure a lot simpler and I was up and running a lot faster. I tested Azure Functions along with Azure's SQL database. I decided to build a quick CRUD application that would allow me to save notes on programming goals. I built the \"create\" portion of the app and a quick frontend display on my website to test the Function. It worked just fine, but I ran into a problem called cold start. This is where the function takes a long time to start up if it hasn't been used in a while because the Function needs to be spun up. If I left my app alone for a length of time (lets say an hour) it would take 30 seconds to receive results from the database! You could get around the cold start by making use of their Azure App Service Plans or by having having a secondary function trigger the first on an interval. I'm glad I tested both of these services, but for my own small projects the Cloud Computing services are a little overkill. I found that there may be more use cases for the databases that for the Cloud Functions, so I may look into using one of the databases in the future.",
+                "pictureUrl": "/images/blogs/cloud/detailsImage2.png",
+                "pictureCaption": ""
+            }
+        ]
+    },
+    {
+        "title": "Mini Linux Server",
+        "description": "Building a Mini Linux Server using a Dell Wyse 3040",
+        "keyword": "wyse",
+        "cover": "/images/blogs/wyse/wyse-cover.webp",
+        "hidden": false,
+        "tags": [
+            "wyse-3040",
+            "server",
+            "linux",
+            "docker"
+        ],
+        "sections": [
+            {
+                "content": "After playing around with Cloud Functions and other cloud-based services, I considered an at-home alternative that would allow me to run some of my apps on a server. I've wanted to better understand linux systems as well, so I knew I would want something that would run Ubuntu (or something similar). After scouring the internet for options, I decided on a Dell Wyse 3040. I bought one off Ebay for $30 plus shipping. This price point was really nice considering some devices, like the Raspberry Pi, would set you back around $150. The version I chose had WiFi, bluetooth, and a teeny 16GB hard drive.",
+                "pictureUrl": "",
+                "pictureCaption": ""
+            },
+            {
+                "content": "I wasn't sure if I wanted a GUI option, and there were many Linux OSes to choose from, so I tried a few different ones. Intially, I began wtih Arch Linux with KDE Plasma. It was nice, but I found that I wasn't really using the GUI as much, and my long term goals were to have my apps running in Docker and for the device to be accessible through SSH. I figured that now would be a good time to test other OSes before I did too much, so I gave Ubuntu Server a go too. After setting up Ubuntu, I realised how nice it was to have a low powered server constatly running and always accessible. I am now able to SSH into a Linux server and have my configurations and desired repos available from anywhere. It does mean I now have situations like the following: Wife: \"Are you texting while giving me a hug? \"Me: \"No...\" *Wife turns around* Wife: \"You're coding?? That's even worse!\"",
+                "pictureUrl": "/images/blogs/wyse/detailsImage.webp",
+                "pictureCaption": "My mini server has a new plant friend!"
+            },
+            {
+                "content": "So far I have messed around with Docker, nvim, and a bunch of my personal repos in a Linux environment. I find this a really great way to test for cross platform compatibility, as well as a cheap alternative to using Cloud environments. This of course will lack scalability as the device itself doesn't have much room for expansion and any larger apps would need to be migrated to an alternative server, but for hobby projects and testing, this is a great alternative that I would highly recommend. ",
+                "pictureUrl": "",
+                "pictureCaption": ""
+            },
+            {
+                "content": "",
+                "pictureUrl": "",
+                "pictureCaption": ""
+            }
+        ]
+    },
+    {
+        "title": "",
+        "description": "",
+        "sections": [
+            {
+                "content": "",
+                "pictureUrl": "",
+                "pictureCaption": ""
+            },
+            {
+                "content": "",
+                "pictureUrl": "",
+                "pictureCaption": ""
+            },
+            {
+                "content": "",
+                "pictureUrl": "",
+                "pictureCaption": ""
+            }
+        ],
+        "keyword": "",
+        "cover": "",
+        "hidden": true,
+        "tags": []
+    }
+]

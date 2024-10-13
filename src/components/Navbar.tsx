@@ -36,6 +36,7 @@ export default function Navbar() {
                     </div>
                     <ul tabIndex={0} className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-primary rounded-box w-36 ${dropdownOpen ? '' : 'hidden'}`}>
                         <li><Link className="text-lg" onClick={closeDropdown} to="/projects">Projects</Link></li>
+                        <li><Link className="text-lg" onClick={closeDropdown} to="/blogs">Blogs</Link></li>
                         <li><Link className="text-lg" onClick={closeDropdown} to="/about">About me</Link></li>
                         <li><Link className="text-lg" onClick={closeDropdown} to="/resume">Resume</Link></li>
                     </ul>
@@ -59,6 +60,7 @@ export default function Navbar() {
             <div className="navbar-end hidden lg:flex text-primary font-bold">
                 <ul className="menu menu-horizontal px-1">
                     <li><Link className="text-xl" to="/projects">Projects</Link></li>
+                    <li><Link className="text-xl" to="/blogs">Blogs</Link></li>
                     <li><Link className="text-xl" to="/about">About me</Link></li>
                     <li><Link className="text-xl" to="/resume">Resume</Link></li>
                 </ul>
