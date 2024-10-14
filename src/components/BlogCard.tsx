@@ -22,10 +22,10 @@ export default function BlogCard({ blog }: { blog: Blog }) {
         <>
             <div className='project w-[21rem] max-w-[90vw] text-primary flex flex-col gap-1'>
                 <Link to={`/blogs/${blog.keyword}`}>
-                    <img className='project-image rounded-2xl mb-2' src={blog.cover} alt={blog.title} />
                     <h2 className='title font-bold'>
                         {blog.title}
                     </h2>
+                    <img className='project-image rounded-2xl mb-2' src={blog.cover} alt={blog.title} />
                 </Link>
                 <div className="tag">
                     {blog.tags.map((tag: string) => (
