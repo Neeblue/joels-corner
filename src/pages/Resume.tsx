@@ -14,7 +14,7 @@ export default function Resume() {
 }
 
 const Header = () => (
-    <div className="text-center text-secondary  font-semibold">
+    <div className="text-center text-secondary font-semibold">
         <h1>Joel Miles</h1>
         <p>Washington, USA | <a target="_blank" href="mailto:email@johnbarnes.com">email@joelmiles.com</a></p>
         <p>
@@ -38,6 +38,10 @@ const Education = () => (
         </div>
     </section>
 );
+
+const edu = ({ school, date, details }: { school: string, date: string, details: string }) => (
+    div.h3.text-secondary@@@@@
+)
 
 const Project = ({ title, date, details }: { title: string, date: string, details: string[] }) => (
     <div>
