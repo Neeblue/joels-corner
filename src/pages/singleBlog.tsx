@@ -22,11 +22,11 @@ export default function SingleBlog() {
     const blog: Blog | undefined = jsonData.find((blog) => blog.keyword === keyword);
     
     return (
-        <div className="sections text-primary p-4 mb-4 sm:max-w-screen-md mx-auto flex flex-col gap-6">
+        <div className="sections text-primary p-2 mb-4 sm:max-w-screen-md mx-auto flex flex-col gap-6">
             {blog && blog.sections.map((section, index) => (
                 <div key={index} className="content">
                     {section.pictureUrl && (
-                        <img className='px-12' src={section.pictureUrl} alt={`${blog.title} image`}></img>
+                        <img className='px-1 sm:px-12' src={section.pictureUrl} alt={`${blog.title} image`}></img>
                     )}
                     <p className='text-center mb-4 text-secondary'>{section.pictureCaption}</p>
                     <p>{section.content}</p>
