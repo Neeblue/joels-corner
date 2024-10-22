@@ -3,10 +3,11 @@
 export default function Resume() {
     return (
         <>
-            <div className="container p-4 mx-auto text-primary flex flex-col gap-4">
+            <div className="container p-4 mt-2 mx-auto text-primary flex flex-col gap-8 max-w-4xl text-xl mb-8">
                 <Header />
                 <Education />
                 <Projects />
+                <Experience />
                 <TechnicalSkills />
             </div>
         </>
@@ -14,85 +15,87 @@ export default function Resume() {
 }
 
 const Header = () => (
-    <div className="text-center text-secondary  font-semibold">
-        <h1>Joel Miles</h1>
-        <p>Washington, USA | <a target="_blank" href="mailto:email@johnbarnes.com">email@joelmiles.com</a></p>
-        <p>
+    <div className="text-center text-secondary font-semibold">
+        <div className="text-4xl">Joel Miles</div>
+        <div className="text-xl">Washington, USA | <a target="_blank" href="mailto:email@johnbarnes.com">email@joelmiles.com</a></div>
+        <div className="text-xl">
             <a target="_blank" href="https://joelmiles.com">joelmiles.com</a> |{' '}
             <a target="_blank" href="https://www.linkedin.com/in/jmrmiles">linkedin.com/in/jmrmiles</a> |{' '}
             <a target="_blank" href="https://github.com/Neeblue">github.com/Neeblue</a>
-        </p>
+        </div>
     </div>
 );
 
 const Education = () => (
-    <section>
-        <h2 className="text-secondary font-semibold">Education</h2>
-        <div>
-            <h3>University of British Columbia, Vancouver, BC</h3>
-            <p>Bachelor of Education, Aug. 2021 -- May 2022</p>
+    <div>
+        <div className="projects flex flex-col gap-4">
+            <div>
+                <div>University of British Columbia <span className="float-right">Vancouver, BC</span></div>
+                <div className="italic">Bachelor of Education <span className="float-right">Aug. 2021 - May 2022</span></div>
+            </div>
+            <div>
+                <div>University of British Columbia <span className="float-right">Vancouver, BC</span></div>
+                <div>Bachelor of Science, Major in Biochemistry, Co-operative Education Program <span className="italic float-right">Aug. 2014 - May 2017</span></div>
+            </div>
         </div>
-        <div>
-            <h3>University of British Columbia, Vancouver, BC</h3>
-            <p>Bachelor of Science, Major in Biochemistry, Co-operative Education Program, Aug. 2014 -- May 2017</p>
-        </div>
-    </section>
+    </div>
 );
 
 const Project = ({ title, date, details }: { title: string, date: string, details: string[] }) => (
     <div>
-        <h3 className="text-secondary">{title} <span className="italic float-right">{date}</span></h3>
+        <div className="">{title} <span className="italic float-right">{date}</span></div>
         <ul>
-            {details.map((detail, index) => <li key={index}>• {detail}</li>)}
+            {details.map((detail, index) => <li className="ml-4" key={index}>• {detail}</li>)}
         </ul>
     </div>
 );
 
 const Projects = () => (
-    <section className="flex flex-col gap-2">
-        <h2 className="text-secondary font-semibold">Projects</h2>
-        <Project
-            title="Joel's Corner | React, JS, HTML, CSS, TypeScript, Tailwind"
-            date="Aug. 2023 -- Present"
-            details={[
-                'Static, front-end website hosted on Cloudflare pages for displaying personal projects',
-                'Responsive design with dynamically generated pages, uses DaisyUI components',
-            ]}
-        />
-        <Project
-            title="Disney Booker | C#, ASP.NET, Selenium"
-            date="Aug. 2023 -- Oct. 2023"
-            details={[
-                'Automated detection of Disney World reservations using an API endpoint, with Selenium-powered booking',
-                'Features include direct link generation of bookings, and notification through alerts, text, and emails',
-            ]}
-        />
-        <Project
-            title="Bookshelf | C#, Avalonia UI, Firebase"
-            date="Apr. 2023 -- Sep. 2023"
-            details={[
-                'A cross-platform digital bookshelf with data storage in Google\'s Firebase',
-                'Uses Google Books API and HtmlAgility package to pull data and images from Google and Goodreads',
-                'Uses MVVM architecture, dependency injection, and .NET Community Toolkit 8.1 for source generation',
-            ]}
-        />
-        <Project
-            title="Work Finder | React, JS, HTML, CSS, TypeScript, Tailwind, ASP.NET, MAUI, WPF"
-            date="Sep. 2022 -- Oct. 2022"
-            details={[
-                'Full stack React C# program for finding work as a substitute teacher',
-                'Features include themes, dependency injection, notifications through email and text, and job filtering',
-            ]}
-        />
-    </section>
+    <div>
+        <div className="projects flex flex-col gap-4">
+
+            <Project
+                title="Joel's Corner | React, JS, HTML, CSS, TypeScript, Tailwind"
+                date="Aug. 2023 - Present"
+                details={[
+                    'Static, front-end website hosted on Cloudflare pages for displaying personal projects',
+                    'Responsive design with dynamically generated pages, uses DaisyUI components',
+                ]}
+            />
+            <Project
+                title="Disney Booker | C#, ASP.NET, Selenium"
+                date="Aug. 2023 - Oct. 2023"
+                details={[
+                    'Automated detection of Disney World reservations using an API endpoint, with Selenium-powered booking',
+                    'Features include direct link generation of bookings, and notification through alerts, text, and emails',
+                ]}
+            />
+            <Project
+                title="Bookshelf | C#, Avalonia UI, Firebase"
+                date="Apr. 2023 - Sep. 2023"
+                details={[
+                    'A cross-platform digital bookshelf with data storage in Google\'s Firebase',
+                    'Uses Google Books API and HtmlAgility package to pull data and images from Google and Goodreads',
+                    'Uses MVVM architecture, dependency injection, and .NET Community Toolkit 8.1 for source generation',
+                ]}
+            />
+            <Project
+                title="Work Finder | React, JS, HTML, CSS, TypeScript, Tailwind, ASP.NET, MAUI, WPF"
+                date="Sep. 2022 - Oct. 2022"
+                details={[
+                    'Full stack React C# program for finding work as a substitute teacher',
+                    'Features include themes, dependency injection, notifications through email and text, and job filtering',
+                ]}
+            />
+        </div>
+    </div>
 );
 
 const Experience = () => (
     <section>
-        <h2 className="text-secondary font-semibold">Experience</h2>
         <div>
-            <h3>Teacher | Surrey Schools District, Surrey, BC</h3>
-            <p>Sep. 2022 -- Present</p>
+            <div>Teacher | Surrey Schools District, Surrey, BC</div>
+            <div>Sep. 2022 - Present</div>
             <ul>
                 <li>Instructed a diverse range of subjects including Computer Science, Engineering, Science, and Math</li>
                 <li>Collaborated with students with intricate needs to support their tailored learning objectives</li>
@@ -100,24 +103,24 @@ const Experience = () => (
             </ul>
         </div>
         <div>
-            <h3>Education Assistant | Pacific Academy, Surrey, BC</h3>
-            <p>Sep. 2018 -- June 2021</p>
+            <div>Education Assistant | Pacific Academy, Surrey, BC</div>
+            <div>Sep. 2018 - June 2021</div>
             <ul>
                 <li>Adapted courses during COVID-19 by incorporating a self-made website, YouTube lessons, and online sessions</li>
                 <li>Promoted inclusivity by offering personalized, one-on-one support to students with diverse needs</li>
             </ul>
         </div>
         <div>
-            <h3>Agriculture Lab Technician | SGS Canada, Burnaby, BC</h3>
-            <p>Aug. 2017 -- Sep. 2018</p>
+            <div>Agriculture Lab Technician | SGS Canada, Burnaby, BC</div>
+            <div>Aug. 2017 - Sep. 2018</div>
             <ul>
                 <li>Automated a manual data entry task, reducing processing time from 3 days to 20 minutes</li>
                 <li>Delivered protocol-adhered samples for analysis with close to a 100% punctuality rate</li>
             </ul>
         </div>
         <div>
-            <h3>Food Residue Technician | Maxxam Analytics, Burnaby, BC</h3>
-            <p>May 2015 -- Jan. 2016</p>
+            <div>Food Residue Technician | Maxxam Analytics, Burnaby, BC</div>
+            <div>May 2015 - Jan. 2016</div>
             <ul>
                 <li>Worked independently and efficiently to deliver sample results within a client's specified timeframe</li>
                 <li>Experienced in equipment maintenance, troubleshooting, and precise protocol adherence</li>
@@ -128,7 +131,6 @@ const Experience = () => (
 
 const TechnicalSkills = () => (
     <section>
-        <h2 className="text-secondary font-semibold">Technical Skills</h2>
         <ul>
             <li><strong>Programming languages:</strong> C#, SQL (MSSQL, SQLite), JavaScript, HTML, CSS</li>
             <li><strong>Frameworks:</strong> React, ASP.NET Core, Microsoft MAUI, Node.js, Angular, TypeScript</li>
