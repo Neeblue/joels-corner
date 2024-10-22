@@ -98,7 +98,7 @@ const ProjectCard = ({ title, date, details }: { title: string, date: string, de
     <div>
         <div className="">{title} <span className="italic float-right ml-4">{date}</span></div>
         <ul>
-            {details.map((detail, index) => <li className="ml-4" key={index}>• {detail}</li>)}
+            {details.map((detail, index) => <li className="ml-10 list-disc" key={index}>{detail}</li>)}
         </ul>
     </div>
 );
