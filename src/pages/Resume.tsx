@@ -28,6 +28,7 @@ const Header = () => (
 
 const Education = () => (
     <div>
+        <div className="text-secondary font-semibold mb-4">Education</div>
         <div className="projects flex flex-col gap-4">
             <EducationCard
                 title="University of British Columbia"
@@ -54,6 +55,7 @@ const EducationCard = ({ title, location, details, date }: { title: string, loca
 
 const Projects = () => (
     <div>
+        <div className="text-secondary font-semibold mb-4">Projects</div>
         <div className="projects flex flex-col gap-4">
             <ProjectCard
                 title="Joel's Corner | React, JS, HTML, CSS, TypeScript, Tailwind"
@@ -102,7 +104,7 @@ const ProjectCard = ({ title, date, details }: { title: string, date: string, de
 );
 
 const Experience = () => (
-    <section>
+    <section hidden={true}>
         <div>
             <div>Teacher | Surrey Schools District, Surrey, BC</div>
             <div>Sep. 2022 - Present</div>
@@ -140,13 +142,14 @@ const Experience = () => (
 );
 
 const TechnicalSkills = () => (
-    <section>
-        <ul>
+    <div>
+        <div className="text-secondary font-semibold mb-4">Technical Skills</div>
+        <ul className="flex flex-col gap-2">
             <li><strong>Programming languages:</strong> C#, SQL (MSSQL, SQLite), JavaScript, HTML, CSS</li>
             <li><strong>Frameworks:</strong> React, ASP.NET Core, Microsoft MAUI, Node.js, Angular, TypeScript</li>
             <li><strong>Developer Tools:</strong> Git, VS Code, Visual Studio, Rider, Postman, AWS CLI, Azure CLI</li>
             <li><strong>Libraries:</strong> Selenium, .NET Community Toolkit, Entity Framework, Swagger, Tailwind, Mantine, DaisyUI</li>
             <li><strong>Concepts:</strong> OOP, Version Control Systems, Software Architecture</li>
         </ul>
-    </section>
+    </div>
 );
