@@ -29,32 +29,33 @@ const Header = () => (
 const Education = () => (
     <div>
         <div className="projects flex flex-col gap-4">
-            <div>
-                <div>University of British Columbia <span className="float-right">Vancouver, BC</span></div>
-                <div className="italic">Bachelor of Education <span className="float-right">Aug. 2021 - May 2022</span></div>
-            </div>
-            <div>
-                <div>University of British Columbia <span className="float-right">Vancouver, BC</span></div>
-                <div>Bachelor of Science, Major in Biochemistry, Co-operative Education Program <span className="italic float-right">Aug. 2014 - May 2017</span></div>
-            </div>
+            <EducationCard
+                title="University of British Columbia"
+                location="Vancouver, BC"
+                details="Bachelor of Education"
+                date="Aug. 2021 - May 2022"
+            />
+            <EducationCard
+                title="University of British Columbia"
+                location="Vancouver, BC"
+                details="Bachelor of Science, Major in Biochemistry, Co-operative Education Program"
+                date="Aug. 2014 - May 2017"
+            />
         </div>
     </div>
 );
 
-const Project = ({ title, date, details }: { title: string, date: string, details: string[] }) => (
+const EducationCard = ({ title, location, details, date }: { title: string, location: string, date: string, details: string }) => (
     <div>
-        <div className="">{title} <span className="italic float-right">{date}</span></div>
-        <ul>
-            {details.map((detail, index) => <li className="ml-4" key={index}>• {detail}</li>)}
-        </ul>
+        <div className="education">{title}<span className="location float-right ml-4">{location}</span></div>
+        <div className="details italic">{details}<span className="date italic float-right ml-4">{date}</span></div>
     </div>
 );
 
 const Projects = () => (
     <div>
         <div className="projects flex flex-col gap-4">
-
-            <Project
+            <ProjectCard
                 title="Joel's Corner | React, JS, HTML, CSS, TypeScript, Tailwind"
                 date="Aug. 2023 - Present"
                 details={[
@@ -62,7 +63,7 @@ const Projects = () => (
                     'Responsive design with dynamically generated pages, uses DaisyUI components',
                 ]}
             />
-            <Project
+            <ProjectCard
                 title="Disney Booker | C#, ASP.NET, Selenium"
                 date="Aug. 2023 - Oct. 2023"
                 details={[
@@ -70,7 +71,7 @@ const Projects = () => (
                     'Features include direct link generation of bookings, and notification through alerts, text, and emails',
                 ]}
             />
-            <Project
+            <ProjectCard
                 title="Bookshelf | C#, Avalonia UI, Firebase"
                 date="Apr. 2023 - Sep. 2023"
                 details={[
@@ -79,7 +80,7 @@ const Projects = () => (
                     'Uses MVVM architecture, dependency injection, and .NET Community Toolkit 8.1 for source generation',
                 ]}
             />
-            <Project
+            <ProjectCard
                 title="Work Finder | React, JS, HTML, CSS, TypeScript, Tailwind, ASP.NET, MAUI, WPF"
                 date="Sep. 2022 - Oct. 2022"
                 details={[
@@ -88,6 +89,15 @@ const Projects = () => (
                 ]}
             />
         </div>
+    </div>
+);
+
+const ProjectCard = ({ title, date, details }: { title: string, date: string, details: string[] }) => (
+    <div>
+        <div className="">{title} <span className="italic float-right ml-4">{date}</span></div>
+        <ul>
+            {details.map((detail, index) => <li className="ml-4" key={index}>• {detail}</li>)}
+        </ul>
     </div>
 );
 
