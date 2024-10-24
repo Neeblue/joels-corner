@@ -144,12 +144,33 @@ const Experience = () => (
 const TechnicalSkills = () => (
     <div>
         <div className="text-secondary font-semibold mb-4">Technical Skills</div>
-        <ul className="flex flex-col gap-2">
+        <div className="flex">
+            <div className="flex flex-col gap-2 w-1/4">
+                <p>Languages:</p>
+                <p>Frameworks:</p>
+                <p>Developer:</p>
+                <p>Libraries:</p>
+                <p>Concepts:</p>
+            </div>
+            <div className="flex flex-col gap-2 w-3/4">
+                <p>C#, SQL (MSSQL, SQLite), JavaScript, HTML, CSS</p>
+                <p>React, ASP.NET Core, Microsoft MAUI, Node.js, Angular, TypeScript</p>
+                <p>Git, VS Code, Visual Studio, Rider, Postman, AWS CLI, Azure CLI</p>
+                <p>Selenium, .NET Community Toolkit, Entity Framework, Swagger, Tailwind, Mantine, DaisyUI</p>
+                <p>OOP, Version Control Systems, Software Architecture</p>
+            </div>
+        </div>
+
+
+
+
+
+        {/* <ul className="flex flex-col gap-2">
             <li><strong>Programming languages:</strong> C#, SQL (MSSQL, SQLite), JavaScript, HTML, CSS</li>
             <li><strong>Frameworks:</strong> React, ASP.NET Core, Microsoft MAUI, Node.js, Angular, TypeScript</li>
             <li><strong>Developer Tools:</strong> Git, VS Code, Visual Studio, Rider, Postman, AWS CLI, Azure CLI</li>
             <li><strong>Libraries:</strong> Selenium, .NET Community Toolkit, Entity Framework, Swagger, Tailwind, Mantine, DaisyUI</li>
             <li><strong>Concepts:</strong> OOP, Version Control Systems, Software Architecture</li>
-        </ul>
+        </ul> */}
     </div>
 );
