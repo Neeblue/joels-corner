@@ -144,15 +144,15 @@ const Experience = () => (
 const TechnicalSkills = () => (
     <div>
         <div className="text-secondary font-semibold mb-4">Technical Skills</div>
-        <div className="flex">
-            <div className="flex flex-col gap-2 w-1/4">
+        <div className="grid grid-cols-2">
+            <div className="justify-end mr-4">
                 <p>Languages:</p>
                 <p>Frameworks:</p>
                 <p>Developer:</p>
                 <p>Libraries:</p>
                 <p>Concepts:</p>
             </div>
-            <div className="flex flex-col gap-2 w-3/4">
+            <div className="justify-start">
                 <p>C#, SQL (MSSQL, SQLite), JavaScript, HTML, CSS</p>
                 <p>React, ASP.NET Core, Microsoft MAUI, Node.js, Angular, TypeScript</p>
                 <p>Git, VS Code, Visual Studio, Rider, Postman, AWS CLI, Azure CLI</p>
