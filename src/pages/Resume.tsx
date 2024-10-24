@@ -104,42 +104,65 @@ const ProjectCard = ({ title, date, details }: { title: string, date: string, de
 );
 
 const Experience = () => (
-    <section hidden={true}>
-        <div>
-            <div>Teacher | Surrey Schools District, Surrey, BC</div>
-            <div>Sep. 2022 - Present</div>
-            <ul>
-                <li>Instructed a diverse range of subjects including Computer Science, Engineering, Science, and Math</li>
-                <li>Collaborated with students with intricate needs to support their tailored learning objectives</li>
-                <li>Assisted with the Bases program, aiding students with learning and physical disabilities</li>
-            </ul>
-        </div>
-        <div>
-            <div>Education Assistant | Pacific Academy, Surrey, BC</div>
-            <div>Sep. 2018 - June 2021</div>
-            <ul>
-                <li>Adapted courses during COVID-19 by incorporating a self-made website, YouTube lessons, and online sessions</li>
-                <li>Promoted inclusivity by offering personalized, one-on-one support to students with diverse needs</li>
-            </ul>
-        </div>
-        <div>
-            <div>Agriculture Lab Technician | SGS Canada, Burnaby, BC</div>
-            <div>Aug. 2017 - Sep. 2018</div>
-            <ul>
-                <li>Automated a manual data entry task, reducing processing time from 3 days to 20 minutes</li>
-                <li>Delivered protocol-adhered samples for analysis with close to a 100% punctuality rate</li>
-            </ul>
-        </div>
-        <div>
-            <div>Food Residue Technician | Maxxam Analytics, Burnaby, BC</div>
-            <div>May 2015 - Jan. 2016</div>
-            <ul>
-                <li>Worked independently and efficiently to deliver sample results within a client's specified timeframe</li>
-                <li>Experienced in equipment maintenance, troubleshooting, and precise protocol adherence</li>
-            </ul>
-        </div>
+    <section>
+        <div className="text-secondary font-semibold mb-4">Experience</div>
+        
+        <ExperienceCard
+            job="Teacher"
+            location="Surrey Schools District, Surrey, BC"
+            date="Sep. 2022 - Present"
+            details={[
+                "Instructed a diverse range of subjects including Computer Science, Engineering, Science, and Math",
+                "Collaborated with students with intricate needs to support their tailored learning objectives",
+                "Assisted with the Bases program, aiding students with learning and physical disabilities"
+            ]}
+        />
+
+        <ExperienceCard
+            job="Education Assistant"
+            location="Pacific Academy, Surrey, BC"
+            date="Sep. 2018 - June 2021"
+            details={[
+                "Adapted courses during COVID-19 by incorporating a self-made website, YouTube lessons, and online sessions",
+                "Promoted inclusivity by offering personalized, one-on-one support to students with diverse needs"
+            ]}
+        />
+
+        <ExperienceCard
+            job="Agriculture Lab Technician"
+            location="SGS Canada, Burnaby, BC"
+            date="Aug. 2017 - Sep. 2018"
+            details={[
+                "Automated a manual data entry task, reducing processing time from 3 days to 20 minutes",
+                "Delivered protocol-adhered samples for analysis with close to a 100% punctuality rate"
+            ]}
+        />
+
+        <ExperienceCard
+            job="Food Residue Technician"
+            location="Maxxam Analytics, Burnaby, BC"
+            date="May 2015 - Jan. 2016"
+            details={[
+                "Worked independently and efficiently to deliver sample results within a client's specified timeframe",
+                "Experienced in equipment maintenance, troubleshooting, and precise protocol adherence"
+            ]}
+        />
     </section>
 );
+
+const ExperienceCard = ({ job, location, date, details }: { job: string, location: string, date: string, details: string[] }) => (
+    <div>
+        <div className="job">{job}</div>
+        <div className="location">{location}</div>
+        <div className="date">{date}</div>
+        <ul>
+            {details.map((detail, index) => (
+                <li key={index}>{detail}</li>
+            ))}
+        </ul>
+    </div>
+);
+
 
 const TechnicalSkills = () => (
     <div>
@@ -160,17 +183,5 @@ const TechnicalSkills = () => (
                 <p>OOP, Version Control Systems, Software Architecture</p>
             </div>
         </div>
-
-
-
-
-
-        {/* <ul className="flex flex-col gap-2">
-            <li><strong>Programming languages:</strong> C#, SQL (MSSQL, SQLite), JavaScript, HTML, CSS</li>
-            <li><strong>Frameworks:</strong> React, ASP.NET Core, Microsoft MAUI, Node.js, Angular, TypeScript</li>
-            <li><strong>Developer Tools:</strong> Git, VS Code, Visual Studio, Rider, Postman, AWS CLI, Azure CLI</li>
-            <li><strong>Libraries:</strong> Selenium, .NET Community Toolkit, Entity Framework, Swagger, Tailwind, Mantine, DaisyUI</li>
-            <li><strong>Concepts:</strong> OOP, Version Control Systems, Software Architecture</li>
-        </ul> */}
     </div>
-);
+};
