@@ -13,15 +13,10 @@ interface AboutSection {
 }
 
 export default function About() {
-  const [about, setAbout] = useState<AboutSection>({});
-  const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [about] = useState<AboutSection>(jsonData);
+  const [activeSection, setActiveSection] = useState<string | null>(Object.keys(jsonData)[0]);
 
-  // grab initial data from json, and open the first section
   useEffect(() => {
-    setAbout(jsonData);
-    const firstSectionKey = Object.keys(jsonData)[0];
-    setActiveSection(firstSectionKey);
-
     // Simulate a click event on the first item after the component has mounted
     setTimeout(() => {
       const firstItem = document.querySelector('.collapse-content .item input[type="radio"]');
