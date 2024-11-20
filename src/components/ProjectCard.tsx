@@ -13,7 +13,7 @@ type Project = {
 export default function ProjectCard({ project }: { project: Project }) {
     return (
         <div className='project w-[21rem] max-w-[90vw] text-primary'>
-            <h2 className='title font-bold'>
+            <h2 className='title font-bold text-secondary'>
                 <Link to={`/projects/${project.keyword}`}>{project.title}</Link>
             </h2>
             <div className='githubLink mb-2 flex items-center justify-center gap-2'>

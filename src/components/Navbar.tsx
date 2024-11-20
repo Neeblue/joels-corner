@@ -42,9 +42,7 @@ export default function Navbar() {
                 </div>
                 <a href="/" className="btn btn-ghost text-2xl font-bold text-primary gap-4 z-0">
                     <img src="/favicon.ico" alt="" className="h-8 hidden sm:block" />
-                    <p>
-                        Joel's Corner
-                    </p>
+                    <p className="text-secondary">Joel's Corner</p>
                 </a>
             </div>
             {/* Theme toggle */}
@@ -58,9 +56,9 @@ export default function Navbar() {
             {/* Homepage buttons on large screens */}
             <div className="navbar-end hidden lg:flex text-primary font-bold">
                 <ul className="menu menu-horizontal px-1">
-                    <li><Link className="text-xl" to="/projects">Projects</Link></li>
-                    <li><Link className="text-xl" to="/blogs">Blogs</Link></li>
-                    <li><Link className="text-xl" to="/resume">Resume</Link></li>
+                    <li><Link className="text-xl text-secondary" to="/projects">Projects</Link></li>
+                    <li><Link className="text-xl text-secondary" to="/blogs">Blogs</Link></li>
+                    <li><Link className="text-xl text-secondary" to="/resume">Resume</Link></li>
                 </ul>
             </div>
         </div>

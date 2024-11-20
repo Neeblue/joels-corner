@@ -29,7 +29,7 @@ export default function SingleProject(){
 
     return (
         <div className="projectPage m-4">
-            {project && <h1 className="title text-center font-bold mb-4 text-primary">{project.title}</h1>}
+            {project && <h1 className="title text-center font-bold mb-4 text-secondary">{project.title}</h1>}
 
             {project && project.detailsDescription.map((paragraph, index) => (
                 <div key={index} className='section max-w-full justify-center flex flex-col gap-4 mb-8 sm:flex-row sm:items-center'>
