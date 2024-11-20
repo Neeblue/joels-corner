@@ -1,7 +1,6 @@
 import Navbar from "@components/Navbar";
 import Footer from "@components/Footer";
 import Introduction from "@components/Introduction";
-import About from "@pages/About";
 import Projects from "@pages/Projects";
 import Spells from "@pages/Spells";
 import Resume from "@pages/Resume";
@@ -29,7 +28,6 @@ export default function App() {
               <Route path="projects/:keyword" element={<SingleProject />} />
               <Route path="blogs" element={<Blogs />} />
               <Route path="blogs/:keyword" element={<SingleBlog />} />
-              <Route path="about" element={<About />} />
               <Route path="resume" element={<Resume />} />
               <Route path="projects/spells/app" element={<Spells />} />
               <Route path="projects/notes/app" element={<Notes />} />
