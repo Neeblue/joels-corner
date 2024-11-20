@@ -32,7 +32,7 @@ export default function Blog() {
             <div className='blogs-page text-center'>
                 <h1 className='header text-3xl font-bold text-secondary'>Joel's Blog</h1>
                 <div className='sub-header text-primary mb-8 mx-2'>(Take a gander at some DIY projects and blog posts)</div>
-                <div className="blogs flex flex-wrap flex-col sm:flex-row justify-center items-center gap-8 mb-12">
+                <div className="blogs flex flex-wrap flex-col sm:flex-row justify-center gap-8 mb-12">
                     {blogs.map((blog, index) => (
                         <div key={index}>
                             <BlogCard blog={blog} />
