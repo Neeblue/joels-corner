@@ -19,8 +19,14 @@ export default function Projects() {
   }, []);
 
   return (
+    // Intro
     <div className='projects-page text-center'>
       <h1 className='header text-3xl font-bold text-secondary'>GitHub Projects</h1>
+
+    {/* // Projects under construction */}
+
+
+    {/* // Current projects */}
       <div className='sub-header text-primary mb-8 mx-2'>(Click on a project title or image to see more information about that project)</div>
       <div className="projects flex flex-col flex-wrap justify-center items-center sm:items-start gap-8 mb-12 sm:flex-row">
         {projects.map((project, index) => (

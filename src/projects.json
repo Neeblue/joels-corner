@@ -19,6 +19,7 @@
       "DaisyUI"
     ],
     "hidden": false,
+    "developing": false
   },
   {
     "title": "Desert Island",
@@ -40,6 +41,7 @@
       "Hosted on..."
     ],
     "hidden": true,
+    "developing": false
   },
   {
     "title": "Work Finder",
@@ -63,6 +65,7 @@
       "Selenium"
     ],
     "hidden": false,
+    "developing": false
   },
   {
     "title": "Disney Booker",
@@ -81,6 +84,7 @@
       "C#"
     ],
     "hidden": false,
+    "developing": false
   },
   {
     "title": "Bookshelf Mobile App",
@@ -107,6 +111,7 @@
       "DI"
     ],
     "hidden": false,
+    "developing": false
   },
   {
     "title": "Librarian App",
@@ -128,6 +133,7 @@
       "Google Books API"
     ],
     "hidden": false,
+    "developing": false
   },
   {
     "title": "Wizarding Spells",
@@ -148,6 +154,7 @@
       "Wizard World API"
     ],
     "hidden": false,
+    "developing": false
   },
   {
     "title": "",
@@ -166,6 +173,7 @@
       ""
     ],
     "hidden": true,
+    "developing": false
   },
   {
     "title": "Test application",
@@ -186,6 +194,7 @@
       ""
     ],
     "hidden": true,
+    "developing": false
   },
   {
     "title": "Blank project",
@@ -206,5 +215,6 @@
       ""
     ],
     "hidden": true,
+    "developing": false
   }
 ]
