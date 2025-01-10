@@ -18,7 +18,7 @@
       "Cloudflare",
       "DaisyUI"
     ],
-    "hidden": "false"
+    "hidden": false,
   },
   {
     "title": "Desert Island",
@@ -39,7 +39,7 @@
       "Docker",
       "Hosted on..."
     ],
-    "hidden": "true"
+    "hidden": true,
   },
   {
     "title": "Work Finder",
@@ -62,7 +62,7 @@
       "Cross-platform",
       "Selenium"
     ],
-    "hidden": "false"
+    "hidden": false,
   },
   {
     "title": "Disney Booker",
@@ -80,7 +80,7 @@
       "ASP.Net API",
       "C#"
     ],
-    "hidden": "false"
+    "hidden": false,
   },
   {
     "title": "Bookshelf Mobile App",
@@ -106,7 +106,7 @@
       ".Net Community Toolkit 8.1",
       "DI"
     ],
-    "hidden": "false"
+    "hidden": false,
   },
   {
     "title": "Librarian App",
@@ -127,7 +127,7 @@
       ".Net Community Toolkit 8.1",
       "Google Books API"
     ],
-    "hidden": "false"
+    "hidden": false,
   },
   {
     "title": "Wizarding Spells",
@@ -147,7 +147,7 @@
       "React",
       "Wizard World API"
     ],
-    "hidden": "false"
+    "hidden": false,
   },
   {
     "title": "",
@@ -165,7 +165,7 @@
       "",
       ""
     ],
-    "hidden": "true"
+    "hidden": true,
   },
   {
     "title": "Test application",
@@ -185,7 +185,7 @@
       "",
       ""
     ],
-    "hidden": "true"
+    "hidden": true,
   },
   {
     "title": "Blank project",
@@ -205,6 +205,6 @@
       "",
       ""
     ],
-    "hidden": "true"
+    "hidden": true,
   }
 ]

@@ -15,7 +15,7 @@ export default function Projects() {
   const [projects, setProjects] = useState<Project[]>([]);
 
   useEffect(() => {
-    setProjects(jsonData.filter(project => project.hidden === "false"));
+    setProjects(jsonData.filter(project => project.hidden === false));
   }, []);
 
   return (
