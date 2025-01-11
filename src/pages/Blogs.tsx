@@ -20,13 +20,8 @@ type Blog = {
 };
 
 export default function Blog() {
-    const [blogs, setBlogs] = useState<Blog[]>([]);
+    const blogs: Blog[] = jsonData.filter(blog => blog.hidden === false);
 
-    useEffect(() => {
-        setBlogs(jsonData.filter(blog => blog.hidden === false));
-    }, []);
-
-    // https://www.adhamdannaway.com/blog Blog example that looks nice.
     return (
         <>
             <div className='blogs-page text-center'>

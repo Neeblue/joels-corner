@@ -12,11 +12,7 @@ type Project = {
 }
 
 export default function Projects() {
-  const [projects, setProjects] = useState<Project[]>([]);
-
-  useEffect(() => {
-    setProjects(jsonData.filter(project => project.hidden === false));
-  }, []);
+  const projects: Project[] = jsonData.filter(project => project.hidden === false);
 
   return (
     <div className='projects-page text-center'>

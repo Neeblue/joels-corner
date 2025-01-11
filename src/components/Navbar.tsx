@@ -2,24 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-    const [theme, setTheme] = useState(
-        localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
-    );
+    const localTheme: string = localStorage.getItem("theme") ?? "light"; // used to coordinate toggle initial value with theme. TODO: undefined needed?
 
-    // Theme toggle functionality
     const handleToggle = (e: React.ChangeEvent<HTMLInputElement>) => {
-        if (e.target.checked) {
-            setTheme("dark");
-        } else {
-            setTheme("light");
-        }
-    };
-    const localTheme = localStorage.getItem("theme");
-    useEffect(() => {
-        localStorage.setItem("theme", theme ?? "light");
+        const theme: string | undefined = e.target.checked ? "dark" : "light";
+        localStorage.setItem("theme", e.target.checked ? "dark" : "light");
         document.documentElement.setAttribute("data-theme", theme ?? "");
-    }, [theme]);
-
+    };
+    
     // Closes drawer when a link is clicked
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const closeDropdown = () => {
