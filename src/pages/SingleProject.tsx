@@ -34,7 +34,7 @@ export default function SingleProject(){
                                 <>
                                     <div className="detailsParagraph text-primary max-w-[50vw] p-2" dangerouslySetInnerHTML={{__html: paragraph}}></div>
                                     <img className='detailsImage max-w-[50vw] max-h-[60vw] p-2 object-contain' src={project.detailsImage[index]} alt="" />
-                                </div>
+                                </>
                             )}
                         </div>
                 </div>
