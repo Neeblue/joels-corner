@@ -1,6 +1,7 @@
 import BlogCard from "@/components/BlogCard";
 import jsonData from '@/blog.json';
 import { useEffect, useState } from "react";
+import { usePreloadImages } from '@/hooks/usePreloadImages';
 
 
 type Section = {
@@ -25,6 +26,9 @@ export default function Blog() {
     useEffect(() => {
         setBlogs(jsonData.filter(blog => blog.hidden === false));
     }, []);
+
+    // Preload all blog cover images
+    usePreloadImages(blogs.map(b => b.cover));
 
     // https://www.adhamdannaway.com/blog Blog example that looks nice.
     return (

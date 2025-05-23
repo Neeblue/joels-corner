@@ -1,19 +1,23 @@
 import jsonData from '@/projects.json';
 import ProjectCard from '@/components/ProjectCard';
+import { usePreloadImages } from '@/hooks/usePreloadImages';
 
 interface Project {
-    keyword: string;
-    title: string;
-    detailsDescription: string[];
-    detailsImage: string[];
-    image: string;
-    link: string;
-    description: string;
-    tags: string[];
+  keyword: string;
+  title: string;
+  detailsDescription: string[];
+  detailsImage: string[];
+  image: string;
+  link: string;
+  description: string;
+  tags: string[];
 }
 
 export default function Projects() {
   const projects: Project[] = jsonData.filter(project => project.hidden === false);
+
+  // Preload all project images
+  usePreloadImages(projects.map(p => p.image));
 
   return (
     <div className='projects-page text-center'>
