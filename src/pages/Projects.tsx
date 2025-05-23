@@ -1,22 +1,19 @@
-import { useEffect, useState } from 'react';
 import jsonData from '@/projects.json';
 import ProjectCard from '@/components/ProjectCard';
 
-type Project = {
-  keyword: string;
-  image: string;
-  title: string;
-  link: string;
-  description: string;
-  tags: string[];
+interface Project {
+    keyword: string;
+    title: string;
+    detailsDescription: string[];
+    detailsImage: string[];
+    image: string;
+    link: string;
+    description: string;
+    tags: string[];
 }
 
 export default function Projects() {
-  const [projects, setProjects] = useState<Project[]>([]);
-
-  useEffect(() => {
-    setProjects(jsonData.filter(project => project.hidden === "false"));
-  }, []);
+  const projects: Project[] = jsonData.filter(project => project.hidden === false);
 
   return (
     <div className='projects-page text-center'>
