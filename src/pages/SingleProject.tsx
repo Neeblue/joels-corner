@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import jsonData from '@/projects.json';
+import { usePreloadImages } from '@/hooks/usePreloadImages';
 
 interface Project {
     keyword: string;
@@ -9,23 +10,24 @@ interface Project {
     detailsImage: string[];
 }
 
-export default function SingleProject() {
+export default function SingleProject(){
     const { keyword } = useParams<{ keyword: string }>();
     const project: Project | undefined = jsonData.find((project) => project.keyword === keyword);
     const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 640);
-    // Add state for image loading
-    const [imgLoaded, setImgLoaded] = useState<{ [key: number]: boolean }>({});
+
+    // Preload project images
+    usePreloadImages(project?.detailsImage || []);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 640);
+        setIsMobile(window.innerWidth <= 640);
         };
 
         window.addEventListener('resize', handleResize);
 
         // Cleanup the event listener on unmount
         return () => {
-            window.removeEventListener('resize', handleResize);
+        window.removeEventListener('resize', handleResize);
         };
     }, []);
 
@@ -37,56 +39,21 @@ export default function SingleProject() {
                 <div key={index} className='section max-w-full justify-center flex flex-col gap-4 mb-8 sm:flex-row sm:items-center'>
                     {isMobile ? (
                         <>
-                            <div className="detailsParagraph text-primary" dangerouslySetInnerHTML={{ __html: paragraph }}></div>
-                            <div className="relative w-full flex items-center justify-center">
-                                {!imgLoaded[index] && (
-                                    <div className="absolute inset-0 flex items-center justify-center bg-neutral animate-pulse rounded-lg" style={{ width: '100%', height: '100%', minHeight: 200 }} />
-                                )}
-                                <img
-                                    className={`detailsImage transition-opacity duration-300 ${imgLoaded[index] ? 'opacity-100' : 'opacity-0'}`}
-                                    src={project.detailsImage[index]}
-                                    alt=""
-                                    loading="lazy"
-                                    onLoad={() => setImgLoaded(l => ({ ...l, [index]: true }))}
-                                    style={{ minHeight: 200 }}
-                                />
-                            </div>
+                            <div className="detailsParagraph text-primary" dangerouslySetInnerHTML={{__html: paragraph}}></div>
+                            <img className='detailsImage' src={project.detailsImage[index]} alt="" style={{ aspectRatio: '16/9', width: '100%', maxWidth: isMobile ? undefined : '50vw', maxHeight: isMobile ? undefined : '60vw' }} />
+
                         </>
                     ) : (
                         <>
                             {index % 2 === 0 ? (
                                 <>
-                                    <div className="relative max-w-[50vw] max-h-[60vw] p-2 flex items-center justify-center">
-                                        {!imgLoaded[index] && (
-                                            <div className="absolute inset-0 flex items-center justify-center bg-neutral animate-pulse rounded-lg" style={{ width: '100%', height: '100%', minHeight: 200 }} />
-                                        )}
-                                        <img
-                                            className={`detailsImage max-w-[50vw] max-h-[60vw] p-2 object-contain transition-opacity duration-300 ${imgLoaded[index] ? 'opacity-100' : 'opacity-0'}`}
-                                            src={project.detailsImage[index]}
-                                            alt=""
-                                            loading="lazy"
-                                            onLoad={() => setImgLoaded(l => ({ ...l, [index]: true }))}
-                                            style={{ minHeight: 200 }}
-                                        />
-                                    </div>
-                                    <div className="detailsParagraph text-primary max-w-[50vw] p-2" dangerouslySetInnerHTML={{ __html: paragraph }}></div>
+                                    <img className='detailsImage max-w-[50vw] max-h-[60vw] p-2 object-contain' src={project.detailsImage[index]} alt= "" style={{ aspectRatio: '16/9', width: '100%', maxWidth: '50vw', maxHeight: '60vw' }} />
+                                    <div className="detailsParagraph text-primary max-w-[50vw] p-2" dangerouslySetInnerHTML={{__html: paragraph}}></div>
                                 </>
                             ) : (
                                 <>
-                                    <div className="detailsParagraph text-primary max-w-[50vw] p-2" dangerouslySetInnerHTML={{ __html: paragraph }}></div>
-                                    <div className="relative max-w-[50vw] max-h-[60vw] p-2 flex items-center justify-center">
-                                        {!imgLoaded[index] && (
-                                            <div className="absolute inset-0 flex items-center justify-center bg-neutral animate-pulse rounded-lg" style={{ width: '100%', height: '100%', minHeight: 200 }} />
-                                        )}
-                                        <img
-                                            className={`detailsImage max-w-[50vw] max-h-[60vw] p-2 object-contain transition-opacity duration-300 ${imgLoaded[index] ? 'opacity-100' : 'opacity-0'}`}
-                                            src={project.detailsImage[index]}
-                                            alt=""
-                                            loading="lazy"
-                                            onLoad={() => setImgLoaded(l => ({ ...l, [index]: true }))}
-                                            style={{ minHeight: 200 }}
-                                        />
-                                    </div>
+                                    <div className="detailsParagraph text-primary max-w-[50vw] p-2" dangerouslySetInnerHTML={{__html: paragraph}}></div>
+                                    <img className='detailsImage max-w-[50vw] max-h-[60vw] p-2 object-contain' src={project.detailsImage[index]} alt="" style={{ aspectRatio: '16/9', width: '100%', maxWidth: '50vw', maxHeight: '60vw' }} />
                                 </>
                             )}
                         </>

@@ -1,5 +1,6 @@
 import jsonData from '@/blog.json';
 import { useParams } from "react-router-dom";
+import { usePreloadImages } from '@/hooks/usePreloadImages';
 
 type Section = {
     content: string;
@@ -20,13 +21,15 @@ type Blog = {
 export default function SingleBlog() {
     const { keyword } = useParams<{ keyword: string }>();
     const blog: Blog | undefined = jsonData.find((blog) => blog.keyword === keyword);
+    // Preload section images
+    usePreloadImages(blog?.sections.map(s => s.pictureUrl).filter(Boolean) || []);
     
     return (
         <div className="sections text-primary p-2 mb-4 sm:max-w-screen-md mx-auto flex flex-col gap-6">
             {blog && blog.sections.map((section, index) => (
                 <div key={index} className="content">
                     {section.pictureUrl && (
-                        <img className='px-1 sm:px-12' src={section.pictureUrl} alt={`${blog.title} image`}></img>
+                        <img className='px-1 sm:px-12' src={section.pictureUrl} alt={`${blog.title} image`} style={{ aspectRatio: '16/9', width: '100%' }}></img>
                     )}
                     <p className='text-center mb-4 text-secondary'>{section.pictureCaption}</p>
                     <p>{section.content}</p>
