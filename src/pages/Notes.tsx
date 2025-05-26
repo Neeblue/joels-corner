@@ -18,7 +18,7 @@ export default function Notes() {
         setIsLoading(true);
         setError(null);
         console.log('Fetching notes...');
-        
+
         fetch(`https://post-message-neeblue.azurewebsites.net/api/notes?code=${import.meta.env.VITE_APP_AZURE_FUNCTION_API}`)
             .then(response => {
                 if (!response.ok) {
@@ -48,7 +48,7 @@ export default function Notes() {
         <div>
             <h1 className='text-center text-primary'>Notes to myself</h1>
             <div className='text-center text-primary mb-8'>
-                These notes are pulled from an Azure database using an Azure Function endpoint. 
+                These notes are pulled from an Azure database using an Azure Function endpoint.
                 The free tier of Azure Functions has a long cold start, so results may take a while to display.
             </div>
 
@@ -58,68 +58,73 @@ export default function Notes() {
                 </div>
             )}
 
-            {error && <div className='text-center text-red-600'>{error}</div>}
+            {error && <div className='text-center text-red-600' role="alert" aria-live="assertive">{error}</div>}
 
-            <div className='flex flex-wrap gap-4 justify-center mb-4'>
+            <div className='flex flex-wrap gap-4 justify-center mb-4' role="radiogroup" aria-label="Filter notes by label">
                 <label>
-                    <input 
-                        type="radio" 
-                        aria-label="All" 
-                        className="btn" 
-                        value='' 
-                        checked={selectedLabel === ''} 
-                        onChange={handleLabelChange} 
+                    <input
+                        type="radio"
+                        aria-label="All"
+                        className="btn"
+                        value=''
+                        checked={selectedLabel === ''}
+                        onChange={handleLabelChange}
+                        tabIndex={0}
                     />
                     All
                 </label>
                 <label>
-                    <input 
-                        type="radio" 
-                        aria-label="Todos" 
-                        className="btn" 
-                        value='Todo' 
-                        checked={selectedLabel === 'Todo'} 
-                        onChange={handleLabelChange} 
+                    <input
+                        type="radio"
+                        aria-label="Todos"
+                        className="btn"
+                        value='Todo'
+                        checked={selectedLabel === 'Todo'}
+                        onChange={handleLabelChange}
+                        tabIndex={0}
                     />
                     Todos
                 </label>
                 <label>
-                    <input 
-                        type="radio" 
-                        aria-label="Questions" 
-                        className="btn" 
-                        value='Question' 
-                        checked={selectedLabel === 'Question'} 
-                        onChange={handleLabelChange} 
+                    <input
+                        type="radio"
+                        aria-label="Questions"
+                        className="btn"
+                        value='Question'
+                        checked={selectedLabel === 'Question'}
+                        onChange={handleLabelChange}
+                        tabIndex={0}
                     />
                     Questions
                 </label>
                 <label>
-                    <input 
-                        type="radio" 
-                        aria-label="Issues" 
-                        className="btn" 
-                        value='Issue' 
-                        checked={selectedLabel === 'Issue'} 
-                        onChange={handleLabelChange} 
+                    <input
+                        type="radio"
+                        aria-label="Issues"
+                        className="btn"
+                        value='Issue'
+                        checked={selectedLabel === 'Issue'}
+                        onChange={handleLabelChange}
+                        tabIndex={0}
                     />
                     Issues
                 </label>
                 <label>
-                    <input 
-                        type="radio" 
-                        aria-label="Texts" 
-                        className="btn" 
-                        value='Text' 
-                        checked={selectedLabel === 'Text'} 
-                        onChange={handleLabelChange} 
+                    <input
+                        type="radio"
+                        aria-label="Texts"
+                        className="btn"
+                        value='Text'
+                        checked={selectedLabel === 'Text'}
+                        onChange={handleLabelChange}
+                        tabIndex={0}
                     />
                     Texts
                 </label>
             </div>
             <div className='flex flex-wrap gap-4 justify-center mb-8'>
                 {isLoading ? (
-                    <span className="loading loading-spinner text-primary size-9"></span>
+                    <span className="loading loading-spinner text-primary size-9" role="status" aria-live="polite" aria-label="Loading notes"></span>
                 ) : (
                     filteredNotes.map((note) => (
                         <div key={note.id}>

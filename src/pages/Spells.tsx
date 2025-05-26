@@ -33,22 +33,28 @@ export default function Spells() {
 
     return (
         <div className='mb-8'>
-            <div className='flex flex-wrap justify-center items-center gap-2 mb-4'>
+            <div className='flex flex-wrap justify-center items-center gap-2 mb-4' role="group" aria-label="Spell types">
                 {spellTypes.map(spellType => (
-                    <button className='btn text-neutral bg-secondary' key={spellType} onClick={() => handleSpellTypeClick(spellType)}>
+                    <button
+                        className='btn text-neutral bg-secondary'
+                        key={spellType}
+                        onClick={() => handleSpellTypeClick(spellType)}
+                        aria-pressed={selectedSpellType === spellType}
+                        tabIndex={0}
+                    >
                         {spellType}
                     </button>
                 ))}
             </div>
             <div className='flex justify-center'>
                 {isloading ? (
-                    <span className="loading loading-spinner text-primary size-9 flex justify-center"></span>
+                    <span className="loading loading-spinner text-primary size-9 flex justify-center" role="status" aria-live="polite" aria-label="Loading spells"></span>
                 ) : (
-                <div className='flex flex-wrap justify-center items-center gap-4'>
-                    {data && data.map((spell: any) => (
-                        <Spell key={spell.name} spell={spell} />
-                    ))}
-                </div>
+                    <div className='flex flex-wrap justify-center items-center gap-4'>
+                        {data && data.map((spell: any) => (
+                            <Spell key={spell.name} spell={spell} />
+                        ))}
+                    </div>
                 )}
 
             </div>

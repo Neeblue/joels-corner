@@ -15,7 +15,8 @@
         @apply hidden;
     }
 
-    .about-container a, .projectPage a {
+    .about-container a,
+    .projectPage a {
         @apply underline;
     }
 }
