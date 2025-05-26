@@ -17,7 +17,6 @@ export default function Notes() {
     const handleButtonPress = useCallback(() => {
         setIsLoading(true);
         setError(null);
-        console.log('Fetching notes...');
 
         fetch(`https://post-message-neeblue.azurewebsites.net/api/notes?code=${import.meta.env.VITE_APP_AZURE_FUNCTION_API}`)
             .then(response => {
@@ -29,7 +28,6 @@ export default function Notes() {
             .then(data => {
                 setNotes(data);
                 setIsLoading(false);
-                console.log('Notes fetched.');
             })
             .catch(error => {
                 console.error(error);
