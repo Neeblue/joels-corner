@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Tag from '@components/Tag';
+import { useState } from 'react';
 
 type Project = {
     keyword: string;
@@ -11,6 +12,8 @@ type Project = {
 }
 
 export default function ProjectCard({ project }: { project: Project }) {
+    const [imgLoaded, setImgLoaded] = useState(false);
+
     return (
         <div className='project w-[21rem] max-w-[90vw] text-primary'>
             <h2 className='title font-bold text-secondary'>
@@ -25,11 +28,21 @@ export default function ProjectCard({ project }: { project: Project }) {
             </div>
             <div className='imageContainer mb-2'>
                 <Link to={`/projects/${project.keyword}`}>
-                    <img className='image max-w-[90vw] sm:max-w-[300px] h-[250px] mx-auto' src={project.image} alt={project.title} />
+                    <div className="relative max-w-[90vw] sm:max-w-[300px] h-[250px] mx-auto flex items-center justify-center">
+                        {!imgLoaded && (
+                            <div className="absolute inset-0 flex items-center justify-center bg-neutral animate-pulse rounded-lg" style={{ width: '100%', height: '100%' }} />
+                        )}
+                        <img
+                            className={`image max-w-[90vw] sm:max-w-[300px] h-[250px] mx-auto transition-opacity duration-300 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
+                            src={project.image}
+                            alt={project.title}
+                            loading="lazy"
+                            onLoad={() => setImgLoaded(true)}
+                        />
+                    </div>
                     {project.tags.map((tag: string) => (
                         tag && <Tag key={tag} name={tag} />
-                    )
-                    )}
+                    ))}
                 </Link>
             </div>
             <p className='description'>{project.description}</p>
