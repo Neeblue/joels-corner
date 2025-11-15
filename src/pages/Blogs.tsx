@@ -1,6 +1,6 @@
 import BlogCard from "@/components/BlogCard";
 import jsonData from '@/blog.json';
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 
 
 type Section = {
@@ -20,11 +20,7 @@ type Blog = {
 };
 
 export default function Blog() {
-    const [blogs, setBlogs] = useState<Blog[]>([]);
-
-    useEffect(() => {
-        setBlogs(jsonData.filter(blog => blog.hidden === false));
-    }, []);
+    const blogs: Blog[] = useMemo(() => jsonData.filter(blog => blog.hidden === false), [jsonData]);
 
     // https://www.adhamdannaway.com/blog Blog example that looks nice.
     return (

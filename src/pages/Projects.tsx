@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import jsonData from '@/projects.json';
 import ProjectCard from '@/components/ProjectCard';
 
@@ -13,7 +14,7 @@ interface Project {
 }
 
 export default function Projects() {
-  const projects: Project[] = jsonData.filter(project => project.hidden === false);
+  const projects: Project[] = useMemo(() => jsonData.filter(project => project.hidden === false), [jsonData]);
 
   return (
     <div className='projects-page text-center'>
